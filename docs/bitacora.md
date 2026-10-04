@@ -15,7 +15,7 @@
 - Documentados objetivos, responsabilidades de agentes y secuencia de pruebas.
 - Creados tres ejemplos Lua originales para círculo, Lissajous y curva sobre toro.
 
-### Estado
+### Estado al terminar la preparación inicial
 
 - Verificación matemática: los tres archivos pasaron con Lua y LuaJIT, con 4097
   muestras cada uno. Se verificaron coordenadas finitas, amplitud, cierre, radio
@@ -34,3 +34,17 @@
 - El control de UI tardó varios minutos por llamada; conviene que el usuario
   complete ese diálogo directamente si desea evitar más espera.
 - Imagen, escucha y edición en vivo dentro de osci-render: pendientes.
+
+## Actualización posterior — primera ejecución confirmada por el usuario
+
+- El usuario confirmó que completó la instalación y ejecutó los tres ejemplos.
+  Esto supera el bloqueo de instalación de la entrada anterior.
+- Considera los ejemplos demasiado simples y solicita explorar una composición
+  más compleja, como las de los videos, idealmente con geometría algebraica.
+- Pide buscar antecedentes y registrar todos los experimentos solicitados.
+- No se infieren de esa confirmación la versión instalada, los ajustes de audio,
+  una grabación ni una prueba de edición en vivo; siguen sin registrarse.
+- Pedidos y propuestas organizados en [el registro de experimentos](experimentos.md).
+- Investigación inicial: antecedentes de composición paramétrica y live coding
+  de curvas sobre toros. No se verificó un puente Surfer Shuffle → osci-render
+  ni una composición basada en superficies implícitas arbitrarias.

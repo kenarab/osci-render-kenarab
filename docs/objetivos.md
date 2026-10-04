@@ -1,5 +1,8 @@
 # Objetivos y decisiones iniciales
 
+El seguimiento de pedidos, resultados y próximas pruebas está en
+[Registro de experimentos](experimentos.md).
+
 ## Intención artística
 
 Crear un instrumento para ver y escuchar geometría, disfrutar piezas musicales y

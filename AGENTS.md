@@ -19,6 +19,9 @@ Leer `docs/objetivos.md` y, cuando exista, `docs/bitacora.md` antes de iniciar o
 - Empezar con volumen bajo; preservar la separación de los canales X/Y al grabar.
 - No instalar dependencias grandes ni comprar software por anticipado.
 - Ejecutar solamente verificaciones pertinentes a los cambios.
+- Registrar cada experimento solicitado por el usuario en `docs/experimentos.md`,
+  con estado, criterio de aceptación y evidencia. Distinguir pedidos del usuario
+  de propuestas del agente; actualizar resultados sin perder los pendientes.
 
 ## Commits atómicos — preferencia explícita del usuario
 
