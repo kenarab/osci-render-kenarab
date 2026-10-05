@@ -9,7 +9,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | ID | Experimento o investigación | Estado | Criterio de aceptación / evidencia |
 | --- | --- | --- | --- |
 | EXP-001 | Instalar osci-render y ejecutar pruebas mínimas | Ejecutado por el usuario | Confirmó instalación y ejecución de círculo, Lissajous y recorrido sobre toro. Los considera demasiado simples. Validación matemática previa en Lua y LuaJIT; ajustes y grabación aún no registrados. |
-| EXP-002 | Composición más compleja, como las de los videos, idealmente con geometría algebraica | Pedido; pendiente de implementar | Pieza reproducible con evolución temporal y estructura musical, cambios geométricos reconocibles y evaluación del usuario sobre imagen y sonido. Los videos concretos de referencia aún no están identificados. |
+| EXP-002 | Composición más compleja, como las de los videos, idealmente con geometría algebraica | Primer prototipo implementado; evaluación en osci-render pendiente | [Estudio de un toro](../experiments/002-estudio-de-un-toro/README.md): 80 s, tres secciones, secuenciador y geometría animada. Falta evaluación del usuario sobre imagen y sonido. |
 | EXP-003 | Investigar quién compuso música de osciloscopio usando esta clase de geometría | Primera búsqueda realizada | Referencias primarias abajo; distinguir composición paramétrica de superficies implícitas generales. No se afirma una búsqueda exhaustiva. |
 | EXP-004 | Usar superficies algebraicas elegidas, más allá de la generación aleatoria | Pendiente | Partir de una ecuación registrada, producir curvas o malla y comprobar la visualización en osci-render. Conservar ecuación, dominio, parámetros y método de recorrido. |
 | EXP-005 | Recuperar o adaptar el generador aleatorio de superficies de Surfer Shuffle | Pendiente; código original por localizar | Reproducir una superficie con la misma semilla y parámetros y evaluar su uso musical. El enlace del proyecto está disponible; su código no se importó. |
@@ -63,10 +63,12 @@ ejemplo verificado de composición que tome superficies implícitas arbitrarias
 de Surfer Shuffle y las convierta directamente en música de osciloscopio. Esto
 no demuestra que no exista.
 
-## Propuesta del agente para EXP-002: Estudio de un toro
+## Propuesta aceptada para EXP-002: Estudio de un toro
 
-Prototipo sugerido, todavía no implementado: pieza de 60–90 segundos con tres
-secciones, escrita inicialmente en Lua para aprovechar la instalación existente.
+El usuario aceptó comenzar con esta propuesta. Primer prototipo implementado en
+[estudio.lua](../experiments/002-estudio-de-un-toro/estudio.lua): 80 segundos, 96 BPM,
+32 compases y tres secciones. Su secuenciador funciona sin MIDI ni dependencias.
+La guía del experimento explica reinicio, controles y verificación fuera del host.
 
 1. **Presentación:** un recorrido cerrado sobre el toro, con motivo rítmico y
    rotación lenta que permita reconocer la forma.

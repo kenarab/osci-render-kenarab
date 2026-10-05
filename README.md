@@ -6,6 +6,8 @@ trabajar tanto con superficies elegidas como con generación aleatoria reproduci
 
 - [Objetivos, etapas y herramientas](docs/objetivos.md)
 - [Primera sesión con osci-render](docs/primer-arranque.md)
+- [Estudio de un toro — composición de 80 segundos](experiments/002-estudio-de-un-toro/README.md)
+- [Registro de experimentos solicitados](docs/experimentos.md)
 - [Hallazgos y estado de las pruebas](docs/bitacora.md)
 - [Instrucciones para agentes](AGENTS.md)
 

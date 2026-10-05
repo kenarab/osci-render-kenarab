@@ -48,3 +48,22 @@
 - Investigación inicial: antecedentes de composición paramétrica y live coding
   de curvas sobre toros. No se verificó un puente Surfer Shuffle → osci-render
   ni una composición basada en superficies implícitas arbitrarias.
+
+## EXP-002 — Primer prototipo de Estudio de un toro
+
+- Propuesta aceptada por el usuario e implementada en
+  `experiments/002-estudio-de-un-toro/estudio.lua`.
+- 80 segundos a 96 BPM, 32 compases; presentación de 0–20 s, desarrollo de
+  20–60 s y retorno de 60–80 s. Final en silencio, reinicio mediante `TAKE`.
+- Secuencia menor con respuestas, cambios de raíz, acentos y silencios.
+  Recorridos sobre un toro de radios variables; rotación 3D y envolvente común
+  a imagen y sonido. No depende de MIDI ni de bibliotecas externas.
+- `luajit scripts/check_torus_study.lua recordings/estudio-de-un-toro.wav`
+  completó dos pasadas de 80 segundos por frecuencia (44.1 y 48 kHz): cotas,
+  señal finita, actividad de las tres secciones, continuidad en cambios de nota,
+  determinismo, silencio final y reinicio con TAKE. Picos: 0.409116 y 0.409109.
+- WAV de preescucha generado a 48 kHz, estéreo de 16 bits; excluido de Git.
+  Es la salida directa X/Y del script, no una grabación de osci-render.
+- Pendiente: apertura y escucha del nuevo prototipo en osci-render, rendimiento
+  en el host y valoración artística del usuario. No se verificó todavía la
+  edición de controles durante la reproducción en el editor de la aplicación.
