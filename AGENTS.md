@@ -27,6 +27,21 @@ Leer `docs/objetivos.md` y, cuando exista, `docs/bitacora.md` antes de iniciar o
   con estado, criterio de aceptación y evidencia. Distinguir pedidos del usuario
   de propuestas del agente; actualizar resultados sin perder los pendientes.
 
+## Desarrollo guiado por especificaciones (SDD)
+
+- Seguir `specs/README.md`: especificación, plan, implementación, verificación y
+  entrega. Para nuevo comportamiento, crear o actualizar requisitos observables
+  y criterios de aceptación antes del código.
+- Referenciar los IDs de requisitos en pruebas, bitácora o mensaje del commit.
+- El instrumento prioritario diseña sonido desde superficies, sin depender de
+  notas MIDI. MIDI CC sigue siendo una entrada de control válida.
+- Separar velocidad de escena, barrido sonoro y tempo de una partitura; no llamar
+  a las tres simplemente “velocidad”. Incluir parada de escena sin cortar audio.
+- Dar prioridad al timbre y a la legibilidad de superficies. No declarar calidad
+  artística a partir de métricas ni equivalencia geométrica tras filtrar sin verificar.
+- Marcar aceptación en host/hardware como pendiente hasta comprobarla. SDD no
+  agrega una solicitud de permiso por etapa dentro del alcance ya autorizado.
+
 ## Commits atómicos — preferencia explícita del usuario
 
 - Hacer commit local de cada avance coherente cuando funcione. La atomicidad es

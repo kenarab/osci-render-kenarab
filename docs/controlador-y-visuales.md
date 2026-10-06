@@ -21,6 +21,22 @@ de 0–1 se acotan. Mantener la ganancia de salida del host moderada.
 
 ## Conectar un controlador MIDI
 
+### Encontrar los controles con el mouse
+
+En el código de la versión 2.9.9.3, `Lua Sliders` aparece **debajo del editor Lua**
+y se oculta cuando se cierra ese editor. Abrir un archivo `.lua`, expandir el
+editor con su flecha lateral y ampliar la zona inferior arrastrando el separador
+horizontal si quedó comprimida. Los controles A–E de ese panel son los sliders
+de pantalla; las variables `slider_a`…`slider_e` leen sus valores. No hay que
+instalar Lua ni tener un dispositivo conectado para moverlos.
+
+Si un slider está animado por un modulador, quitar esa asignación para la prueba
+manual. Los nombres exactos de menú y la visibilidad deben comprobarse en la
+versión instalada; esta explicación se basa en `Source/PluginEditor.cpp`, no en
+una interacción ya realizada con la app del usuario.
+
+### Mapear el dispositivo
+
 1. Conectar el controlador USB/MIDI y configurar los potenciómetros para enviar
    **CC absolutos** (0–127), no encoders relativos. Marca/modelo aún por confirmar.
 2. En ajustes de audio/MIDI de osci-render, habilitar su entrada MIDI.
@@ -45,6 +61,29 @@ para probar los sliders con el mouse.
 El contrato 0–1 y los nombres `slider_a`…`slider_e` se comprobaron en la copia local
 2.9.9.3 (`LuaDocumentationComponent.cpp` y `PluginProcessor.cpp`), además de la
 [wiki oficial](https://github.com/jameshball/osci-render/wiki).
+
+### OSC y MIDI son rutas diferentes
+
+- Controlador USB MIDI → MIDI CC → parámetro del host → slider Lua: ruta directa
+  cuando la edición del host ofrece el aprendizaje correspondiente.
+- Controlador OSC → receptor/puente OSC a MIDI → host → slider Lua: requiere un
+  receptor adicional si no hay entrada OSC nativa comprobada. Una DAW también
+  puede actuar como intermediaria si soporta el mapeo necesario.
+
+No se encontró una entrada OSC de parámetros documentada en la revisión de
+README/wiki y fuentes disponibles. La copia contiene módulos ausentes: no se
+afirma que sea imposible, pero no se inventan direcciones como `/slider_a` ni un
+puerto de escucha. Si el controlador ya envía MIDI, no necesita pasar por OSC.
+No se instaló ningún puente ni se abrió un puerto.
+
+### Por qué los estudios anteriores no resolvían la lentitud
+
+En AIRE, A aumenta el tempo base de 38 a 54 BPM y C aumenta la rotación; esos
+rangos no permiten ralentizar mucho ni detener la escena. La densidad aparente
+proviene además de sumar voces con distintas frecuencias. No se corrige todo
+bajando el tempo. El nuevo [contrato SDD](../specs/001-instrumento-superficies/spec.md)
+separa escena y barrido, incluye pausa visual y prioriza una sola superficie
+legible. Ese comportamiento está especificado, todavía no implementado.
 
 ## Si la figura casi no se ve
 

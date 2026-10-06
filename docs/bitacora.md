@@ -127,3 +127,18 @@
 - Pendiente: importar y evaluar las mallas en osci-render, reducir/ordenar su
   barrido si hace falta y relacionar deformaciones con música. El render sombreado
   es una referencia geométrica, no una captura de audio.
+
+## Dirección nueva y SDD
+
+- El usuario valora AIRE, pero percibe su dibujo aleatorio y rápido; pide diseñar
+  sonidos desde superficies, sliders lentos y aclarar MIDI/OSC. Añade prioridad
+  de mejorar el timbre. No se interpreta como rechazo del control MIDI CC.
+- Implementado el flujo SDD local: requisitos identificados, plan incremental y
+  matrices de aceptación en specs/001 y specs/002. El nuevo motor no se declara
+  implementado; la comparación de timbres sigue pendiente.
+- Localización de Lua Sliders comprobada en fuentes 2.9.9.3: bajo el editor,
+  visible solo al abrirlo. No se verificó todavía la interfaz instalada.
+- OSC de parámetros no encontrado en fuentes/documentación revisadas; revisión
+  limitada por módulos ausentes. Ruta directa MIDI o puente OSC según hardware.
+- Completado el commit interrumpido de superficies: 34582b2. El usuario autoriza
+  volver a solicitar el commit que rechazó por error.

@@ -3,6 +3,15 @@
 El seguimiento de pedidos, resultados y próximas pruebas está en
 [Registro de experimentos](experimentos.md).
 
+## Dirección vigente
+
+Diseñar sonido desde superficies algebraicas, con timbre agradable, movimiento
+lento y controles comprensibles. El usuario prefiere esta vía a usar una partitura
+MIDI como motor principal. MIDI CC puede controlar el instrumento. Bach y Piazzolla
+se conservan como referencias, sin desplazar esta prioridad.
+El desarrollo sigue [SDD](../specs/README.md), con aceptación geométrica, auditiva
+y en el host por separado. Las especificaciones nuevas no están implementadas aún.
+
 ## Intención artística
 
 Crear un instrumento para ver y escuchar geometría, disfrutar piezas musicales y

@@ -27,6 +27,10 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-017 | Incorporar Meditango de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial/discográfica localizada. |
 | EXP-018 | Incorporar Solitude de Piazzolla como referencia | Identidad exacta por confirmar | Candidato: Solitude de Suite Lumière; no confundir con Années de solitude. |
 | EXP-019 | Corregir el enfoque: visualizar superficies algebraicas completas, no solo curvas | Prototipo geométrico implementado; host pendiente | Mallas implícitas de toro/Cassini con caras, OBJ y vista sombreada; falta verificar legibilidad y rendimiento en osci-render. |
+| EXP-020 | Diseñar sonidos desde superficies, en vez de notas MIDI como motor | Especificado; implementación pendiente | SUP-R01–R04 en specs/001; conservar Bach como referencia. |
+| EXP-021 | Controlar lentitud y pausa con slider, separando velocidades | Especificado; implementación pendiente | SUP-R05/R06 y SUP-A04/A05; escena independiente del barrido. |
+| EXP-022 | Implementar SDD y aclarar acceso a sliders/ruta OSC | Flujo SDD y guía implementados; conexión pendiente | specs/README.md; localización del panel verificada en fuentes; OSC nativo no confirmado. |
+| EXP-023 | Conseguir un timbre más lindo | Especificado; variantes y escucha pendientes | TIM-R01–R06; tres comparaciones cortas y elección auditiva del usuario. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.
