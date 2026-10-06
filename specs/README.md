@@ -14,6 +14,7 @@ velocidades lentas. No implica instalar un framework ni una herramienta externa.
 | [004 — AIRE controlable](004-aire-controlable/spec.md) | Implementado; nueva escucha y host pendientes | Tempo 20–52 BPM, expresión y cuatro timbres |
 | [005 — Narración audiovisual](005-narracion-audiovisual/spec.md) | Storyboard propuesto | Historia de formas y sonidos; IanniX como candidato para secuenciar |
 | [006 — Superficies SURFER](006-superficies-surfer/spec.md) | Dirección precisada; implementación pendiente | Polinomios implícitos, singularidades y coeficientes interactivos |
+| [007 — Bach con materias tímbricas](007-bach-materias/spec.md) | Implementado; aceptación auditiva y host pendientes | Cuárticas, modulación de fase y voces diferenciadas |
 
 Los estudios anteriores son antecedentes, no implementaciones conformes a estas
 especificaciones. Las mallas de EXP-019 son una base geométrica ya verificada.

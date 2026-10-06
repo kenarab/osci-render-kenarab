@@ -38,6 +38,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-028 | Modificar superficies con controles y representarlas completas, como en demos | Investigación inicial; editor/malla dinámica pendientes | Distinguir malla sombreada de barrido XY. Referencia aclarada: SURFER y superficies singulares (specs/006). Editor implícito/coeficientes y puente al host pendientes. |
 | EXP-029 | Investigar antecedentes y sentido de integrar IanniX con osci-render | Investigación documentada; integración pendiente | No se encontró antecedente exacto. Ruta propuesta IanniX → OSC → REAPER → parámetros de osci-render; verificar un cursor y un coeficiente. |
 | EXP-030 | Comparar premium, Live y REAPER para MIDI y conexión futura con IanniX | Investigación completada; prueba física pendiente | [Comparativa y protocolo](midi-premium-live-reaper.md). Verificar un CC → Lua Slider A, guardar/reabrir y luego un mensaje OSC; no comprar antes de comprobar parámetros expuestos. |
+| EXP-031 | Nuevas versiones del Bach favorito con timbres por voz basados en superficies u otras síntesis complejas | Cuárticas y Prisma implementados; escucha y host pendientes | [008](../experiments/008-bach-materias/README.md): dos Lua/presets y controles, WAV de 5:39, ocho voces aisladas, comparación de 60 s; mallas completas y análisis espectral. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.

@@ -245,3 +245,16 @@
   y especificación sin modificar música ni borrar variantes.
 - Verificación de esta etapa: documentación y enlaces locales; sin cambios de código,
   instalación, compra, prueba física o nueva renderización de audio.
+
+## 2026-10-06 — Nuevas materias para el Adagio (EXP-031)
+
+- El interés por premium incluye explorar el instrumento y su interfaz, no sólo MIDI.
+  El usuario considera instalar DAW actual; no se instala en esta etapa.
+- 008 conserva la interpretación Adagio con dos orquestaciones: superficies cuárticas
+  y modulación de fase precalculada. Cada voz tiene espectro y evolución diferentes.
+- Cuatro mallas cerradas completas y vista sombreada; la señal audible es sonificación
+  filtrada de recorridos, no una visualización completa de las superficies. Editor
+  SURFER, singularidades y actualización conjunta de coeficientes siguen pendientes.
+- Dos WAV completos de 339.066 s, picos 0.65084/0.60245; continuidad, fin y reinicio
+  aprobados. Ocho timbres aislados a igual RMS, controles a 44.1/48 kHz y comparación
+  audiovisual con el Adagio original. Falta escucha del usuario y prueba en host.
