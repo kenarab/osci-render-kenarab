@@ -1,0 +1,2 @@
+# Archivos originales de Mutopia: conservar espacios y líneas finales de origen.
+*.ly whitespace=-blank-at-eol,-blank-at-eof
