@@ -16,6 +16,10 @@ Leer `docs/objetivos.md` y, cuando exista, `docs/bitacora.md` antes de iniciar o
   éxito de audio o interfaz a partir de una validación matemática solamente.
 - Registrar ecuación, parámetros, semilla cuando corresponda, versión y resultado.
 - Mantener la geometría costosa fuera del cálculo por muestra de audio.
+- Visualizar superficies algebraicas como superficies: malla/caras o cobertura
+  de barridos suficiente, junto a una vista 3D que permita reconocer su forma.
+  Una curva aislada sobre una superficie no satisface este requisito del usuario.
+  Distinguir siempre vista sombreada, representación XY y mezcla de voces.
 - Empezar con volumen bajo; preservar la separación de los canales X/Y al grabar.
 - No instalar dependencias grandes ni comprar software por anticipado.
 - Ejecutar solamente verificaciones pertinentes a los cambios.

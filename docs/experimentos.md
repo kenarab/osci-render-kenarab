@@ -26,6 +26,10 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-016 | Incorporar Violentango de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial/discográfica localizada. |
 | EXP-017 | Incorporar Meditango de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial/discográfica localizada. |
 | EXP-018 | Incorporar Solitude de Piazzolla como referencia | Identidad exacta por confirmar | Candidato: Solitude de Suite Lumière; no confundir con Années de solitude. |
+| EXP-019 | Corregir el enfoque: visualizar superficies algebraicas completas, no solo curvas | Prototipo geométrico implementado; host pendiente | Mallas implícitas de toro/Cassini con caras, OBJ y vista sombreada; falta verificar legibilidad y rendimiento en osci-render. |
+
+**Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
+no completan por sí solos EXP-004 ni el requisito de visualizar superficies.
 
 Las cinco referencias se desarrollan en [Repertorio Piazzolla](referencias-piazzolla.md).
 

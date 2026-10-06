@@ -113,3 +113,17 @@
   fotogramas de Hilo (25 s) y Luz (180 s). Entrega en `recordings/005-aire.mp4`.
 - Guía explica controles sin programar y condiciones de conexión MIDI directa.
   La apreciación sonora y la ejecución dentro de osci-render quedan pendientes.
+
+## Corrección de alcance — superficies y repertorio Piazzolla
+
+- El usuario solicitó Libertango, Oblivion, Violentango, Meditango y Solitude como
+  referencias; registradas individualmente, con fuentes editoriales/discográficas.
+  No se importaron partituras ni grabaciones ni se hicieron arreglos de Piazzolla.
+- El usuario aclaró que las curvas anteriores no cumplen su pedido de visualizar
+  superficies. Se corrigió el criterio en objetivos, instrucciones y experimentos.
+- EXP-019: extracción implícita de toro y Cassini mediante tetraedros, con caras,
+  exportación OBJ y vista sombreada. Mallas cerradas por incidencia de aristas,
+  Euler 0/2 y residuos de vértices por debajo de 1e-9. Vista inspeccionada.
+- Pendiente: importar y evaluar las mallas en osci-render, reducir/ordenar su
+  barrido si hace falta y relacionar deformaciones con música. El render sombreado
+  es una referencia geométrica, no una captura de audio.

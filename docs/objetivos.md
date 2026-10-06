@@ -27,11 +27,21 @@ las ideas de Surfer Shuffle sin limitar el instrumento a superficies aleatorias.
 
 ## Distinción fundamental
 
+**Corrección explícita del usuario:** quiere ver superficies algebraicas, no
+solo curvas situadas sobre ellas. Los estudios 001–005 son exploraciones musicales
+de recorridos; no dan por cumplido el objetivo de visualización de superficies.
+
 Una superficie implícita es un conjunto bidimensional en el espacio. El audio
 estéreo describe un recorrido temporal `(X(t), Y(t))`. Necesitamos elegir curvas
 sobre la superficie, contornos o aristas, ordenarlas y proyectarlas. Esa elección
 afecta tanto la imagen como el sonido: más detalle no garantiza mejor resultado.
 No basta con enviar a osci-render la imagen sombreada que produce SURFER.
+
+El flujo de trabajo debe conservar una geometría de superficie (malla con caras)
+y ofrecer una vista sombreada de referencia. Su representación en osci-render
+podrá usar aristas o barridos que permitan reconocer la superficie. Debemos
+comparar ambas vistas, sin etiquetar la vista sombreada como salida de audio.
+Primera prueba: [superficies implícitas](../experiments/006-superficies-implicitas/README.md).
 
 ## Herramientas y arquitectura propuestas
 

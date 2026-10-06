@@ -10,6 +10,8 @@ trabajar tanto con superficies elegidas como con generación aleatoria reproduci
 - [Órbitas — elipsoide con controles en vivo](experiments/003-orbitas/README.md)
 - [Cristal — superficie de cuarto grado](experiments/004-cristal/README.md)
 - [AIRE — cuatro voces de Bach en el espacio](experiments/005-aire-de-bach/README.md)
+- [Superficies implícitas: mallas y vista sombreada](experiments/006-superficies-implicitas/README.md)
+- [Piazzolla: las cinco obras de referencia](docs/referencias-piazzolla.md)
 - [Potenciómetros MIDI y previsualizaciones en video](docs/controlador-y-visuales.md)
 - [Registro de experimentos solicitados](docs/experimentos.md)
 - [Hallazgos y estado de las pruebas](docs/bitacora.md)
