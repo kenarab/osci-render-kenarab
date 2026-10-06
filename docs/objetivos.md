@@ -10,7 +10,8 @@ lento y controles comprensibles. El usuario prefiere esta vía a usar una partit
 MIDI como motor principal. MIDI CC puede controlar el instrumento. Bach y Piazzolla
 se conservan como referencias, sin desplazar esta prioridad.
 El desarrollo sigue [SDD](../specs/README.md), con aceptación geométrica, auditiva
-y en el host por separado. Las especificaciones nuevas no están implementadas aún.
+y en el host por separado. El primer prototipo de esas especificaciones está en el experimento 007;
+la aceptación en el host y por escucha sigue pendiente.
 
 ## Intención artística
 

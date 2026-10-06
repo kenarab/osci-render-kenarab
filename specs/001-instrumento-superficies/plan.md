@@ -33,3 +33,12 @@ este plan no marca ninguna tarea como completada.
 - No imponer un puente OSC antes de saber si hace falta.
 - Evaluación perceptual del usuario obligatoria para declarar logrado el timbre;
   no introduce un permiso extra para implementar o renderizar pruebas autorizadas.
+
+## Avance realizado
+
+Pasos 2–4: primer instrumento de toro, dos relojes y tres clips comparables en
+007. Video con superficie, barrido original y XY tratado, revisado fuera del host.
+Paso 1: guía preparada; interacción en la app pendiente. Paso 5: controlador y
+edición sin identificar; el usuario confirmó que aún falta la prueba física.
+Paso 6: comprobaciones de geometría, audio, controles y espectro estático realizadas;
+aceptación artística y rendimiento en el host siguen abiertos.

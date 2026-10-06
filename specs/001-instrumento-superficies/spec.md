@@ -1,6 +1,6 @@
 # 001 — Instrumento sonoro de superficies algebraicas
 
-Estado: especificación inicial; instrumento completo pendiente.
+Estado: prototipo 007 implementado y verificado fuera del host; integración y escucha pendientes.
 Pedidos: EXP-004/006/007/009/019/020/021/022. Dirección confirmada por el usuario.
 
 ## Problema
@@ -61,15 +61,15 @@ explícitamente en un preset o guía; un slider existente en cero no significa a
 
 | ID | Prueba | Estado |
 | --- | --- | --- |
-| SUP-A01 | Malla cerrada, no degenerada, ecuación/residuos y dominio documentados (R01) | Base toro/Cassini verificada en EXP-019 |
-| SUP-A02 | Reconocer la misma superficie en vista 3D y host XY, registrar comparación (R02/R04) | Pendiente |
-| SUP-A03 | Sonido sostenido sin MIDI de notas ni partitura (R03) | Pendiente para el instrumento de superficie |
-| SUP-A04 | A=0 congela escena durante 10 s sin silenciar; valores bajos lentos y sin saltos (R05/R06) | Pendiente |
-| SUP-A05 | B modifica barrido sin alterar velocidad de escena; medir legibilidad/aliasing (R05) | Pendiente |
+| SUP-A01 | Malla cerrada, no degenerada, ecuación/residuos y dominio documentados (R01) | Toro/Cassini en EXP-019 y toro paramétrico cerrado en 007 verificados |
+| SUP-A02 | Reconocer la misma superficie en vista 3D y host XY, registrar comparación (R02/R04) | Video comparativo 007 revisado; host y reconocimiento por usuario pendientes |
+| SUP-A03 | Sonido sostenido sin MIDI de notas ni partitura (R03) | Aprobado fuera del host: tres renders de 12 s, 007 |
+| SUP-A04 | A=0 congela escena durante 10 s sin silenciar; valores bajos lentos y sin saltos (R05/R06) | Prueba de pausa 10 s y controles a 44.1/48 kHz aprobada fuera del host |
+| SUP-A05 | B modifica barrido sin alterar velocidad de escena; medir legibilidad/aliasing (R05) | Independencia y espectro estático verificados; host pendiente |
 | SUP-A06 | Mover controles con mouse y guardar/reabrir preset (R07) | Pendiente en host |
 | SUP-A07 | Un potenciómetro mueve un parámetro identificado; registrar dispositivo y CC (R08) | Pendiente, hardware desconocido |
 | SUP-A08 | Si se usa OSC, registrar receptor, puerto, dirección y conversión; probar desconexión (R08) | Pendiente; OSC no confirmado |
-| SUP-A09 | Cambios no bloquean audio; dato inválido conserva geometría anterior (R09) | Pendiente |
+| SUP-A09 | Cambios no bloquean audio; dato inválido conserva geometría anterior (R09) | Controles inválidos conservan radio; geometría fuera de audio; performance en host y edición de ecuaciones pendientes |
 
 ## Evidencia técnica actual
 
@@ -87,3 +87,12 @@ MIDI Learn figura como función premium en las notas de versión consultadas.
 Rehacer Bach, arreglar cinco obras de Piazzolla, instalar una DAW, comprar premium,
 modificar C++/JUCE, aceptar cualquier polinomio o añadir una interfaz de red sin
 definir sus límites. La primera entrega será una superficie y un recorrido legible.
+
+## Primera implementación (EXP-020/021/023)
+
+[007 — Toro sonoro](../../experiments/007-toro-sonoro/README.md) conserva malla con
+caras y usa un barrido de 24 vueltas, continuo y de resolución finita. No rellena
+todos los puntos de la superficie. El tratamiento tímbrico atenúa los armónicos
+23/24/25 y equivale a reducir el radio menor: las vistas distinguen esa diferencia.
+Presets autónomos para escuchar; `control.lua` para sliders sin editar código.
+Valores iniciales y límites están en su guía. No hay MIDI físico ni OSC verificados.

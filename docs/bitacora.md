@@ -153,3 +153,23 @@
   Misma partitura de 980 eventos; sin clipping, final silencioso, TAKE y CC probados.
 - Audio y video son renders fuera del host. Calidad artística y ejecución en
   osci-render siguen pendientes. No se presenta esta mezcla como superficie.
+
+## EXP-020/021/023 — Toro sonoro
+
+- Implementados tres presets autónomos y un Lua de control A–E sin partitura.
+  Malla cerrada con caras, R=0.62 y r=0.24; parametrización para barrido continuo
+  de 24 vueltas, representación finita que deja huecos, no relleno total de la superficie.
+- Calidez atenúa armónicos 23/24/25 conservando el 1; equivale a un toro con radio
+  menor reducido. Videos muestran superficie de referencia, XY crudo y XY tratado.
+- Suave/Cuerpo/Aire: 12 s por variante, pico máximo 0.21866, RMS entre 0.09465 y
+  0.09905, diferencia 0.395 dB. DC <0.001 y delta <0.04 en los clips.
+- Comprobados a 44.1/48 kHz: pausa 10 s sin cortar audio, independencia de barrido,
+  controles extremos, inválidos, silencio y reinicio. Espectro estático 20/120 Hz:
+  armónicos hasta 3000 Hz; residuo relativo fuera de 1/23/24/25 <1e-16.
+- Videos H.264/AAC, 1440×600, tres de 12 s y montaje de 36 s; fotograma de Cuerpo
+  inspeccionado. Audio PCM X/Y sin compresión preservado en WAV. No son capturas del host.
+- LuaJIT externo procesó 48000 muestras de control.lua en ~0.037 s CPU; no es una
+  medición del hilo de audio de osci-render. No se instalaron dependencias.
+- El usuario pregunta por MIDI/OSC: se confirmó expresamente que no hay prueba
+  física; se solicitaron modelo de controlador y versión/edición, todavía sin respuesta.
+  OSC nativo, hardware, escucha y performance en host continúan pendientes.
