@@ -1,6 +1,6 @@
 # 002 — Timbre cálido, suave y expresivo
 
-Estado: tres variantes implementadas y renderizadas; aceptación auditiva pendiente.
+Estado: tres variantes implementadas; timbre rechazado por el usuario incluso en WAV.
 Pedido relacionado: EXP-023. El usuario solicita un timbre más lindo que el actual.
 Interpretación de diseño inicial: cálido y sostenido, menos áspero y menos parecido
 a un pitido. Es una hipótesis que debe contrastarse con su escucha.
@@ -39,7 +39,7 @@ para ocultar un timbre que todavía no funciona.
 | TIM-A02 | Señal finita, pico <0.95, medir DC y discontinuidades con umbrales justificados | Aprobado para clips: pico ≤0.21866, DC <0.001, delta <0.04; guía 007 |
 | TIM-A03 | Revisar aliasing en el rango de barrido y densidad elegidos; no basta comprobar clipping | Espectro estático verificado a 44.1/48 kHz, armónicos hasta 3000 Hz; automatización arbitraria/host pendientes |
 | TIM-A04 | Video comparativo XY antes/después y superficie 3D de referencia | Tres videos de 12 s y comparación de 36 s generados; fotograma revisado |
-| TIM-A05 | Usuario elige variante o describe ajuste; registrar preferencia y contexto de escucha | Pendiente |
+| TIM-A05 | Usuario elige variante o describe ajuste; registrar preferencia y contexto de escucha | No aceptado: WAV más limpio que Lua/host, pero tampoco gusta su carácter. Rediseño artístico y diagnóstico del host pendientes |
 
 La definición de “más lindo” no se reemplaza por métricas: los controles técnicos
 son condiciones de funcionamiento, la aceptación artística sigue siendo auditiva.

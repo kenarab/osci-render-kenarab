@@ -186,3 +186,47 @@
   continuidad y controles inválidos aprobados. No equivale a una prueba MIDI física.
 - Muestra XY de 60 s y cuatro timbres aislados de 6 s al mismo RMS 0.13.
   Los timbres y la expresividad aún requieren escucha; no son cuerdas acústicas.
+
+## Rechazo tímbrico e investigación de IanniX
+
+- El usuario describe los toroides como estática, insiste en modificar superficies
+  completas con controles y pregunta por demos e integración con IanniX, que ya usó.
+  TIM-A05 y EXP-023 se marcan no aceptados; sin atribuir todavía una causa técnica.
+- Se solicitaron contexto WAV/video frente a Lua/host y una demo de referencia.
+  No se recibió respuesta al registrar esta entrada. La API Lua local documenta
+  `step` por muestra, `sample_rate` y 26 sliders A–Z; no apareció un desajuste evidente
+  con el modelo usado por las pruebas, pero eso no verifica el sonido en la app.
+- No se encontró un antecedente exacto IanniX–osci-render en la búsqueda limitada.
+  IanniX documenta OSC; REAPER documenta OSC y FX Learn. Se propone esa ruta para
+  controlar el plugin, pendiente de una prueba de un solo parámetro.
+- El conector oficial Blender/osci-render usa TCP/GPLA, no OSC. Blender es candidato
+  para editar/ver la malla completa y obtener su representación de líneas hacia el host.
+  Se conserva como pendiente el editor de superficies dinámicas; más densidad de
+  trazado no garantiza mejor sonido. Fuentes y límites en docs/iannix-superficies.md.
+- Registrada propuesta narrativa Respirar la materia (EXP-027), sin componer aún
+  una obra larga; IanniX podría organizar escenas y curvas de control.
+
+### Aclaraciones y lectura del host
+
+- El usuario confirma: estática **con los Lua en osci-render**. Se solicita ahora
+  comparación con `007-suave.wav`; no se atribuye el rechazo al WAV sin escucharlo.
+- Referencia aportada: SURFER y sus galerías, incluidas superficies con singularidades;
+  el usuario reafirma la autoría de su generador. Especificación 006 precisa el
+  modelo implícito, editor de coeficientes y tratamiento explícito de singularidades.
+- La UI leída muestra `aire-adagio.lua` y los sliders H–O; M fue editado. Los Lua
+  entregados usan A–E. Se informó cómo desplazarse a esos controles. No se manipuló
+  la app ni se obtuvo una grabación. La consulta tardó 240 s: no se repitieron
+  llamadas lentas para adivinar una causa de ruido.
+- Info.plist de la app: **2.9.9.10**, frente a fuentes de referencia 2.9.9.3.
+  Se confirma presencia del panel; MIDI Learn, efectos y audio real siguen pendientes.
+
+### Resultado de la comparación WAV/host
+
+- El usuario confirma que `007-suave.wav` es distinto y más limpio que el Lua en
+  osci-render. Aclara después que tampoco le gusta ese timbre: “suena como estática”
+  es su descripción perceptual. El rechazo artístico no se reduce a un fallo técnico.
+- TIM-A05 sigue no aceptado. Quedan separados el rediseño sonoro y el diagnóstico
+  de la diferencia con el host; no se atribuye causa sin una grabación/configuración.
+- Antes de otra generación larga, priorizar una superficie implícita de referencia
+  y una muestra breve que permita elegir dirección tímbrica. Bach controlable y
+  la comparación de cuatro voces ya están disponibles como entregas independientes.

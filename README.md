@@ -17,6 +17,7 @@ trabajar tanto con superficies elegidas como con generación aleatoria reproduci
 - [Toro sonoro: tres timbres y controles de movimiento](experiments/007-toro-sonoro/README.md)
 - [Bach: tempo controlable, expresión y cuatro timbres](experiments/005-aire-de-bach/README.md#nueva-versión-controlable-aire-expresivo)
 - [SDD: especificaciones y plan del instrumento de superficies](specs/README.md)
+- [IanniX, OSC y superficies completas: hallazgos y próxima prueba](docs/iannix-superficies.md)
 - [Hallazgos y estado de las pruebas](docs/bitacora.md)
 - [Instrucciones para agentes](AGENTS.md)
 

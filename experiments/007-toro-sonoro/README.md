@@ -3,6 +3,12 @@
 Primera implementación de SUP-R01–R07 y TIM-R01–R06. Prueba pequeña, sin partitura:
 el recorrido de un toro produce todo el sonido. No es aún una composición larga.
 
+**Resultado posterior:** el usuario escucha estática al abrir los Lua en osci-render.
+El WAV le suena más limpio, pero **tampoco le gusta el timbre**. Esta dirección sonora
+no fue aceptada. Las métricas de abajo son técnicas, no de calidad artística.
+Se conserva la prueba como evidencia; la diferencia WAV/host sigue por diagnosticar.
+[Revisión y ruta con IanniX](../../docs/iannix-superficies.md).
+
 ## Escuchar y comparar
 
 Abrir **`recordings/007-comparacion.mp4`**: 36 segundos, Suave → Cuerpo → Aire.
@@ -115,5 +121,5 @@ Todos quedan por debajo de Nyquist a ambas tasas. Esto no certifica ausencia de
 aliasing bajo cualquier automatización externa o efecto del host.
 Prueba local LuaJIT: 48000 muestras en ~0.037 s de CPU; no mide el hilo de audio del host.
 
-Pendientes: escucha comparativa y preferencia del usuario, ejecución/performance
+Pendientes: diagnóstico WAV frente a host, ajustes tímbricos, ejecución/performance
 en osci-render, persistencia de sliders, MIDI físico, OSC y live coding de ecuaciones.

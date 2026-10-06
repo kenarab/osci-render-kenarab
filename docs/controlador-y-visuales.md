@@ -23,6 +23,11 @@ de 0–1 se acotan. Mantener la ganancia de salida del host moderada.
 
 ### Encontrar los controles con el mouse
 
+**Comprobación posterior en la app 2.9.9.10:** el panel Lua estaba abierto pero
+desplazado a **H–O**, con M editado. Los estudios entregados usan **A–E**; M no
+tiene función en ellos. Desplazar la lista hacia arriba. Esto confirma la presencia
+del panel, no una prueba física MIDI/OSC ni su persistencia al guardar.
+
 En el código de la versión 2.9.9.3, `Lua Sliders` aparece **debajo del editor Lua**
 y se oculta cuando se cierra ese editor. Abrir un archivo `.lua`, expandir el
 editor con su flecha lateral y ampliar la zona inferior arrastrando el separador
