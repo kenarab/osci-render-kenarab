@@ -271,3 +271,16 @@
 - Falta el archivo elegido para producir arreglos musicales; aún no hay Piazzolla
   sonando en Lua. Se pidió enlace al usuario y aclaración de Solitude. No se
   presenta infraestructura ni una propuesta de orquestación como obra terminada.
+
+## 2026-10-06 — Atlas Piazzolla, planificación para otro repositorio (EXP-033)
+
+- Pedido: reunir tantos arreglos como podamos y construir un archivo amplio de
+  Piazzolla. El usuario decide planificar aquí y ejecutar después en otro repositorio.
+- Entregados `docs/proyecto-piazzolla/README.md` y `fuentes.json`: alcance, entidades,
+  ATL-01–09, etapas, semillas, transferencia del importador y prompt de arranque.
+- Recolección interrumpida: un HTML público de Oblivion/Songparts descargado y
+  registrado por hash; ningún MIDI/PDF/MusicXML musical confirmado. No se creó repo.
+- Diagnóstico observado: curl falló por DNS en sandbox y funcionó al autorizar red.
+  No se observó evidencia de bloqueo por User-Agent. Registrar la causa específica
+  y usar navegador cuando el flujo público lo requiera; sin asumir éxito tras aborto.
+- Verificación de esta entrega: JSON válido, enlaces locales, hash del HTML y diff.

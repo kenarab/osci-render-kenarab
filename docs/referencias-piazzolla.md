@@ -105,3 +105,12 @@ y comprobar el fraseo contra la interpretación elegida.
 Estos son diseños del laboratorio, no análisis de una grabación que ya hayamos
 escuchado. El paso pendiente para producir las versiones musicales es incorporar
 el archivo concreto. No se sustituyó ninguna obra por notas inventadas.
+
+## Proyecto independiente acordado
+
+El usuario amplía el objetivo a una base de datos extensa de Piazzolla y pide
+planificarla aquí para ejecutarla después en otro repositorio. El [traspaso de
+Atlas Piazzolla](proyecto-piazzolla/README.md) conserva fuentes adicionales, modelo,
+criterios y límites del importador. La búsqueda iniciada obtuvo un HTML de
+Songparts; todavía no se descargaron arreglos musicales. La recolección masiva
+se traslada al futuro proyecto; este laboratorio consumirá arreglos seleccionados.

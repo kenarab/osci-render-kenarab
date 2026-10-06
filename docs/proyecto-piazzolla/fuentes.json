@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "status": "semillas; no corpus musical",
+  "sources": [
+    {
+      "id": "pagani",
+      "kind": "catalogo editorial",
+      "url": "https://www.apagani.it/pdf/Partiture%20Astor%20Piazzolla.pdf",
+      "works": [
+        "Libertango",
+        "Meditango",
+        "Violentango",
+        "Solitude"
+      ],
+      "observation": "Consulta previa: identifica obras; Solitude figura como parte de Suite Lumière.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "songparts-oblivion",
+      "kind": "variantes y reproductor",
+      "url": "https://songparts.com/songs/astor-piazzolla/oblivion",
+      "works": [
+        "Oblivion"
+      ],
+      "observation": "HTML descargado. Anuncia tres variantes; ningún MIDI descargado.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "songparts-libertango",
+      "kind": "variantes y reproductor",
+      "url": "https://songparts.com/songs/astor-piazzolla/libertango",
+      "works": [
+        "Libertango"
+      ],
+      "observation": "Enlace descubierto desde Oblivion; anuncia cuatro variantes. Descarga de la ficha no confirmada.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "scorebase-oblivion",
+      "kind": "partitura MIDI MusicXML",
+      "url": "https://scorebase.org/scores/38762",
+      "works": [
+        "Oblivion"
+      ],
+      "observation": "Ficha consultada: enlaces PDF/MIDI/MXL y etiqueta PDMX. Instrumentación declarada contradictoria con rangos/tags; revisar archivos. Sin licencia verificada.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "scorely-piazzolla",
+      "kind": "catalogo comunitario",
+      "url": "https://scorely.org/product-author/astor-piazzolla/",
+      "works": [
+        "Libertango"
+      ],
+      "observation": "Página consultada ofrece Libertango PDF/MIDI; no se descargaron archivos.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "midishow-oblivion",
+      "kind": "archivo comunitario",
+      "url": "https://www.midishow.com/en/midi/oblivion-midi-download-154691",
+      "works": [
+        "Oblivion"
+      ],
+      "observation": "Resultado de búsqueda; descarga y condiciones pendientes.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "karapertutti",
+      "kind": "directorio MIDI",
+      "url": "https://ftp.karapertutti.altervista.org/browser.php?path=Liscio%2FTango",
+      "works": [
+        "Libertango"
+      ],
+      "observation": "Resultado de búsqueda: Astor Piazzolla - Libertango1.mid; no verificado ni descargado.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "geerdes-libertango",
+      "kind": "MIDI comercial",
+      "url": "https://geerdes.media/apps/playback/en/libertango-astor-piazzolla-11844.01.html",
+      "works": [
+        "Libertango"
+      ],
+      "observation": "Ficha consultada; adquisición excluida del lote gratuito. Referencia de arreglo, sin compra.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "pianosolo-oblivion",
+      "kind": "MIDI PDF comercial",
+      "url": "https://pianosolo.me/en/piano-sheets-midi/oblivion-2/",
+      "works": [
+        "Oblivion"
+      ],
+      "observation": "Ficha consultada; arreglo Play The Piano. Referencia sin compra.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "notestore-meditango",
+      "kind": "MIDI PDF comercial",
+      "url": "https://note-store.com/notes/astor-pyatstsolla/meditango/piano-solo/",
+      "works": [
+        "Meditango"
+      ],
+      "observation": "Resultado de búsqueda; referencia, no descargado ni comprado.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "hal-leonard-oblivion",
+      "kind": "edicion",
+      "url": "https://www.halleonard.com/product/4491250/oblivion",
+      "works": [
+        "Oblivion"
+      ],
+      "observation": "Referencia previa de solista y cuerdas; no comprada.",
+      "license_status": "no verificada",
+      "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    }
+  ],
+  "local_snapshot": {
+    "path": "downloads/piazzolla/oblivion-page.html",
+    "bytes": 202888,
+    "sha256": "78fd78126956a6d56f86bda047a5dea3b1b6668577fb539938726a6e9db39fb1",
+    "format": "HTML",
+    "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion"
+  }
+}

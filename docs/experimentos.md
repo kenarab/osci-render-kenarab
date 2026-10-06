@@ -40,6 +40,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-030 | Comparar premium, Live y REAPER para MIDI y conexión futura con IanniX | Investigación completada; prueba física pendiente | [Comparativa y protocolo](midi-premium-live-reaper.md). Verificar un CC → Lua Slider A, guardar/reabrir y luego un mensaje OSC; no comprar antes de comprobar parámetros expuestos. |
 | EXP-031 | Nuevas versiones del Bach favorito con timbres por voz basados en superficies u otras síntesis complejas | Cuárticas y Prisma implementados; escucha y host pendientes | [008](../experiments/008-bach-materias/README.md): dos Lua/presets y controles, WAV de 5:39, ocho voces aisladas, comparación de 60 s; mallas completas y análisis espectral. |
 | EXP-032 | Avanzar con la música de Piazzolla | Fuentes MIDI concretas localizadas e importador preparado; archivos/arreglos pendientes | [Repertorio](referencias-piazzolla.md): Libertango y Oblivion; importación probada con tempo/polifonía, sin atribuir notas inventadas a Piazzolla. |
+| EXP-033 | Reunir arreglos públicos y planificar la mayor base de datos posible de Piazzolla en otro repositorio | Plan y traspaso preparados; ejecución diferida por el usuario | [Atlas Piazzolla](proyecto-piazzolla/README.md): ATL-01–09, modelo, fases y semillas. Un HTML obtenido; ningún arreglo musical descargado aún. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.
