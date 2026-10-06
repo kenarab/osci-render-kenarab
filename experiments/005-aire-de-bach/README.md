@@ -7,6 +7,34 @@ para la cuerda de Sol. [Fuente, transformaciones y licencia](SOURCE.md).
 
 ## Primero, disfrutarla
 
+### Nueva versión: AIRE ADAGIO
+
+Pedido EXP-024: más lento y expresivo. Abrir **`aire-adagio.lua`** o escuchar
+`recordings/005-aire-adagio.wav` / `recordings/005-aire-adagio.mp4`.
+Duración de referencia **5:39**, frente a 3:50 del original: tempo base 26 BPM,
+arcos de intensidad de ocho negras, acompañamiento más contenido, ataques suaves
+y respiración gradual en cadencias. Conserva las mismas 980 notas/eventos.
+La cámara gira más lentamente. Esto sigue siendo la mezcla de cuatro recorridos,
+no una visualización de superficies completas ni el nuevo instrumento de timbres.
+
+Empezar con A–E en **0**, sin efectos añadidos y volumen bajo.
+**A ahora significa Lentitud: 0 = 26 BPM, 1 = 18 BPM**, antes del rubato.
+B, D y E mantienen sus funciones; C aumenta la cámara de 0.006 a 0.041 rad/s.
+Para reiniciar cambiar `TAKE = 101` a `102`; usa otra serie para aislar el estado
+del original al cambiar de archivo. La expresividad sigue pendiente de tu escucha.
+
+```sh
+python3 scripts/build_bach_air.py
+luajit scripts/render_bach_air.lua recordings/005-aire-adagio experiments/005-aire-de-bach/aire-adagio.lua
+python3 scripts/preview_bach_air.py recordings/005-aire-adagio
+```
+
+Motor editable: `engine-adagio.lua.in`. Fuente y licencia: [SOURCE.md](SOURCE.md).
+Render completo a 48 kHz: 339.066 s, pico 0.73115, RMS XY 0.15147 y delta
+máximo 0.05119. Verificados final silencioso, reinicio y CC a 44.1 kHz.
+
+### Original conservado
+
 - Video con audio: `recordings/005-aire.mp4`.
 - Audio sin compresión: `recordings/005-aire.wav`.
 - Para tocarla en osci-render: abrir **`aire.lua`**, no `engine.lua.in`.

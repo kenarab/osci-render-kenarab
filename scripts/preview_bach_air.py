@@ -60,7 +60,7 @@ def main():
             image = ImageChops.add(bg,ImageChops.add(trail,glow,scale=1.0))
             d = ImageDraw.Draw(image)
             d.text((58,42),"A I R E",font=fonts[0],fill=(226,231,229))
-            d.text((61,108),"Cuatro voces en el espacio",font=fonts[1],fill=(158,178,187))
+            d.text((61,108),("Adagio / respiracion y fraseo" if "adagio" in prefix.name else "Cuatro voces en el espacio"),font=fonts[1],fill=(158,178,187))
             d.text((61,146),"J. S. BACH  /  BWV 1068 - II",font=fonts[2],fill=(114,136,151))
             d.text((61,810),chapters[chapter],font=fonts[1],fill=color)
             d.text((61,852),"La misma senal dibuja y suena. Cuatro toros, una trayectoria.",font=fonts[2],fill=(142,163,174))

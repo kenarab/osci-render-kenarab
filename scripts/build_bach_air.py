@@ -102,9 +102,11 @@ def main():
                 "source_counts":[len(t) for t in tracks], "notes":expanded}
     (DEST/"score.json").write_text(json.dumps(metadata,indent=2)+"\n")
     lua = "{\n"+",\n".join("{"+",".join("{%s,%s,%s}" % tuple(n) for n in t)+"}" for t in expanded)+"\n}"
-    engine = (DEST/"engine.lua.in").read_text()
-    assert engine.count("@SCORE@") == 1
-    (DEST/"aire.lua").write_text(engine.replace("@SCORE@",lua))
+    for template, output in [("engine.lua.in", "aire.lua"),
+                             ("engine-adagio.lua.in", "aire-adagio.lua")]:
+        engine = (DEST/template).read_text()
+        assert engine.count("@SCORE@") == 1
+        (DEST/output).write_text(engine.replace("@SCORE@",lua))
     print("Importación:",metadata["source_counts"],"→",[len(t) for t in expanded],"notas; 144 negras")
 
 

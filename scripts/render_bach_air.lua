@@ -1,9 +1,10 @@
 -- luajit scripts/render_bach_air.lua [prefijo de salida, por defecto recordings/005-aire]
+-- Segundo argumento opcional: ruta del Lua (p. ej. aire-adagio.lua).
 -- Ejecuta el mismo Lua entregable y valida la señal mientras escribe PCM estéreo.
 local ffi=require("ffi")
 assert(ffi.abi("le"))
 local prefix=arg[1] or "recordings/005-aire"
-local source=assert(io.open("experiments/005-aire-de-bach/aire.lua")):read("*a")
+local source=assert(io.open(arg[2] or "experiments/005-aire-de-bach/aire.lua")):read("*a")
 local engine=setfenv(assert(loadstring(source)),_G)
 local function uint(n,bytes)
     local out=""
@@ -21,7 +22,7 @@ local previous={0,0,0}
 local transitions={0}
 local boundaries={24,48,96,144}
 local nextboundary=1
-while frames<sample_rate*330 do
+while frames<sample_rate*600 do
     step=frames
     local p=engine()
     for axis=1,3 do
@@ -45,6 +46,9 @@ while frames<sample_rate*330 do
 end
 assert(bach_air.done and #transitions==5,"obra incompleta")
 assert(previous[1]==0 and previous[2]==0 and previous[3]==0)
+if source:find('interpretation="adagio"',1,true) then
+    assert(frames/sample_rate > 230.046*1.3, "adagio insuficientemente lento")
+end
 assert(energy>100 and peak>0.1 and maxdelta<0.25,"actividad/continuidad inesperada")
 wav:write(ffi.string(pcm,used*4))
 wav:seek("set",0)
@@ -56,9 +60,10 @@ report:write(string.format('{"duration":%.9f,"frames":%d,"sample_rate":48000,"pe
     frames/48000,frames,peak,math.sqrt(energy/(2*frames)),maxdelta,table.concat(transitions,",")))
 report:close()
 -- Reinicio TAKE sin depender de que el editor borre sus variables.
-local restart=assert(loadstring((source:gsub("local TAKE = 1","local TAKE = 2",1))))
+local take=assert(tonumber(source:match("local TAKE = (%d+)")))
+local restart=assert(loadstring((source:gsub("local TAKE = "..take,"local TAKE = "..(take+1),1))))
 local p=restart()
-assert(bach_air.take==2 and p[1]==0 and p[2]==0)
+assert(bach_air.take==take+1 and p[1]==0 and p[2]==0)
 -- Movimientos bruscos de perillas a 44.1 kHz: cota y reloj monotónico.
 sample_rate=44100
 for i=0,44100*8 do

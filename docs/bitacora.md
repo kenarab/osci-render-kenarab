@@ -142,3 +142,14 @@
   limitada por módulos ausentes. Ruta directa MIDI o puente OSC según hardware.
 - Completado el commit interrumpido de superficies: 34582b2. El usuario autoriza
   volver a solicitar el commit que rechazó por error.
+
+## EXP-024 — AIRE Adagio
+
+- El usuario pide ralentizar Bach y darle más expresión, manteniendo la dirección
+  de superficies para el desarrollo tímbrico posterior. Se conserva el original.
+- Nueva interpretación autónoma: base 26 BPM; A reduce hasta 18 BPM; cadencias
+  con recuperación gradual, arcos de frase, acompañamiento contenido y cámara lenta.
+- Render completo: 339.066 s, pico 0.73115, RMS XY 0.15147, delta 0.05119.
+  Misma partitura de 980 eventos; sin clipping, final silencioso, TAKE y CC probados.
+- Audio y video son renders fuera del host. Calidad artística y ejecución en
+  osci-render siguen pendientes. No se presenta esta mezcla como superficie.

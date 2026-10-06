@@ -1,0 +1,109 @@
+-- AIRE ADAGIO / Cuatro voces en el espacio — sobre J. S. Bach, BWV 1068/II.
+-- Fuente Mutopia 242, edición jeff covey, CC BY-SA 3.0; ver SOURCE.md.
+-- Archivo generado por scripts/build_bach_air.py. Editar este motor y regenerar.
+-- En osci-render: abrir aire-adagio.lua. TAKE reinicia; sliders A–E empiezan en cero.
+local TAKE = 101
+if not bach_air or bach_air.interpretation ~= "adagio" or bach_air.take ~= TAKE or bach_air.rate ~= sample_rate
+    or step < bach_air.last then
+    bach_air = {
+        interpretation="adagio", take=TAKE, rate=sample_rate, last=step, beat=0, seconds=0,
+        camera=0, a=0,b=0,c=0,d=0,e=0, done=false,
+        notes=@SCORE@,
+        voices={}, weights={0.40,0.145,0.125,0.23},
+        tilt={0.15,0.65,-0.5,0.9}, offsets={0,0.5,1.2,2.0}, endings={24,48,96,144}
+    }
+    for i=1,4 do
+        bach_air.voices[i]={index=1,phase=0}
+    end
+    function bach_air.smooth(a,b,x)
+        local t=math.max(0,math.min(1,(x-a)/(b-a)))
+        return t*t*(3-2*t)
+    end
+    function bach_air.control(old,value,k)
+        if type(value)~="number" or value~=value then value=0 end
+        return old+k*(math.max(0,math.min(1,value))-old)
+    end
+end
+local s=bach_air
+s.last=step
+local dt=1/sample_rate
+local k=1-math.exp(-dt/0.08)
+s.a=s.control(s.a,slider_a,k)
+s.b=s.control(s.b,slider_b,k)
+s.c=s.control(s.c,slider_c,k)
+s.d=s.control(s.d,slider_d,k)
+s.e=s.control(s.e,slider_e,k)
+if s.beat>=144 then s.done=true; return {0,0,0} end
+local beat=s.beat
+-- Respiración de cada compás y cadencias. El tempo se integra sin saltar notas.
+local barphase=(beat%8)/8
+local rubato=1+0.035*math.sin(2*math.pi*barphase)
+local cadence=0
+for _,ending in ipairs(s.endings) do
+    if beat>ending-3 and beat<ending+1 then
+        cadence=s.smooth(ending-3,ending-0.25,beat)
+            *(1-s.smooth(ending,ending+1,beat))
+    end
+end
+local rit=1-0.20*cadence-0.25*s.smooth(140,144,beat)
+local bps=(26-8*s.a)/60*rubato*rit
+s.beat=s.beat+bps*dt
+s.seconds=s.seconds+dt
+s.camera=(s.camera+dt*(0.006+0.035*s.c))%(2*math.pi)
+
+-- Cuatro episodios continuos: hilo, bóveda, penumbra y luz.
+local opening=s.smooth(20,36,beat)
+local shadow=s.smooth(48,64,beat)*(1-s.smooth(90,110,beat))
+local light=s.smooth(96,124,beat)
+local thickness=0.06+0.045*opening+0.055*light+0.12*s.b
+local width=0.68+0.16*opening+0.12*s.e
+local phrase=0.74+0.26*math.sin(math.pi*(beat%8)/8)^2
+local globalfade=s.smooth(0,0.28,s.seconds)
+local finalfade=1-s.smooth(143.15,144,beat)
+local x,y,z=0,0,0
+for i=1,4 do
+    local voice=s.voices[i]
+    local notes=s.notes[i]
+    while notes[voice.index] and beat>=notes[voice.index][2] do
+        voice.index=voice.index+1
+    end
+    local event=notes[voice.index]
+    if event and beat>=event[1] then
+        local start,finish,pitch=event[1],event[2],event[3]
+        local duration=(finish-start)/bps
+        local age=(beat-start)/bps
+        local remain=(finish-beat)/bps
+        local attack=math.min(i==1 and 0.12 or 0.055,duration*0.18)
+        local release=math.min(0.09,duration*0.18)
+        local env=s.smooth(0,attack,age)*s.smooth(0,release,remain)
+        -- Vibrato discreto en la voz cantabile, introducido después del ataque.
+        local vibrato=i==1 and (0.025+0.025*phrase)*s.smooth(0.25,0.8,age)
+            *math.sin(2*math.pi*4.7*s.seconds) or 0
+        local hz=440*2^((pitch-69+vibrato)/12)
+        local theta=voice.phase
+        voice.phase=(theta+2*math.pi*hz*dt)%(2*math.pi)
+        -- Toro por voz: R=0.78, r=thickness. (u,v)=(theta,2theta+offset).
+        -- Cada punto cumple el polinomio del toro antes de cámara/mezcla.
+        local u=theta
+        local v=2*theta+s.offsets[i]+0.25*math.sin(beat*math.pi/24)
+        local R,r=0.78,thickness*(i==4 and 0.45 or 1)
+        local gx=(R+r*math.cos(v))*math.cos(u)
+        local gy=(R+r*math.cos(v))*math.sin(u)
+        local gz=r*math.sin(v)
+        local tilt=s.tilt[i]+0.28*shadow+0.15*math.sin(beat*math.pi/48)
+        local yy=gy*math.cos(tilt)-gz*math.sin(tilt)
+        local zz=gy*math.sin(tilt)+gz*math.cos(tilt)
+        local xx=gx*math.cos(s.camera)+zz*math.sin(s.camera)
+        zz=-gx*math.sin(s.camera)+zz*math.cos(s.camera)
+        local focus=i==1 and (1+0.12*s.d) or (1-0.80*s.d)
+        local orchestration=i==1 and 1 or (0.80+0.12*opening+0.08*light)
+        -- Arco dentro de las notas largas y respiración de la frase, sin ruido.
+        local swell=1+0.10*math.sin(math.pi*(beat-start)/(finish-start))^2
+        local breath=(i==4 and 0.92 or phrase)*(1-0.10*cadence)*swell
+        local gain=s.weights[i]*env*focus*orchestration*breath
+        x=x+gain*xx; y=y+gain*yy; z=z+gain*zz
+    end
+end
+-- La suma polifónica es una trayectoria resultante; no son cuatro dibujos separados.
+local gain=0.90*globalfade*finalfade
+return {gain*x,gain*width*y,gain*z}

@@ -10,6 +10,7 @@ velocidades lentas. No implica instalar un framework ni una herramienta externa.
 | --- | --- | --- |
 | [001 — Instrumento de superficies](001-instrumento-superficies/spec.md) | Especificado; implementación pendiente | Geometría, sonido, velocidades y entrada de controles |
 | [002 — Calidad del timbre](002-calidad-timbrica/spec.md) | Especificado; comparación auditiva pendiente | Suavidad, expresividad y evaluación del usuario |
+| [003 — AIRE Adagio](003-aire-adagio/spec.md) | Implementado; escucha y host pendientes | Interpretación más lenta y expresiva, original conservado |
 
 Los estudios anteriores son antecedentes, no implementaciones conformes a estas
 especificaciones. Las mallas de EXP-019 son una base geométrica ya verificada.

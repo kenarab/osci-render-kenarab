@@ -31,6 +31,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-021 | Controlar lentitud y pausa con slider, separando velocidades | Especificado; implementación pendiente | SUP-R05/R06 y SUP-A04/A05; escena independiente del barrido. |
 | EXP-022 | Implementar SDD y aclarar acceso a sliders/ruta OSC | Flujo SDD y guía implementados; conexión pendiente | specs/README.md; localización del panel verificada en fuentes; OSC nativo no confirmado. |
 | EXP-023 | Conseguir un timbre más lindo | Especificado; variantes y escucha pendientes | TIM-R01–R06; tres comparaciones cortas y elección auditiva del usuario. |
+| EXP-024 | Air de Bach más lento y expresivo; superficies para futuros timbres profundos | Adagio implementado; escucha pendiente | BAC-R01–R05: mismos 980 eventos, base 26 BPM y 5:39; fraseo, cadencias y cámara más lenta. Integración futura con superficies continúa en EXP-020/023. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.
