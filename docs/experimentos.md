@@ -16,6 +16,12 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-006 | Live coding de superficies | Pendiente | Editar una ecuación o sus parámetros durante la ejecución y observar/escuchar cambios. Registrar latencia y comportamiento ante errores. Ejecutar archivos existentes no verifica este punto. |
 | EXP-007 | Integración directa del renderizador de superficies con osci-render | Pendiente de prototipo | Demostrar un flujo ecuación → geometría recorrible → osci-render. Precisar si usa Lua, archivos o streaming, sin presumir una API inexistente. |
 | EXP-008 | Pruebas de temas para disfrutar y desarrollar el proyecto de arte y ciencia | Objetivo continuo | Guardar piezas o sesiones reproducibles y notas sobre qué funciona musical y visualmente. Aún no hay temas específicos seleccionados. |
+| EXP-009 | Controlar parámetros clave con potenciómetros | Sliders A–E implementados en los dos nuevos estudios; hardware pendiente | Tempo, forma, rotación, presencia y registro. Falta marca/modelo, edición instalada y prueba de mapeo MIDI CC. |
+| EXP-010 | Crear dos estudios más, similares al toro | Implementados; escucha en host pendiente | Órbitas (elipsoide, 60 s) y Cristal (cuártica, 71.11 s), con WAV y previsualizaciones XY. |
+| EXP-011 | Mejorar/aclarar la salida visual, casi invisible según el usuario | Pendiente de aclaración; primera mejora preparada | Nuevos estudios con mayor presencia entre notas, slider D y videos directos XY. Falta distinguir problema del visualizador frente a exportación. |
+
+El usuario indicó que le gusta mucho EXP-002; la evaluación sonora es positiva,
+pero reportó dificultades para ver lo visual. Conservar el original como referencia.
 
 ## Antecedentes verificados
 

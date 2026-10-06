@@ -67,3 +67,28 @@
 - Pendiente: apertura y escucha del nuevo prototipo en osci-render, rendimiento
   en el host y valoración artística del usuario. No se verificó todavía la
   edición de controles durante la reproducción en el editor de la aplicación.
+
+## Dos estudios controlables y previsualización XY
+
+- El usuario evaluó positivamente el estudio del toro, informó escasa visibilidad
+  y pidió control por potenciómetros y dos estudios similares. Registrados como
+  EXP-009, EXP-010 y EXP-011. Marca/modelo y naturaleza del problema visual todavía
+  pendientes de aclaración.
+- Creados Órbitas (elipsoide cuadrático, 60 s a 72 BPM, 3/4) y Cristal (superficie
+  cuártica, 71.11 s a 108 BPM, 4/4). A–E controlan tempo, forma, rotación, presencia
+  y registro. Todos en cero producen la versión de referencia.
+- Controles suavizados 35 ms; reloj y rotación integrados. La envolvente conserva
+  presencia entre notas, con apagado al principio y al final. El original se conserva.
+- Prueba completa con LuaJIT a 48 kHz para ambos: polinomio antes de cámara,
+  coordenadas finitas/acotadas, actividad, final silencioso, reinicio y repetición
+  determinista. Barridos extremos de A–E a 44.1 y 48 kHz aprobados.
+  Picos de referencia: Órbitas 0.4674, Cristal 0.4983.
+- WAV PCM y MP4 XY con audio generados localmente en `recordings/` (fuera de Git).
+  Videos nuevos verificados con ffprobe: H.264 640×640 y AAC, duración 60.00 y
+  71.11 s; revisados fotogramas de desarrollo. Son renders directos de la señal,
+  no capturas del host. También se generó la previsualización del toro original:
+  `recordings/estudio-de-un-toro.mp4`, 80 s, H.264 con audio AAC verificado.
+- Guía de CC absolutos y sliders documentada. Las notas oficiales ubican MIDI
+  Learn entre funciones premium; mapeo desde DAW como alternativa por verificar.
+- Pendiente: prueba de los nuevos Lua en osci-render, controlador físico,
+  persistencia de asignaciones y evaluación artística del usuario.
