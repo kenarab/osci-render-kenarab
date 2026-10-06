@@ -19,6 +19,8 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-009 | Controlar parámetros clave con potenciómetros | Sliders A–E implementados en los dos nuevos estudios; hardware pendiente | Tempo, forma, rotación, presencia y registro. Falta marca/modelo, edición instalada y prueba de mapeo MIDI CC. |
 | EXP-010 | Crear dos estudios más, similares al toro | Implementados; escucha en host pendiente | Órbitas (elipsoide, 60 s) y Cristal (cuártica, 71.11 s), con WAV y previsualizaciones XY. |
 | EXP-011 | Mejorar/aclarar la salida visual, casi invisible según el usuario | Pendiente de aclaración; primera mejora preparada | Nuevos estudios con mayor presencia entre notas, slider D y videos directos XY. Falta distinguir problema del visualizador frente a exportación. |
+| EXP-012 | Crear una obra especialmente elaborada basada en el Air de Bach | Adaptación implementada; valoración en host pendiente | AIRE, 3:50, cuatro voces de Mutopia 242, repeticiones AABB, fraseo, toros por voz y cinco controles. Video y audio reproducibles; fuente/licencia documentadas. |
+| EXP-013 | Explicar qué hace el código y cómo intervenir, aclarando controlador directo frente a software adicional | Guía preparada; conexión física pendiente | Explicación del audio como recorrido XY, ejercicio con cinco perillas y rutas MIDI Learn/DAW según edición. Falta controlador y versión instalada. |
 
 El usuario indicó que le gusta mucho EXP-002; la evaluación sonora es positiva,
 pero reportó dificultades para ver lo visual. Conservar el original como referencia.

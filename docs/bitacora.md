@@ -92,3 +92,24 @@
   Learn entre funciones premium; mapeo desde DAW como alternativa por verificar.
 - Pendiente: prueba de los nuevos Lua en osci-render, controlador físico,
   persistencia de asignaciones y evaluación artística del usuario.
+
+## 2026-10-06 — AIRE / Cuatro voces en el espacio
+
+- El usuario solicita una obra de mayor elaboración sobre el Air de Bach y una
+  explicación comprensible de cómo intervenir con controlador. EXP-012/013.
+- Obtenida edición Mutopia 242 de jeff covey, CC BY-SA 3.0, con fuentes LilyPond
+  y MIDI orquestal. Conservados originales, procedencia y SHA-256; no samples.
+- Importadas cuatro voces: 149/105/112/150 notas de origen. Desplegadas las
+  repeticiones y casillas según la partitura: 282/200/215/283 eventos, 980 total,
+  144 negras. Re mayor original, no transcripción literal de Wilhelmj.
+- Adaptación: tempo base 38 BPM, respiración, cadencias y ralentización final;
+  cuatro recorridos toroidales sumados, cinco controles suavizados, cuatro episodios.
+- Render de 230.046 s a 48 kHz; pico 0.75060, RMS XY 0.16765, delta máximo 0.05527.
+  Validaciones de notas iniciales, duración, monofonía por voz, final en silencio,
+  reinicio TAKE, controles extremos a 44.1 kHz y tamaño íntegro del WAV aprobadas.
+- Generador de video XY de concierto con persistencia óptica, capítulos y crédito
+  en imagen. Solo la señal produce el trazo; color y composición gráfica editoriales.
+- Video completo verificado: 230.046 s, H.264 960×960 y audio AAC; revisados
+  fotogramas de Hilo (25 s) y Luz (180 s). Entrega en `recordings/005-aire.mp4`.
+- Guía explica controles sin programar y condiciones de conexión MIDI directa.
+  La apreciación sonora y la ejecución dentro de osci-render quedan pendientes.
