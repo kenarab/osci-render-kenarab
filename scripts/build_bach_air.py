@@ -103,10 +103,13 @@ def main():
     (DEST/"score.json").write_text(json.dumps(metadata,indent=2)+"\n")
     lua = "{\n"+",\n".join("{"+",".join("{%s,%s,%s}" % tuple(n) for n in t)+"}" for t in expanded)+"\n}"
     for template, output in [("engine.lua.in", "aire.lua"),
-                             ("engine-adagio.lua.in", "aire-adagio.lua")]:
+                             ("engine-adagio.lua.in", "aire-adagio.lua"),
+                             ("engine-expresivo.lua.in", "aire-expresivo.lua"),
+                             ("engine-expresivo.lua.in", "aire-control.lua")]:
         engine = (DEST/template).read_text()
         assert engine.count("@SCORE@") == 1
-        (DEST/output).write_text(engine.replace("@SCORE@",lua))
+        (DEST/output).write_text(engine.replace("@SCORE@",lua).replace(
+            "@LIVE@", "true" if output=="aire-control.lua" else "false"))
     print("Importación:",metadata["source_counts"],"→",[len(t) for t in expanded],"notas; 144 negras")
 
 

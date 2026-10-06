@@ -32,6 +32,8 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-022 | Implementar SDD y aclarar acceso a sliders/ruta OSC | Flujo SDD y guía implementados; conexión pendiente | specs/README.md; localización del panel verificada en fuentes; OSC nativo no confirmado. |
 | EXP-023 | Conseguir un timbre más lindo | Tres variantes implementadas; escucha pendiente | Suave/Cuerpo/Aire, 12 s cada una, RMS comparable (0.395 dB), WAV y videos 007. TIM-A05 pendiente. |
 | EXP-024 | Air de Bach más lento y expresivo; superficies para futuros timbres profundos | Adagio implementado; escucha pendiente | BAC-R01–R05: mismos 980 eventos, base 26 BPM y 5:39; fraseo, cadencias y cámara más lenta. Integración futura con superficies continúa en EXP-020/023. |
+| EXP-025 | Controlar tempo y expresión de Bach: el Adagio resultó demasiado lento | Implementado; nueva escucha pendiente | AIRE EXPRESIVO, preset 32 BPM, controles 20–52 BPM, expresión/articulación/color/balance; audio de 4:35 y muestra de 60 s. |
+| EXP-026 | Timbres distintos por voz y ejecución menos robótica | Cuatro perfiles implementados; aceptación auditiva pendiente | Recorridos/filtros por voz, fraseo/vibrato y microdesfases deterministas; comparación de cuatro notas C4 de 6 s a igual RMS. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.

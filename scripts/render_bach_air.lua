@@ -65,13 +65,14 @@ local restart=assert(loadstring((source:gsub("local TAKE = "..take,"local TAKE =
 local p=restart()
 assert(bach_air.take==take+1 and p[1]==0 and p[2]==0)
 -- Movimientos bruscos de perillas a 44.1 kHz: cota y reloj monotónico.
+local controls=assert(loadstring((source:gsub("local USAR_SLIDERS = false","local USAR_SLIDERS = true",1))))
 sample_rate=44100
 for i=0,44100*8 do
     step=i
     local target=i<44100*2 and 0 or (i<44100*5 and 1 or 0)
     slider_a,slider_b,slider_c,slider_d,slider_e=target,target,target,target,target
     local oldbeat=bach_air.rate==sample_rate and bach_air.beat or 0
-    p=engine()
+    p=controls()
     assert(bach_air.beat>=oldbeat or i==0)
     for _,v in ipairs(p) do assert(v==v and math.abs(v)<1) end
 end

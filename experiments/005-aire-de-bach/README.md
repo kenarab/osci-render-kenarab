@@ -7,6 +7,63 @@ para la cuerda de Sol. [Fuente, transformaciones y licencia](SOURCE.md).
 
 ## Primero, disfrutarla
 
+### Nueva versión controlable: AIRE EXPRESIVO
+
+El Adagio resultó demasiado lento para el usuario. El nuevo preset empieza en
+**32 BPM** y dura **4:35**; los controles permiten elegir entre 20 y 52 BPM.
+No se considera definitivo ese tempo ni se declara resuelta la sensación robótica.
+
+- Escucha directa: abrir **[aire-expresivo.lua](aire-expresivo.lua)**. Usa valores
+  internos; no necesita configurar sliders y no responde a ellos.
+- Para intervenir: abrir **[aire-control.lua](aire-control.lua)** y ajustar los
+  sliders según la tabla. No hace falta editar código.
+- Audio completo: `recordings/005-aire-expresivo.wav`.
+- Video de preescucha, primer minuto: `recordings/005-expresivo-muestra.mp4`.
+- Comparación de voces: `recordings/005-voces.wav`, cuatro notas C4 de 6 s,
+  en orden I–IV, igualadas a RMS 0.13 para comparar color y no volumen.
+
+| Slider | Control | Valor inicial recomendado |
+| --- | --- | --- |
+| A | Tempo base `20 + 32 A` BPM, antes del rubato | **0.375 = 32 BPM**; 0.50 = 36 BPM |
+| B | Expresión: fraseo, cadencias, vibrato y pequeños desfases entre voces | 0.65 |
+| C | Color: grosor y filtro, con respuesta diferente en cada voz | 0.45 |
+| D | Articulación: 0 más separada, 1 más ligada | 0.70 |
+| E | Balance solista: 0 conjunto, 1 melodía al frente | 0.20 |
+
+Los sliders están debajo del editor Lua; ver [guía](../../docs/controlador-y-visuales.md).
+En el archivo controlable, A=0 significa 20 BPM: **configurar A primero**.
+E es balance, no volumen. Usar el volumen general del host para escuchar bajo.
+Suavizado de 80 ms, reloj integrado y conservación de controles ante NaN/infinito.
+Cambiar `TAKE = 201` a `202` para reiniciar.
+
+Los cuatro timbres tienen recorridos y filtros distintos: I, tubo fino y sonido
+contenido; II, más armónicos pares; III, armónicos impares 3/5 y más cuerpo;
+IV, tubo grueso con filtro más oscuro. Nombres descriptivos, no emulación acústica.
+La expresión añade arcos de intensidad, vibrato gradual de distinta velocidad
+por voz y desfases de ataque reproducibles de hasta 14 ms en el acompañamiento.
+No se agregan notas aleatorias. Mover C no equivale a elegir un instrumento
+acústico por voz: esa interfaz más amplia aún no existe.
+
+Sigue siendo una suma de señales: **no muestra cuatro superficies completas**.
+El filtro por voz cambia su trayectoria XY. Para ver la comparación entre malla
+y sonido está [Toro sonoro](../007-toro-sonoro/README.md), cuya primera versión
+el usuario describió como estática; su timbre no fue aceptado.
+
+```sh
+python3 scripts/build_bach_air.py
+luajit scripts/render_bach_air.lua recordings/005-aire-expresivo experiments/005-aire-de-bach/aire-expresivo.lua
+luajit scripts/check_bach_expression.lua
+ffmpeg -i recordings/005-aire-expresivo.wav -t 60 -af afade=t=out:st=59:d=1 -c:a pcm_s16le recordings/005-expresivo-muestra.wav
+python3 scripts/preview_xy.py recordings/005-expresivo-muestra.wav recordings/005-expresivo-muestra.mp4
+```
+
+Motor editable: `engine-expresivo.lua.in`. Misma fuente/licencia y 980 eventos.
+Render completo: 274.567 s; pico 0.54046, RMS XY 0.13769, delta 0.04398, fin
+silencioso y reinicio. Prueba de `aire-control.lua` a 44.1/48 kHz: extremos 20/52 BPM,
+continuidad, polinomios y controles inválidos aprobados; delta máximo 0.04190.
+La prueba de controles simula sliders en Lua; **no certifica MIDI/OSC físico**.
+Escucha expresiva y ejecución dentro del host pendientes.
+
 ### Nueva versión: AIRE ADAGIO
 
 Pedido EXP-024: más lento y expresivo. Abrir **`aire-adagio.lua`** o escuchar

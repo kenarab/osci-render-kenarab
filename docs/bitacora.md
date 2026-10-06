@@ -173,3 +173,16 @@
 - El usuario pregunta por MIDI/OSC: se confirmó expresamente que no hay prueba
   física; se solicitaron modelo de controlador y versión/edición, todavía sin respuesta.
   OSC nativo, hardware, escucha y performance en host continúan pendientes.
+
+## EXP-025/026 — Ajuste tras escuchar el Adagio
+
+- El usuario informa que 26 BPM resultó demasiado lento y pide tempo/expresión
+  controlables y voces con timbres diferentes, menos robóticas.
+- AIRE EXPRESIVO: preset 32 BPM y entregable para sliders A–E; rango 20–52 BPM,
+  fraseo, articulación, color y balance. Cuatro perfiles de recorrido/filtro,
+  vibratos propios y microdesfases de ataque deterministas. Se conservan versiones anteriores.
+- Audio completo 274.567 s: pico 0.54046, RMS 0.13769, delta 0.04398, fin y TAKE
+  aprobados. Prueba del Lua controlable a 44.1/48 kHz: tempo extremo, polinomios,
+  continuidad y controles inválidos aprobados. No equivale a una prueba MIDI física.
+- Muestra XY de 60 s y cuatro timbres aislados de 6 s al mismo RMS 0.13.
+  Los timbres y la expresividad aún requieren escucha; no son cuerdas acústicas.

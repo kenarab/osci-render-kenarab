@@ -15,7 +15,7 @@ trabajar tanto con superficies elegidas como con generación aleatoria reproduci
 - [Potenciómetros MIDI y previsualizaciones en video](docs/controlador-y-visuales.md)
 - [Registro de experimentos solicitados](docs/experimentos.md)
 - [Toro sonoro: tres timbres y controles de movimiento](experiments/007-toro-sonoro/README.md)
-- [Bach: nueva versión Adagio](experiments/005-aire-de-bach/README.md#nueva-versión-aire-adagio)
+- [Bach: tempo controlable, expresión y cuatro timbres](experiments/005-aire-de-bach/README.md#nueva-versión-controlable-aire-expresivo)
 - [SDD: especificaciones y plan del instrumento de superficies](specs/README.md)
 - [Hallazgos y estado de las pruebas](docs/bitacora.md)
 - [Instrucciones para agentes](AGENTS.md)
