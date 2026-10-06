@@ -21,6 +21,11 @@ de 0–1 se acotan. Mantener la ganancia de salida del host moderada.
 
 ## Conectar un controlador MIDI
 
+Actualización 2026-10-06: el usuario confirma el requisito premium para MIDI Learn
+interno. Recomendamos probar el mapeo del host en REAPER; ver
+[comparativa premium, Live y REAPER](midi-premium-live-reaper.md).
+La ruta física hacia el plugin gratuito sigue pendiente de verificación.
+
 ### Encontrar los controles con el mouse
 
 **Comprobación posterior en la app 2.9.9.10:** el panel Lua estaba abierto pero
@@ -60,7 +65,7 @@ describen aprendizaje de CC desde el menú contextual dentro de las novedades
 premium. Por eso **no se da por disponible en la instalación gratuita**. Si no
 aparece, una alternativa es cargar el plugin en una DAW y mapear el controlador a
 sus parámetros `Lua Slider A`…`E` usando el sistema de esa DAW. No se ha verificado
-todavía el mapeo físico ni la edición instalada; no es necesario comprar nada
+todavía el mapeo físico; no es necesario comprar nada
 para probar los sliders con el mouse.
 
 El contrato 0–1 y los nombres `slider_a`…`slider_e` se comprobaron en la copia local

@@ -230,3 +230,18 @@
 - Antes de otra generación larga, priorizar una superficie implícita de referencia
   y una muestra breve que permita elegir dirección tímbrica. Bach controlable y
   la comparación de cuatro voces ya están disponibles como entregas independientes.
+
+## 2026-10-06 — MIDI, premium y host; preferencia por Adagio
+
+- EXP-030: comparación documentada en `docs/midi-premium-live-reaper.md`, con
+  fuentes oficiales, precios comprobables y protocolo de aceptación. REAPER
+  ofrece recepción OSC/FX Learn; propuesta para alojar osci-render e integrar IanniX.
+- Inventario de Info.plist: REAPER 5.04 y Live 9.1 ya instalados; osci-render
+  2.9.9.10 en app, AU y VST3. No confundir instalación con compatibilidad o licencia.
+- Recomendación: evaluar REAPER actual antes de comprar premium sólo por MIDI.
+  La automatización de sliders del plugin gratuito necesita prueba en el host;
+  la referencia fuente 2.9.9.3 no basta para validar el binario instalado.
+- Última preferencia del usuario: Adagio es su Bach favorito; se actualizan registro
+  y especificación sin modificar música ni borrar variantes.
+- Verificación de esta etapa: documentación y enlaces locales; sin cambios de código,
+  instalación, compra, prueba física o nueva renderización de audio.

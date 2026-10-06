@@ -3,6 +3,9 @@
 Pedido EXP-024: el usuario pide ralentizar el Air de Bach, darle más expresión
 y, más adelante, usar superficies para timbres más complejos y profundos.
 
+Última escucha (2026-10-06): el usuario elige Adagio como su versión favorita.
+Se conserva como referencia musical; el mapeo físico MIDI sigue pendiente en EXP-030.
+
 ## Contrato y plan
 
 - BAC-R01: conservar `aire.lua` y sus notas; entregar `aire-adagio.lua` autónomo.

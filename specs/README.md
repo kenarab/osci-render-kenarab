@@ -10,7 +10,7 @@ velocidades lentas. No implica instalar un framework ni una herramienta externa.
 | --- | --- | --- |
 | [001 — Instrumento de superficies](001-instrumento-superficies/spec.md) | Prototipo 007 implementado; host pendiente | Geometría, sonido, velocidades y entrada de controles |
 | [002 — Calidad del timbre](002-calidad-timbrica/spec.md) | Timbre no aceptado, también en WAV; diferencia con host pendiente | Suavidad, expresividad y evaluación del usuario |
-| [003 — AIRE Adagio](003-aire-adagio/spec.md) | Usuario lo encuentra lento; ajuste en 004 | Interpretación más lenta y expresiva, original conservado |
+| [003 — AIRE Adagio](003-aire-adagio/spec.md) | Preferido por el usuario (2026-10-06); controles alternativos en 004 | Interpretación más lenta y expresiva, original conservado |
 | [004 — AIRE controlable](004-aire-controlable/spec.md) | Implementado; nueva escucha y host pendientes | Tempo 20–52 BPM, expresión y cuatro timbres |
 | [005 — Narración audiovisual](005-narracion-audiovisual/spec.md) | Storyboard propuesto | Historia de formas y sonidos; IanniX como candidato para secuenciar |
 | [006 — Superficies SURFER](006-superficies-surfer/spec.md) | Dirección precisada; implementación pendiente | Polinomios implícitos, singularidades y coeficientes interactivos |
