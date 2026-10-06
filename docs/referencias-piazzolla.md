@@ -50,3 +50,58 @@ con procedencia y condiciones registradas. No fabricar notas y rotularlas como P
 
 No asignamos todavía ecuaciones definitivas a cada título. El siguiente paso
 musical depende de la versión elegida; la infraestructura geométrica puede avanzar.
+
+## Avance 2026-10-06 — fuentes MIDI e ingreso de repertorio
+
+Pedido renovado EXP-032. Ya hay dos candidatos específicos de archivos de notas,
+además del catálogo editorial. **No se adquirieron ni descargaron estos MIDI**:
+
+| Obra | Archivo ofrecido por la fuente | Estado y utilidad |
+| --- | --- | --- |
+| Libertango | [GEERDES, artículo 11844](https://geerdes.media/apps/playback/en/libertango-astor-piazzolla-11844.01.html): MIDI, 3:12, 11 canales; SMF 0/1; 5,99 € consultados | Candidato para separar bajo, piano, guitarra y voces de acordeón; la ficha anuncia 40 cambios de tempo y variantes de final. No es el manuscrito original. |
+| Oblivion | [Pianosolo, arreglo Play The Piano](https://pianosolo.me/en/piano-sheets-midi/oblivion-2/): paquete PDF + MIDI, USD 16 consultados | Candidato para reducción de piano; requiere distribuir polifonía entre instrumentos, no asumir cuatro pistas monofónicas. |
+
+Son descripciones de vendedores consultadas en esa fecha, no evaluación auditiva
+ni garantía independiente de fidelidad. No se inició compra, registro ni descarga
+privada. También apareció una oferta gratuita en Songparts, pero no quedó aclarada
+la procedencia del arreglo; no se incorporó al repositorio como material autorizado.
+Se pidió al usuario enlace al arreglo/MIDI preferido y aclaración de Solitude.
+Violentango, Meditango y Solitude siguen pendientes de fuente de notas seleccionada.
+
+### Infraestructura utilizable ahora
+
+`scripts/import_repertoire_midi.py` lee SMF 0/1 y conserva notas polifónicas,
+canal, pista, velocidad, programas, CC y mapa de tempo. Calcula tiempos en segundos
+a través de todos los cambios de tempo, sin forzar el rubato del Bach sobre Piazzolla.
+Pide procedencia y condiciones de uso, registra SHA-256 y rechaza sobrescribir su
+salida. No depende de paquetes nuevos ni modifica el importador específico de Bach.
+
+```sh
+python3 scripts/import_repertoire_midi.py /ruta/al/arreglo.mid \
+  --source 'URL o referencia del archivo aportado' \
+  --conditions 'Condiciones documentadas del material' \
+  --output recordings/piazzolla-import.json
+python3 scripts/check_repertoire_midi.py
+```
+
+Probado con MIDI sintético (acordes, velocidades, running status, dos tempos y
+entradas erróneas) y con las 516 notas del MIDI fuente de Bach antes de desplegar
+repeticiones. **Todavía no se probó con un MIDI de Piazzolla**. El pedal se conserva
+como CC, pero no prolonga las notas automáticamente; pitch bend y otros eventos
+expresivos necesitan soporte posterior. El JSON importado no es aún un arreglo
+Lua reproducible: falta seleccionar pistas, resolver polifonía, asignar timbres
+y comprobar el fraseo contra la interpretación elegida.
+
+### Primeros arreglos propuestos, todavía no implementados
+
+- **Oblivion:** melodía cantabile con apertura espectral lenta; acompañamiento de
+  parciales amortiguados; bajo separado. Probar primero 30–45 s con el mapa de tempo
+  del arreglo elegido, conservando notas y espacios. Paleta disponible: Cuárticas
+  y Prisma del experimento 008; no se promete imitación acústica de bandoneón.
+- **Libertango:** ataques más rápidos y contraste de funciones entre bajo, piano
+  y voz principal; preservar los cambios de tempo del MIDI. Comparar un fragmento
+  con brillo fijo y otro con articulación espectral, antes de hacer la pieza completa.
+
+Estos son diseños del laboratorio, no análisis de una grabación que ya hayamos
+escuchado. El paso pendiente para producir las versiones musicales es incorporar
+el archivo concreto. No se sustituyó ninguna obra por notas inventadas.

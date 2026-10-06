@@ -258,3 +258,16 @@
 - Dos WAV completos de 339.066 s, picos 0.65084/0.60245; continuidad, fin y reinicio
   aprobados. Ocho timbres aislados a igual RMS, controles a 44.1/48 kHz y comparación
   audiovisual con el Adagio original. Falta escucha del usuario y prueba en host.
+
+## 2026-10-06 — Ingreso de repertorio Piazzolla (EXP-032)
+
+- Localizadas ofertas MIDI específicas: Libertango de GEERDES y Oblivion, arreglo
+  de Play The Piano en Pianosolo. Procedencia, alcance, precios consultados y enlaces
+  en `docs/referencias-piazzolla.md`. No se compraron ni descargaron archivos.
+- Importador SMF 0/1 preparado: notas polifónicas, velocidad, pistas, canales,
+  tempo/segundos, CC, programas y SHA-256/procedencia. Salida privada en recordings.
+- Prueba sintética de dos tempos, acordes y running status, rechazo de entradas
+  inválidas y lectura de las 516 notas del MIDI fuente de Bach: aprobadas.
+- Falta el archivo elegido para producir arreglos musicales; aún no hay Piazzolla
+  sonando en Lua. Se pidió enlace al usuario y aclaración de Solitude. No se
+  presenta infraestructura ni una propuesta de orquestación como obra terminada.
