@@ -22,3 +22,14 @@ r=parse(Path('experiments/005-aire-de-bach/source/bach-air-score.mid').read_byte
 assert len({n['track'] for n in r['notes']})==4
 assert len(r['notes'])>400
 print('OK: tempo, polifonia, velocidad, running status, errores y MIDI real de Bach',len(r['notes']))
+
+# SEM-06: preservar eventos de duración cero sólo cuando se pide explícitamente.
+zero=midi(b"\x00\x90\x3c\x60\x00\x80\x3c\x00\x00\xff\x2f\x00")
+try:parse(zero)
+except ValueError:pass
+else:raise AssertionError("El modo estricto aceptó duración cero")
+r=parse(zero,allow_zero_duration=True)
+assert r["zero_duration_notes"]==1 and len(r["notes"])==1
+assert r["notes"][0]["start_seconds"]==r["notes"][0]["end_seconds"]==0
+assert "cero" in r["warnings"][0]
+print("SEM-06 OK: modo estricto y preservación tolerante con advertencia")

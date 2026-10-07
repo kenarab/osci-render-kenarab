@@ -114,3 +114,11 @@ Atlas Piazzolla](proyecto-piazzolla/README.md) conserva fuentes adicionales, mod
 criterios y límites del importador. La búsqueda iniciada obtuvo un HTML de
 Songparts; todavía no se descargaron arreglos musicales. La recolección masiva
 se traslada al futuro proyecto; este laboratorio consumirá arreglos seleccionados.
+
+## Actualización: lote semilla obtenido
+
+El usuario autorizó continuar aquí con un lote pequeño para representar el Atlas.
+Ya hay [19 archivos válidos y catálogo navegable](proyecto-piazzolla/semilla.md),
+con variantes de Oblivion/Libertango, Violentango en PDF y una muestra de Meditango.
+Soledad sigue sin archivo válido. Las afirmaciones anteriores de «ningún MIDI»
+describen el estado previo; la semilla documenta el resultado actual y sus límites.

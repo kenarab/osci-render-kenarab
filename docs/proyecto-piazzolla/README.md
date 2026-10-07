@@ -1,6 +1,9 @@
 # Atlas Piazzolla — propuesta y traspaso a un proyecto independiente
 
 Estado: planificación preparada el 2026-10-06. **No ejecutada como base de datos**.
+El [experimento semilla](semilla.md) ya contiene archivos y conversiones limitadas;
+la implementación del Atlas completo sigue pendiente en otro repositorio.
+
 Repositorio propuesto: `piazzolla-atlas` (nombre provisional, aún no creado).
 Pedido del usuario: construir la base de datos de Piazzolla más grande que podamos,
 reuniendo arreglos abiertos o públicamente accesibles para compararlos y elegir.
@@ -221,3 +224,34 @@ ni número bruto de enlaces como medida de progreso.
 
 Este documento no autoriza empezar ahora la implementación en otro repositorio;
 prepara el trabajo para la sesión que el usuario abra allí.
+
+## Reglas ampliadas por el usuario durante el experimento semilla
+
+- Coleccionar todas las fuentes musicales disponibles como objetivo del Atlas:
+  partituras editables, MIDI, PDF, fotos, escaneos y partes sueltas. Este laboratorio
+  realiza sólo una semilla acotada y registra candidatos para continuar afuera.
+- Conservar variaciones para estudiar distintas formas de interpretar una obra.
+  Las diferencias de tempo, articulación, duración e intensidad también importan;
+  dos versiones con casi las mismas alturas no son necesariamente duplicadas.
+- Convertir fuentes a una lengua franca sin sustituir ni descartar originales.
+  Propuesta: **MusicXML para la partitura** y **MIDI/eventos normalizados para la
+  ejecución**. Mantener ambas vistas relacionadas; no prometer una conversión
+  perfecta entre notación e interpretación. JSON de eventos es un derivado técnico
+  versionado del laboratorio, no un estándar universal de partituras.
+- Cada conversión debe registrar entrada/hash, herramienta/versión, parámetros,
+  archivo resultante, revisión y pérdidas. MIDI no permite recuperar de manera
+  inequívoca toda la notación; una transcripción inferida debe estar marcada.
+- PDF, fotografía y escaneo requieren reconocimiento de notación musical (OMR)
+  o transcripción, además de revisión. OCR de texto puede ayudar con títulos y
+  créditos, pero no demuestra que las notas se hayan convertido correctamente.
+- Registrar resolución, orientación, páginas faltantes y legibilidad de imágenes.
+  Conservar cada página y su vínculo con la edición/arreglo, sin contar una foto
+  de la misma página como un arreglo nuevo.
+- ATL-10: una variante interpretativa conserva su relación con la obra/arreglo,
+  comparación y evidencia; la normalización nunca elimina diferencias sin registro.
+- ATL-11: cada fuente tiene estado de conversión (original, extraído, reconocido,
+  revisado o pendiente), cadena de procedencia y reporte de pérdidas.
+
+El primer caso real es Oblivion de Songparts: 1864 y 1865 notas, muchas diferencias
+de velocidad MIDI y pocas de temporización. Se conservan ambas versiones. Ver
+el manifiesto semilla para los conteos de comparación y sus límites.

@@ -1,0 +1,1246 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "id": "oblivion-sp1",
+      "file": "oblivion-songparts-1.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 1 (cFME3AWhMkFX0hWu)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/cFME3AWhMkFX0hWu/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/cFME3AWhMkFX0hWu/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-songparts-1.mid",
+      "derived": [
+        "downloads/piazzolla/derived/oblivion-songparts-1.events.json"
+      ],
+      "bytes": 16523,
+      "sha256": "6c19c87a8f2406e33309e5d9479f434471d3ca2fa9bccf17bbb73707c78d8145",
+      "file_mtime_utc": "2026-10-07T00:59:58.649622+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 1864,
+      "duration_seconds": 308.461232,
+      "tracks_with_notes": 4,
+      "track_names": {
+        "0": "Astor Piazzolla - Oblivion",
+        "1": "Piano 1",
+        "2": "Piano 2",
+        "3": "Strings",
+        "4": "Winds"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "oblivion-sp2",
+      "file": "oblivion-songparts-2.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 2 (fYElFkcT7B5YQfH5)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/fYElFkcT7B5YQfH5/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/fYElFkcT7B5YQfH5/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-songparts-2.mid",
+      "derived": [
+        "downloads/piazzolla/derived/oblivion-songparts-2.events.json"
+      ],
+      "bytes": 16532,
+      "sha256": "4a5297424886c8ab718928d9555a38fd6d5297dad05985ed7355c009b1cbe10b",
+      "file_mtime_utc": "2026-10-07T00:59:55.922074+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 1865,
+      "duration_seconds": 308.461232,
+      "tracks_with_notes": 4,
+      "track_names": {
+        "0": "Astor Piazzolla - Oblivion",
+        "1": "Piano 1",
+        "2": "Piano 2",
+        "3": "Strings",
+        "4": "Winds"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "oblivion-sp3",
+      "file": "oblivion-songparts-3.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 3 (ZzPAjDubB9z09tgI)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/ZzPAjDubB9z09tgI/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/ZzPAjDubB9z09tgI/download",
+      "scope": "fragmento/versión corta según ficha",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-songparts-3.mid",
+      "derived": [
+        "downloads/piazzolla/derived/oblivion-songparts-3.events.json"
+      ],
+      "bytes": 4280,
+      "sha256": "d5dfd1d57d7a6617a64d68c3cbb85fe2c47af46a4a00f1ab77dd9b0a0c7aee47",
+      "file_mtime_utc": "2026-10-07T00:59:57.559119+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 485,
+      "duration_seconds": 167.0,
+      "tracks_with_notes": 1,
+      "track_names": {
+        "0": "Astor Piazzolla - Oblivion Guitar",
+        "1": "Guitar"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-sp1",
+      "file": "libertango-songparts-1.mid",
+      "work": "Libertango",
+      "variant": "Songparts 1 (iXeH2ngqA3Dz4YDV)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/iXeH2ngqA3Dz4YDV/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/iXeH2ngqA3Dz4YDV/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-songparts-1.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-songparts-1.events.json"
+      ],
+      "bytes": 20210,
+      "sha256": "e21162203927a71e75b570027bd192433a6c1057bbb8a293e34091fdcda4d771",
+      "file_mtime_utc": "2026-10-07T01:00:52.517507+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 2364,
+      "duration_seconds": 160.0,
+      "tracks_with_notes": 3,
+      "track_names": {
+        "0": "Astor Piazzolla - Libertango",
+        "1": "Guitar 1",
+        "2": "Guitar 2",
+        "3": "Guitar 3"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-sp2",
+      "file": "libertango-songparts-2.mid",
+      "work": "Libertango",
+      "variant": "Songparts 2 (oKxnZb9QMJZAUDgm)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/oKxnZb9QMJZAUDgm/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/oKxnZb9QMJZAUDgm/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-songparts-2.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-songparts-2.events.json"
+      ],
+      "bytes": 17115,
+      "sha256": "13761fb65b713586aa17ff3cba17a46af964b54e7015618e5bda36042640f0b7",
+      "file_mtime_utc": "2026-10-07T01:00:54.255898+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 1962,
+      "duration_seconds": 163.5,
+      "tracks_with_notes": 3,
+      "track_names": {
+        "0": "Astor Piazzolla - Libertango",
+        "1": "Guitar 1",
+        "2": "Guitar 2",
+        "3": "Guitar 3"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-sp3",
+      "file": "libertango-songparts-3.mid",
+      "work": "Libertango",
+      "variant": "Songparts 3 (C3wsPXOxpMLmZc9I)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/C3wsPXOxpMLmZc9I/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/C3wsPXOxpMLmZc9I/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-songparts-3.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-songparts-3.events.json"
+      ],
+      "bytes": 28694,
+      "sha256": "eea371f2ebf83498027ecfb0ef49a283948567ccde0632396cfde80cd8de8dc1",
+      "file_mtime_utc": "2026-10-07T01:00:53.914972+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 3292,
+      "duration_seconds": 264.17899,
+      "tracks_with_notes": 3,
+      "track_names": {
+        "0": "Astor Piazzolla - Libertango - Version Orquesta - Osea Extendida",
+        "1": "Guitar 1",
+        "2": "Guitar 2",
+        "3": "Guitar 3"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 1,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-sp4",
+      "file": "libertango-songparts-4.mid",
+      "work": "Libertango",
+      "variant": "Songparts 4 (92tgAsh1P1zhWRtK)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/92tgAsh1P1zhWRtK/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/92tgAsh1P1zhWRtK/download",
+      "scope": "fragmento/versión corta según ficha",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-songparts-4.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-songparts-4.events.json"
+      ],
+      "bytes": 2471,
+      "sha256": "484df61f5a8b69a0f68242e1b340cfe399a04600a5a4e1c498db76ed3751c561",
+      "file_mtime_utc": "2026-10-07T01:00:53.454216+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 251,
+      "duration_seconds": 102.143728,
+      "tracks_with_notes": 1,
+      "track_names": {
+        "0": "Astor Piazzolla - Libertango (1974) DISTORTION",
+        "1": "Guitar"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "oblivion-scorebase-mid",
+      "file": "oblivion-scorebase.mid",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-scorebase.mid",
+      "derived": [
+        "downloads/piazzolla/derived/oblivion-scorebase.events.json"
+      ],
+      "bytes": 15352,
+      "sha256": "13ce45d1fe970352620279e673b76f35a7ba34d79870a2514e9d161e08e1ec26",
+      "file_mtime_utc": "2026-10-07T00:59:15.857603+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 1875,
+      "duration_seconds": 250.433841,
+      "tracks_with_notes": 4,
+      "track_names": {
+        "0": "Flauto\u0000",
+        "1": "Fagotto\u0000",
+        "2": "Piano\u0000",
+        "3": "Piano\u0000"
+      },
+      "zero_duration_notes": 2,
+      "tempos": 1,
+      "warnings": [
+        "2 notas de duracion cero conservadas; revisar antes de sintetizar.",
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "oblivion-scorebase-mxl",
+      "file": "oblivion-scorebase.mxl",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-scorebase.mxl",
+      "derived": [
+        "downloads/piazzolla/derived/oblivion-scorebase.musicxml"
+      ],
+      "bytes": 18561,
+      "sha256": "2284efe804a5f598609aabcafdc121cfd25fca25bcb4acec18cee0636b7ea6ad",
+      "file_mtime_utc": "2026-10-07T00:59:17.780481+00:00",
+      "status": "valid",
+      "parts": [
+        "Flauto",
+        "Fagotto",
+        "Piano"
+      ],
+      "creators": [
+        "Astor Piazzolla"
+      ],
+      "derivation": {
+        "tool": "scripts/catalog_piazzolla_seed.py",
+        "schema_version": 1,
+        "tool_sha256": "0d6adfbe8e6572d32a970220dd1066f8b7534dab0028ab609216c71d2347a909",
+        "operation": "extraer XML indicado en META-INF/container.xml, bytes intactos",
+        "review": "XML bien formado y raiz musical; validacion XSD pendiente"
+      }
+    },
+    {
+      "id": "oblivion-scorebase-pdf",
+      "file": "oblivion-scorebase.pdf",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-scorebase.pdf",
+      "derived": [],
+      "bytes": 131067,
+      "sha256": "37670fd966618b8828f41edd808cdafe5a51f9d7876b7b65d496dc416406748a",
+      "file_mtime_utc": "2026-10-07T00:59:18.395775+00:00",
+      "status": "valid",
+      "pages": 6,
+      "conversion": "OMR/transcripcion y revision pendientes"
+    },
+    {
+      "id": "libertango-duo-mid",
+      "file": "libertango-duo.mid",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-duo.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-duo.events.json"
+      ],
+      "bytes": 19082,
+      "sha256": "844bbc4240aaa08b20696a01b8bf4f52e5eb9ac689b8192a95651876f5c6e37d",
+      "file_mtime_utc": "2026-10-07T01:03:24.179565+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 1342,
+      "duration_seconds": 306.998958,
+      "tracks_with_notes": 2,
+      "track_names": {
+        "0": "Cello1\u0000",
+        "1": "Cello2\u0000"
+      },
+      "zero_duration_notes": 0,
+      "tempos": 2,
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-duo-mxl",
+      "file": "libertango-duo.mxl",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-duo.mxl",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-duo.musicxml"
+      ],
+      "bytes": 17041,
+      "sha256": "6a408324dfc6a001440843b72a168d9d63beab59cd1856e091f0b6f228e7ca73",
+      "file_mtime_utc": "2026-10-07T01:03:23.009270+00:00",
+      "status": "valid",
+      "parts": [
+        "Cello1",
+        "Cello2"
+      ],
+      "creators": [
+        "A.Piazzolla"
+      ],
+      "derivation": {
+        "tool": "scripts/catalog_piazzolla_seed.py",
+        "schema_version": 1,
+        "tool_sha256": "0d6adfbe8e6572d32a970220dd1066f8b7534dab0028ab609216c71d2347a909",
+        "operation": "extraer XML indicado en META-INF/container.xml, bytes intactos",
+        "review": "XML bien formado y raiz musical; validacion XSD pendiente"
+      }
+    },
+    {
+      "id": "libertango-duo-pdf",
+      "file": "libertango-duo.pdf",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-duo.pdf",
+      "derived": [],
+      "bytes": 98528,
+      "sha256": "b077944c3112bc0a269d9f9539925286b1f3881fed462c2ca366de601c983ef5",
+      "file_mtime_utc": "2026-10-07T01:03:24.185257+00:00",
+      "status": "valid",
+      "pages": 3,
+      "conversion": "OMR/transcripcion y revision pendientes"
+    },
+    {
+      "id": "libertango-piano-mid",
+      "file": "libertango-piano.mid",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-piano.mid",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-piano.events.json"
+      ],
+      "bytes": 19649,
+      "sha256": "9112f5bd38c1888d77d219f57424f98df78f25cbcf11b7f5952b9d68f7ab41a8",
+      "file_mtime_utc": "2026-10-07T01:03:24.231179+00:00",
+      "status": "valid",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      },
+      "notes": 2997,
+      "duration_seconds": 281.624219,
+      "tracks_with_notes": 2,
+      "track_names": {
+        "0": "Piano\u0000",
+        "1": "Piano\u0000"
+      },
+      "zero_duration_notes": 32,
+      "tempos": 1,
+      "warnings": [
+        "32 notas de duracion cero conservadas; revisar antes de sintetizar.",
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "libertango-piano-mxl",
+      "file": "libertango-piano.mxl",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-piano.mxl",
+      "derived": [
+        "downloads/piazzolla/derived/libertango-piano.musicxml"
+      ],
+      "bytes": 45431,
+      "sha256": "c7e92c753125cfa58b1a17e3fc443228ca3685376bb3c5c7a50f3efd67048563",
+      "file_mtime_utc": "2026-10-07T01:03:24.242327+00:00",
+      "status": "valid",
+      "parts": [
+        "Piano"
+      ],
+      "creators": [
+        "Composer"
+      ],
+      "derivation": {
+        "tool": "scripts/catalog_piazzolla_seed.py",
+        "schema_version": 1,
+        "tool_sha256": "0d6adfbe8e6572d32a970220dd1066f8b7534dab0028ab609216c71d2347a909",
+        "operation": "extraer XML indicado en META-INF/container.xml, bytes intactos",
+        "review": "XML bien formado y raiz musical; validacion XSD pendiente"
+      }
+    },
+    {
+      "id": "libertango-piano-pdf",
+      "file": "libertango-piano.pdf",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/libertango-piano.pdf",
+      "derived": [],
+      "bytes": 189262,
+      "sha256": "099f15dc2a40f5d7326841eaf67868c158c83dfc07d719cc6fd111a23c6d1695",
+      "file_mtime_utc": "2026-10-07T01:03:23.942670+00:00",
+      "status": "valid",
+      "pages": 9,
+      "conversion": "OMR/transcripcion y revision pendientes"
+    },
+    {
+      "id": "violentango-robert",
+      "file": "violentango-tres-guitarras.pdf",
+      "work": "Violentango",
+      "variant": "Serge Robert, tres guitarras",
+      "format": "PDF",
+      "source_url": "https://www.guitares-robert.ca/Piazzolla-Violentango-3G.pdf",
+      "download_url": "https://www.guitares-robert.ca/Piazzolla-Violentango-3G.pdf",
+      "scope": "partitura de tres guitarras y partes; 9 páginas; extremos inspeccionados",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/violentango-tres-guitarras.pdf",
+      "derived": [],
+      "bytes": 632306,
+      "sha256": "03c97a9982f7de80a3a1360cbfce46e8c89c6099732c9e90583b08b9fcce81d3",
+      "file_mtime_utc": "2026-10-07T00:59:18.806699+00:00",
+      "status": "valid",
+      "pages": 9,
+      "conversion": "OMR/transcripcion y revision pendientes"
+    },
+    {
+      "id": "meditango-reift",
+      "file": "meditango-reift-muestra.pdf",
+      "work": "Meditango",
+      "variant": "Thierry Caens, metales/cuerdas/piano",
+      "format": "PDF",
+      "source_url": "https://files.reift.ch/files/scores/EMR76130.pdf",
+      "download_url": "https://files.reift.ch/files/scores/EMR76130.pdf",
+      "scope": "muestra editorial; no confundir con edición completa",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/meditango-reift-muestra.pdf",
+      "derived": [],
+      "bytes": 471605,
+      "sha256": "8a3d7c92f897158ec2e66b6e7074869981ecb5ac8904f9d372541fb909549a10",
+      "file_mtime_utc": "2026-10-07T00:59:18.304420+00:00",
+      "status": "valid",
+      "pages": 6,
+      "conversion": "OMR/transcripcion y revision pendientes"
+    },
+    {
+      "id": "oblivion-preview",
+      "file": "oblivion-scorebase-preview.webp",
+      "work": "Oblivion",
+      "variant": "Página de la variante ScoreBase 38762",
+      "format": "WebP",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://cdn.scorebase.org/oslf14y76ybz4so3dndp3lln5cb6",
+      "scope": "imagen de vista previa, no arreglo adicional",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "path": "downloads/piazzolla/oblivion-scorebase-preview.webp",
+      "derived": [],
+      "bytes": 62460,
+      "sha256": "19531f5cf7c4ebeb6c7c3c917ca394ef3e938e1ec28c9185d60be6427516cf7b",
+      "file_mtime_utc": "2026-10-07T01:03:23.688734+00:00",
+      "status": "valid",
+      "dimensions": [
+        1200,
+        1697
+      ],
+      "conversion": "Imagen de pagina; OMR/transcripcion pendiente"
+    },
+    {
+      "id": "meditango-giant",
+      "file": "meditango-giant.pdf",
+      "work": "Meditango",
+      "variant": "SheetMusicGiant; descarga vacía",
+      "format": "PDF",
+      "source_url": "https://www.sheetmusicgiant.com/piano/sheets/87988/Astor_Piazzola_Meditango.html",
+      "download_url": "https://www.sheetmusicgiant.com/sheets/download?i=ODc5ODg=",
+      "scope": "fallido; Soledad pendiente de identificar frente a Solitude",
+      "rights_status": "sitio declara uso personal/prueba temporal; no licencia abierta verificada; no se obtuvo contenido",
+      "path": "downloads/piazzolla/meditango-giant.pdf",
+      "derived": [],
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file_mtime_utc": "2026-10-07T01:01:26.997982+00:00",
+      "status": "invalid",
+      "error": "Respuesta vacia; no es un archivo musical"
+    },
+    {
+      "id": "soledad-giant",
+      "file": "soledad-giant.pdf",
+      "work": "Soledad",
+      "variant": "SheetMusicGiant; descarga vacía",
+      "format": "PDF",
+      "source_url": "https://www.sheetmusicgiant.com/piano/sheets/88728/Astor_Piazzola_Soledad.html",
+      "download_url": "https://www.sheetmusicgiant.com/sheets/download?i=ODg3Mjg=",
+      "scope": "fallido; Soledad pendiente de identificar frente a Solitude",
+      "rights_status": "sitio declara uso personal/prueba temporal; no licencia abierta verificada; no se obtuvo contenido",
+      "path": "downloads/piazzolla/soledad-giant.pdf",
+      "derived": [],
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "file_mtime_utc": "2026-10-07T01:03:23.748925+00:00",
+      "status": "invalid",
+      "error": "Respuesta vacia; no es un archivo musical"
+    }
+  ],
+  "valid": 19,
+  "failed": 2,
+  "exact_duplicate_groups": [],
+  "comparison": {
+    "ids": [
+      "oblivion-sp1",
+      "oblivion-sp2"
+    ],
+    "only_first_events": 1734,
+    "only_second_events": 1735,
+    "comparison": "canal, altura, tick inicio/fin y velocidad; no prueba igualdad de todos los mensajes MIDI",
+    "timed_events_only_first": 1,
+    "timed_events_only_second": 2,
+    "common_timed_events": 1863,
+    "common_exact_events": 130
+  },
+  "scorebase_candidates": [
+    {
+      "url": "https://scorebase.org/scores/165660",
+      "label": "Café 1930 Piazzolla, Astor",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366537",
+      "label": "$ La Camorra II Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/392543",
+      "label": "$ Oblivion Piazzolla, Astor Lead Sheet / Fake Book",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/521635",
+      "label": "$ Libertango Piazzolla, Astor Folk Instrument",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/621910",
+      "label": "$ Oblivion Piazzolla, Astor Sax",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/3226",
+      "label": "oblivion Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/567333",
+      "label": "$ Oblivion Piazzolla, Astor Folk Instrument",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/167671",
+      "label": "Fugata Piazzoll Piazzolla, Astor Ensemble",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/581322",
+      "label": "$ Oblivion Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/621972",
+      "label": "$ Oblivion Piazzolla, Astor Trumpet",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/193552",
+      "label": "Libertango Piazzolla, Astor Clarinet",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/452270",
+      "label": "$ Oblivion Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/505630",
+      "label": "$ Libertango Piazzolla, Astor Band 19 parts",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/558495",
+      "label": "$ Oblivion Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/387279",
+      "label": "$ Libertango Piazzolla, Astor Lead Sheet / Fake Book",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/558508",
+      "label": "$ Libertango Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/409941",
+      "label": "$ Oblivion Piazzolla, Astor Guitar",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/102891",
+      "label": "9 Tangos Piazzolla, Astor Clarinet",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/342354",
+      "label": "$ Libertango Piazzolla, Astor Strings",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566315",
+      "label": "$ Adios nonino Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/99360",
+      "label": "Piazzola Libertango for 3 Cello Piazzolla, Astor Cello",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/340759",
+      "label": "$ Los Suenos Piazzolla, Astor Strings",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/452264",
+      "label": "$ Libertango Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/560013",
+      "label": "$ Vuelvo Al Sur Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/621961",
+      "label": "$ Oblivion Piazzolla, Astor Clarinet",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566029",
+      "label": "$ La Chanson Du Popo Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/3507",
+      "label": "oblivion Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/452133",
+      "label": "$ Vuelvo Al Sur Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566027",
+      "label": "$ Sensuel Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/621911",
+      "label": "$ Oblivion Piazzolla, Astor Lead Sheet / Fake Book",
+      "listing": "scorebase-composer-2.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/621965",
+      "label": "$ Oblivion Piazzolla, Astor Flute",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/185635",
+      "label": "Libertango Piazzolla, Astor Cello",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/327127",
+      "label": "$ Oblivion Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/341216",
+      "label": "$ La Chanson Du Popo Piazzolla, Astor Strings",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366535",
+      "label": "$ Milonga Del Angel Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/341914",
+      "label": "$ Chanson De La Naissance Piazzolla, Astor Strings",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566031",
+      "label": "$ La Mort Du Canard Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/612008",
+      "label": "$ Oblivion Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/443632",
+      "label": "$ Vuelvo Al Sur Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/446970",
+      "label": "$ Libertango Piazzolla, Astor Orchestra 10 parts",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566033",
+      "label": "$ Mumuki Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566337",
+      "label": "$ Se Termino (C'est fini) Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566342",
+      "label": "$ Calambre Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/897182",
+      "label": "€ Oblivion Piazzolla, Astor Band",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/362935",
+      "label": "$ Adios Nonino (arr. Celil Refik Kaya) Piazzolla, Astor Guitar",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/542263",
+      "label": "$ Street Tango Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/562781",
+      "label": "$ Ave Maria Piazzolla, Astor Choir",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566037",
+      "label": "$ Milonga Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/362943",
+      "label": "$ Jeanne Y Paul (arr. Celil Refik Kaya) Piazzolla, Astor Guitar",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/558505",
+      "label": "$ Street Tango Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566019",
+      "label": "$ Ouverture Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566321",
+      "label": "$ Decarisimo Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566354",
+      "label": "$ Romantico Idilio (Sans ta presence) Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/851435",
+      "label": "€ Tanti Anni Prima Piazzolla, Astor Trombone",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/893229",
+      "label": "€ Libertango Piazzolla, Astor Band",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/542173",
+      "label": "$ Dansee Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/558507",
+      "label": "$ Sensuel Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/558510",
+      "label": "$ Ausencias Piazzolla, Astor Easy Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566021",
+      "label": "$ Ausencias Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/566324",
+      "label": "$ Extasis Piazzolla, Astor Piano",
+      "listing": "scorebase-composer-3.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366533",
+      "label": "$ Oblivion Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/155296",
+      "label": "oblivion Piazzolla, Astor Ensemble",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366528",
+      "label": "$ Adios Nonino Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/36224",
+      "label": "Libertango Piazzolla, Astor Band",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/50534",
+      "label": "adios nonino Piazzolla, Astor Band",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/70301",
+      "label": "Café 1930 Piazzolla, Astor Guitar",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/427622",
+      "label": "$ Street Tango Piazzolla, Astor Band 27 parts",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366534",
+      "label": "$ Tanguedia Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/380343",
+      "label": "$ Oblivion Piazzolla, Astor Violin",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/461814",
+      "label": "$ Oblivion Piazzolla, Astor Band 34 parts",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366540",
+      "label": "$ Cite Tango Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/31155",
+      "label": "Chiquilin de Bachin Part Cello Piazzolla, Astor Band",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/181606",
+      "label": "oblivion Piazzolla, Astor Ensemble",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366538",
+      "label": "$ Verano Porteno Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366530",
+      "label": "$ Escualo Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366532",
+      "label": "$ Street Tango Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/438395",
+      "label": "$ Adios Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366536",
+      "label": "$ Fuga Y Misterio Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/438420",
+      "label": "$ Adios Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366531",
+      "label": "$ Otono Porteno Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366541",
+      "label": "$ Tango Apasionado Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/5721",
+      "label": "El Choclo Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/38762",
+      "label": "oblivion Piazzolla, Astor Band",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/136129",
+      "label": "Libertango Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/366529",
+      "label": "$ Chiquilin de Bachin Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/108974",
+      "label": "Libertango Piazzolla, Astor Violin",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/67083",
+      "label": "Prologue (Tango Apasionado) Piazzolla, Astor Band",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/212177",
+      "label": "El gordo triste Piazzolla, Astor Voice & Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/84447",
+      "label": "oblivion Piazzolla, Astor Violin",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    },
+    {
+      "url": "https://scorebase.org/scores/160002",
+      "label": "Vuelvo Al Sur Piazzolla, Astor Piano",
+      "listing": "scorebase-composer.html",
+      "status": "solo ficha localizada"
+    }
+  ],
+  "limitations": [
+    "Lote semilla; no busqueda exhaustiva de Internet.",
+    "Acceso publico no equivale a licencia abierta.",
+    "No se hicieron OMR, alineacion entre arreglos ni evaluacion auditiva."
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "resources": [
+    {
+      "id": "oblivion-sp1",
+      "file": "oblivion-songparts-1.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 1 (cFME3AWhMkFX0hWu)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/cFME3AWhMkFX0hWu/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/cFME3AWhMkFX0hWu/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-sp2",
+      "file": "oblivion-songparts-2.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 2 (fYElFkcT7B5YQfH5)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/fYElFkcT7B5YQfH5/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/fYElFkcT7B5YQfH5/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-sp3",
+      "file": "oblivion-songparts-3.mid",
+      "work": "Oblivion",
+      "variant": "Songparts 3 (ZzPAjDubB9z09tgI)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion/ZzPAjDubB9z09tgI/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/oblivion/ZzPAjDubB9z09tgI/download",
+      "scope": "fragmento/versión corta según ficha",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-sp1",
+      "file": "libertango-songparts-1.mid",
+      "work": "Libertango",
+      "variant": "Songparts 1 (iXeH2ngqA3Dz4YDV)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/iXeH2ngqA3Dz4YDV/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/iXeH2ngqA3Dz4YDV/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-sp2",
+      "file": "libertango-songparts-2.mid",
+      "work": "Libertango",
+      "variant": "Songparts 2 (oKxnZb9QMJZAUDgm)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/oKxnZb9QMJZAUDgm/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/oKxnZb9QMJZAUDgm/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-sp3",
+      "file": "libertango-songparts-3.mid",
+      "work": "Libertango",
+      "variant": "Songparts 3 (C3wsPXOxpMLmZc9I)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/C3wsPXOxpMLmZc9I/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/C3wsPXOxpMLmZc9I/download",
+      "scope": "integridad por revisar",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-sp4",
+      "file": "libertango-songparts-4.mid",
+      "work": "Libertango",
+      "variant": "Songparts 4 (92tgAsh1P1zhWRtK)",
+      "format": "MIDI",
+      "source_url": "https://songparts.com/songs/astor-piazzolla/libertango/92tgAsh1P1zhWRtK/play",
+      "download_url": "https://songparts.com/songs/astor-piazzolla/libertango/92tgAsh1P1zhWRtK/download",
+      "scope": "fragmento/versión corta según ficha",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-scorebase-mid",
+      "file": "oblivion-scorebase.mid",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-scorebase-mxl",
+      "file": "oblivion-scorebase.mxl",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-scorebase-pdf",
+      "file": "oblivion-scorebase.pdf",
+      "work": "Oblivion",
+      "variant": "Bragato; flauta, fagot y piano según XML",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-duo-mid",
+      "file": "libertango-duo.mid",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-duo-mxl",
+      "file": "libertango-duo.mxl",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-duo-pdf",
+      "file": "libertango-duo.pdf",
+      "work": "Libertango",
+      "variant": "Dos violonchelos",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/185635",
+      "download_url": "https://scorebase.org/scores/185635/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-piano-mid",
+      "file": "libertango-piano.mid",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "MIDI",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/mid?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-piano-mxl",
+      "file": "libertango-piano.mxl",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "MXL",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/mxl?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "libertango-piano-pdf",
+      "file": "libertango-piano.pdf",
+      "work": "Libertango",
+      "variant": "Piano solo",
+      "format": "PDF",
+      "source_url": "https://scorebase.org/scores/136129",
+      "download_url": "https://scorebase.org/scores/136129/file/pdf?download=true",
+      "scope": "arreglo; integridad musical pendiente",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "violentango-robert",
+      "file": "violentango-tres-guitarras.pdf",
+      "work": "Violentango",
+      "variant": "Serge Robert, tres guitarras",
+      "format": "PDF",
+      "source_url": "https://www.guitares-robert.ca/Piazzolla-Violentango-3G.pdf",
+      "download_url": "https://www.guitares-robert.ca/Piazzolla-Violentango-3G.pdf",
+      "scope": "partitura de tres guitarras y partes; 9 páginas; extremos inspeccionados",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "meditango-reift",
+      "file": "meditango-reift-muestra.pdf",
+      "work": "Meditango",
+      "variant": "Thierry Caens, metales/cuerdas/piano",
+      "format": "PDF",
+      "source_url": "https://files.reift.ch/files/scores/EMR76130.pdf",
+      "download_url": "https://files.reift.ch/files/scores/EMR76130.pdf",
+      "scope": "muestra editorial; no confundir con edición completa",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "oblivion-preview",
+      "file": "oblivion-scorebase-preview.webp",
+      "work": "Oblivion",
+      "variant": "Página de la variante ScoreBase 38762",
+      "format": "WebP",
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://cdn.scorebase.org/oslf14y76ybz4so3dndp3lln5cb6",
+      "scope": "imagen de vista previa, no arreglo adicional",
+      "rights_status": "acceso público; licencia abierta no verificada"
+    },
+    {
+      "id": "meditango-giant",
+      "file": "meditango-giant.pdf",
+      "work": "Meditango",
+      "variant": "SheetMusicGiant; descarga vacía",
+      "format": "PDF",
+      "source_url": "https://www.sheetmusicgiant.com/piano/sheets/87988/Astor_Piazzola_Meditango.html",
+      "download_url": "https://www.sheetmusicgiant.com/sheets/download?i=ODc5ODg=",
+      "scope": "fallido; Soledad pendiente de identificar frente a Solitude",
+      "rights_status": "sitio declara uso personal/prueba temporal; no licencia abierta verificada; no se obtuvo contenido"
+    },
+    {
+      "id": "soledad-giant",
+      "file": "soledad-giant.pdf",
+      "work": "Soledad",
+      "variant": "SheetMusicGiant; descarga vacía",
+      "format": "PDF",
+      "source_url": "https://www.sheetmusicgiant.com/piano/sheets/88728/Astor_Piazzola_Soledad.html",
+      "download_url": "https://www.sheetmusicgiant.com/sheets/download?i=ODg3Mjg=",
+      "scope": "fallido; Soledad pendiente de identificar frente a Solitude",
+      "rights_status": "sitio declara uso personal/prueba temporal; no licencia abierta verificada; no se obtuvo contenido"
+    }
+  ]
+}

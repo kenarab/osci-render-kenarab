@@ -284,3 +284,23 @@
   No se observó evidencia de bloqueo por User-Agent. Registrar la causa específica
   y usar navegador cuando el flujo público lo requiera; sin asumir éxito tras aborto.
 - Verificación de esta entrega: JSON válido, enlaces locales, hash del HTML y diff.
+
+## 2026-10-06/07 — Colección semilla del Atlas (EXP-034)
+
+- Usuario precisa: colección amplia futura en otro repositorio; aquí lote semilla.
+  Incluir PDF, MIDI, notación abierta, fotos y escaneos; conservar variaciones para
+  estudiar interpretación y convertirlas sin perder originales (ATL-10/11).
+- Obtenidos 19 archivos válidos: 10 MIDI, 3 MXL, 5 PDF, una página WebP. Dos
+  respuestas vacías no cuentan como partituras. Guardadas 90 fichas de catálogo.
+- Derivados: diez JSON de eventos y tres MusicXML extraídos; PDF/imagen pendientes
+  de OMR/transcripción. Originales y derivados fuera de Git; manifiestos con hash.
+- SEM-06: importación tolerante opcional de duración cero; conserva 2 eventos en
+  Oblivion y 32 en Libertango piano de ScoreBase. Modo estricto sin cambios.
+- Corrección del hallazgo inicial: las variantes de Oblivion difieren en uno en el
+  conteo de notas, pero muchas intensidades. 1863 eventos temporales comunes; sólo
+  130 coinciden también en velocidad. No se fusionan ni se eligió un mejor arreglo.
+- Validación: parsers MIDI/XML, firmas PDF/imagen, inspección de primera/última
+  página de los cinco PDF; casos de cero duración y compatibilidad del parser.
+- Reintentado curl tras rechazo accidental indicado por usuario. ScoreBase funciona;
+  SheetMusicGiant devuelve HTTP 200 vacío aun con Referer. Chrome/IAB no disponibles.
+  No se adjudica causa anti-bot sin evidencia ni se declara búsqueda exhaustiva.
