@@ -5,15 +5,26 @@ Dos arreglos descargados y revisados por muestreo, seleccionados por legibilidad
 atribución y separación de partes. No afirmamos que sean los mejores existentes:
 no hubo comparación auditiva nota por nota con los originales.
 
-| Tema propuesto | Qué estudiar | Fuente disponible |
-| --- | --- | --- |
-| Something About Us | Frases largas, armonía y vocales suaves | Arreglo William Bishop, dos partes de piano, 6 páginas |
-| Digital Love | Melodía con portamento y articulación expresiva | Sección del medley, desde compás 52 |
-| Harder, Better, Faster, Stronger | Vocales cortadas, pulso y contrastes de formantes | Sección del medley, desde compás 64 |
-| Get Lucky | Síncopas y contraste entre voz sostenida y acompañamiento | Secciones del medley desde compases 25 y 88 |
+## Prioridad actual del usuario
 
-Son propuestas de tratamiento; no afirmaciones de cómo se produjo cada grabación.
-El estudio Lua de formantes tiene notas originales y no interpreta estos cuatro temas.
+| Tema | Dirección del trabajo | Estado |
+| --- | --- | --- |
+| Something About Us | Fraseo cálido y sostenido | PDF disponible; interpretación pendiente |
+| Giorgio by Moroder | Desarrollo por capas y arco narrativo | Nueva preferencia; fuente/transcripción pendiente |
+| Instant Crush (Julian Casablancas) | Línea vocal expresiva y tratamiento robótico | Nueva preferencia; fuente/transcripción pendiente |
+| Lose Yourself to Dance | Bajo sincopado, pulso de baile y articulación | Groove original inspirado, no transcripción |
+
+El tema con Julian Casablancas es [Instant Crush, según Sony Music](https://www.sonymusic.es/lanzamientos/daft-punk-lanza-el-video-de-su-single-instant-crush-junto-julian-casablancas-lider-de-strokes/).
+La selección anterior (Digital Love, Harder Better Faster Stronger y Get Lucky)
+se conserva en el medley descargado como material secundario, sin priorizarla.
+Daft Punk está iniciado: fuentes y estudios tímbricos; **ningún tema completo
+interpretado todavía**. No dar por cumplidos arreglos con una demo de vocales.
+
+[Groove original de 24 s](../../recordings/013-groove-disco.wav), 100 BPM,
+bombo a negras, bajo y vocales sincopados. Elección de tempo del estudio, no
+transcripción del original. No contiene grabaciones ni riff copiado. El nombre
+Lose Yourself to Dance es la referencia de intención; semejanza y calidad están
+pendientes de escucha. [Lua](../../experiments/013-voz-robotica/groove-disco.lua).
 
 ## Descargas elegidas
 

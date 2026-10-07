@@ -62,3 +62,5 @@ Plan de tareas / evidencia / dudas pendientes
   visualmente; XYZ con giro, aceptación perceptual pendiente.
 - [014 — Daft Punk y formantes](014-daft-formantes/spec.md): dos arreglos
   descargados y prototipo de vocales sintéticas; transcripción y escucha pendientes.
+- [015 — Groove y niveles](015-groove-disco/spec.md): ensayo disco original,
+  preferencias actualizadas y propuesta de dinámica; escucha/ruteo pendientes.

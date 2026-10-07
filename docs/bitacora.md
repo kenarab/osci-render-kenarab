@@ -472,3 +472,14 @@
   definitiva. Se detienen pruebas sonoras de superficies en host; queda pendiente
   tamaño visual independiente del nivel de audio y timbre aceptable. No se carga
   la nueva prueba vocal automáticamente (herramienta UI no disponible al intentarlo).
+
+## 2026-10-07 — Groove solicitado y política de niveles (EXP-046/047)
+
+- Preferencias actualizadas: Something About Us, Giorgio by Moroder, Instant Crush
+  (Julian Casablancas) y Lose Yourself to Dance. Daft iniciado, arreglos pendientes.
+- GRV-01/02: variante original de ensayo vocal con bajo sincopado y bombo, 100 BPM,
+  WAV 24 s. Pico máximo medido .144373; salida/reinicio comprobados a tres tasas.
+  Lua y WAV disponibles sin modificar sesión de Bach ni cargar sonidos en host.
+- GRV-03: limitación final de escucha y calibración por instrumento propuestas;
+  no se confirmó compresor nativo ni se instaló DAW. No atribuir a compresión
+  corrección de aliasing, saltos o fidelidad de superficie. Aceptación auditiva pendiente.

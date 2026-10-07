@@ -198,3 +198,20 @@ Resultado inicial EXP-044: dos arreglos descargados y revisados por muestreo;
 ver docs/repertorio-daft-punk/README.md. EXP-045: prototipo y WAV disponibles en
 experiments/013-voz-robotica; pico .20 y pruebas de controles a tres frecuencias
 aprobadas. No hay transcripción completa de Daft Punk ni aceptación artística aún.
+
+## EXP-046 — Groove y selección Daft Punk actualizada
+
+Pedido del usuario: priorizar Giorgio by Moroder, Instant Crush y groove de Lose
+Yourself to Dance, conservando Something About Us. Fuentes de los nuevos títulos
+y arreglos completos pendientes. Ensayo original `013-voz-robotica/groove-disco.lua`
+y WAV 24 s, bombo/bajo/vocales; GRV-01/02. Picos <.145 a 16/44.1/48 kHz, reinicio
+aprobado. No es transcripción. Aceptación de groove y escucha pendientes.
+
+## EXP-047 — Control de nivel general para Lua
+
+Consulta/pedido de diseño: compresor o limitador común frente a calibración por
+archivo. Investigación registrada en docs/niveles-y-dinamica.md (GRV-03).
+Propuesta: ganancia calibrada por instrumento + limitador final sólo en escucha,
+referencia geométrica separada. Compresor nativo no confirmado; sin instalación.
+Criterio pendiente: controlar picos sin recorte previo ni cambios XY desiguales,
+comparar audición y geometría. Ningún procesador garantiza buen timbre de todo Lua.
