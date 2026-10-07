@@ -450,3 +450,25 @@
   Evidencia XYZ en marco del objeto tras invertir rotación, sin aplanar.
 - Elipsoide cargado y visible en host 2.9.9.10 Free. Mejora perceptual de profundidad
   y ausencia de distorsión audible todavía deben confirmarse por el usuario.
+
+## 2026-10-07 — Daft Punk y ensayo de formantes (EXP-044/045)
+
+- Usuario confirma Something About Us. Cuatro propuestas: ese tema, Digital Love,
+  Harder Better Faster Stronger y Get Lucky. Selección documentada en
+  docs/repertorio-daft-punk con manifiesto de fuentes, hashes y obstáculos.
+- Descargados dos arreglos: William Bishop (6 páginas, dos partes de piano) y
+  medley de Tom Wallace alojado en Colorado Mesa (16 hojas de partes de banda).
+  Revisión visual por muestreo, no comparación nota por nota. Medley contiene
+  fragmentos de los otros tres temas; no son tres arreglos completos adicionales.
+- DP-02…04: generador independiente de repertorio, vocales/formantes sintéticos,
+  estudio original de 32 sílabas/16 s. Lua autónomo y controlable A–D, WAV XY y
+  captura XYZ separada. No es vocoder de voz real ni superficie algebraica.
+- Pruebas a 16/44.1/48 kHz, preset y controles: pico .20, señal finita, energía
+  en tres ejes y reinicio aprobados. Sonido/calidad artística pendientes de escucha;
+  armónicos acotados no implican ausencia completa de aliasing de modulación.
+- Sin compras ni instalaciones. Originales y grabaciones fuera de Git.
+- Usuario informa imagen demasiado pequeña y ruido fatigante; vuelve a Bach.
+  Se aclara que Volume .30 es ajuste diagnóstico provisional, no configuración
+  definitiva. Se detienen pruebas sonoras de superficies en host; queda pendiente
+  tamaño visual independiente del nivel de audio y timbre aceptable. No se carga
+  la nueva prueba vocal automáticamente (herramienta UI no disponible al intentarlo).

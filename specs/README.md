@@ -60,3 +60,5 @@ Plan de tareas / evidencia / dudas pendientes
   cuártica musical de una voz y referencia con caras; aceptación host pendiente.
 - [013 — Nivel y relieve](013-nivel-relieve/spec.md): recorte de host corregido
   visualmente; XYZ con giro, aceptación perceptual pendiente.
+- [014 — Daft Punk y formantes](014-daft-formantes/spec.md): dos arreglos
+  descargados y prototipo de vocales sintéticas; transcripción y escucha pendientes.

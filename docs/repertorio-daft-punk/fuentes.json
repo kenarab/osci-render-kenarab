@@ -1,0 +1,50 @@
+{
+  "selected": [
+    {
+      "id": "something-about-us-v2",
+      "title": "Something About Us",
+      "arranger": "William Bishop",
+      "page_url": "https://www.superpartituras.com.br/daft-punk/something-about-us-v-2",
+      "download_url": "https://repo.superpartituras.com.br/Arquivo.ashx?p=NzQ4Mzk1MDJzb21ldGhpbmctYWJvdXQtdXMtdi0yODc0MzI5ODU=",
+      "retrieved": "2026-10-07",
+      "path": "downloads/daft-punk/originals/something-about-us-v2.pdf",
+      "sha256": "401ec26ba05c374e1f39bf3e15739c46ff5a9500e7938f1a07663eebd87dde30",
+      "bytes": 106778,
+      "review": "Dos partes de piano; PDF vectorial de 6 páginas. Revisión visual páginas 1 y 6, cierre presente; cotejo nota por nota pendiente.",
+      "rights": "Descarga pública localizada; no se verificó licencia abierta de redistribución. Original fuera de Git.",
+      "conversion": "MIDI/MusicXML pendiente de transcripción revisada"
+    },
+    {
+      "id": "medley-colorado-mesa",
+      "title": "Daft Punk Medley",
+      "arranger": "Tom Wallace; percusión Tony McCutchen",
+      "page_url": "https://www.coloradomesa.edu/marching-band/documents/daft-punk-medley5.pdf",
+      "download_url": "https://www.coloradomesa.edu/marching-band/documents/daft-punk-medley5.pdf",
+      "retrieved": "2026-10-07",
+      "path": "downloads/daft-punk/originals/medley-colorado-mesa.pdf",
+      "sha256": "7c1eb2be19dea77c19b141be046b12d4973b53673a9c52fb42699ec3cf9ae8aa",
+      "bytes": 1211867,
+      "review": "16 páginas escaneadas, dos páginas de parte por hoja. Revisión visual hojas 1, 8 y 16; partes de flauta, saxo barítono y tuba legibles; no es partitura general ni temas completos.",
+      "rights": "Descarga pública localizada; no se verificó licencia abierta de redistribución. Original fuera de Git.",
+      "conversion": "MIDI/MusicXML pendiente de transcripción revisada"
+    }
+  ],
+  "other_sources": [
+    {
+      "url": "https://www.superpartituras.com.br/pharell-williams/get-luck",
+      "status": "La descarga requiere Premium; no descargada"
+    },
+    {
+      "url": "https://pianosheetmusiconline.com/digital-love-daft-punk/",
+      "status": "Visor Flash Docstoc obsoleto; sin PDF recuperable"
+    },
+    {
+      "url": "https://www.raymcgaleacoustic.com/assets/tab-book.pdf",
+      "status": "Certificado TLS no válido para dominio; no descargado"
+    },
+    {
+      "url": "https://www.everyonepiano.com/Music-5359.html",
+      "status": "HTTP 500 al descargar; no seleccionado"
+    }
+  ]
+}

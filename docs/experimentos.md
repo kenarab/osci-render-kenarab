@@ -179,3 +179,22 @@ Pedido del usuario. Reiniciar resolvió EXP-042 según escucha del usuario. En h
 ganancia 2.1787 y Threshold .2947; al pasar a .30 y 1 desaparece el contorno cuadrado
 observado. Escucha pendiente. Corregir orientación/giro de XYZ sin aplanar ni filtrar.
 Criterios NIV-01…03 en specs/013-nivel-relieve.
+
+## EXP-044 — Partituras Daft Punk
+
+Pedido: descargar y elegir 2–3 arreglos de buena calidad; proponer cuatro temas.
+Something About Us confirmado; propuestas Digital Love, Harder Better Faster
+Stronger y Get Lucky. Criterio DP-01: procedencia, formato real, legibilidad y
+alcance comprobados. Conversiones revisadas a MIDI/MusicXML pendientes.
+
+## EXP-045 — Efecto vocal robótico en osciloscopio
+
+Pedido del usuario de explorar vocoder. Primera propuesta: vocales sintéticas
+con formantes y articulación, ensayo original sin voz grabada ni letra de temas.
+Criterios DP-02…04: parámetros útiles, margen, XYZ y WAV diferenciados; aceptación
+artística en host pendiente. Vocoder de análisis de voz real no implementado aquí.
+
+Resultado inicial EXP-044: dos arreglos descargados y revisados por muestreo;
+ver docs/repertorio-daft-punk/README.md. EXP-045: prototipo y WAV disponibles en
+experiments/013-voz-robotica; pico .20 y pruebas de controles a tres frecuencias
+aprobadas. No hay transcripción completa de Daft Punk ni aceptación artística aún.
