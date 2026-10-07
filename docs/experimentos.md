@@ -47,6 +47,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-037 | Constructor visual por factores para divulgar métodos de geometría algebraica y un Shuffle estructurado | Proyecto pendiente, especificado; no implementado | [Constructor](../specs/010-constructor-algebraico/spec.md): árbol/factores, recetas atribuidas, restricciones y semilla; sin lenguaje natural. |
 | EXP-038 | Ejercicios pequeños donde se reconozcan superficies en el XY real | Esfera/elipsoide implementados; aceptación visual en host pendiente | [010](../experiments/010-superficies-legibles/README.md): barrido de cobertura y videos de 10 s, sin reemplazar XY por malla. |
 | EXP-039 | Prueba sencilla de Piazzolla con timbres elegibles dinámicamente por instrumento | Oblivion 30–70 s implementado; escucha/Pro pendientes | [011](../experiments/011-oblivion-asignable/README.md): flauta/fagot/piano, bancos independientes, transición 80 ms. INS-02–05. |
+| EXP-040 | Corregir pérdida de forma 3D de superficies frente a poliedros | Causas identificadas en Lua musicales; localización con usuario pendiente | [Diagnóstico](instrumentos-y-superficies.md#corrección-de-aceptación-visual--2026-10-07-exp-040): bancos planos y suma de voces no conservan geometría; aceptación requiere probar la misma superficie en la salida real. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.

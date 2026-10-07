@@ -392,3 +392,14 @@
   Esfera/elipsoide: F=0 antes de proyección, continuidad y límites aprobados.
 - Separación vigente: geometría editable, receta de sonificación, bancos versionados,
   asignación por instrumento y pieza. Coeficientes→audio en vivo y puente host pendientes.
+
+## 2026-10-07 — Pérdida de forma en la salida visual (EXP-040)
+
+- Usuario detecta peor reconocimiento 3D de superficies que de poliedros.
+- Inspección confirma bancos planos en Bach (`gz=0`) y salida Z=0 en Oblivion;
+  sus transformaciones espectrales y mezcla no representan las superficies fuente.
+- Se registra incumplimiento del objetivo visual en esas rutas, sin adjudicar
+  todavía un fallo específico al editor WebGL o al meshing. Se pidió localizar
+  dónde observa la diferencia antes de cambiar la ruta equivocada.
+- No se cambió sonido ni geometría; verificación pertinente: lectura de las rutas
+  de generación/proyección y revisión del diff documental.

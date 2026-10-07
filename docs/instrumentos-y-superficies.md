@@ -46,3 +46,33 @@ No se modifica C++/JUCE ni se promete que la compra Pro resuelva este enlace.
 
 La complejidad geométrica no garantiza buen timbre. Tampoco asignar una superficie
 al instrumento hace que su forma sobreviva a la suma XY de todas las voces.
+
+## Corrección de aceptación visual — 2026-10-07 (EXP-040)
+
+El usuario observa que los poliedros resultan reconocibles en 3D, pero no las
+superficies algebraicas de las pruebas. No considerar satisfecho el objetivo
+visual por tener una malla o un render sombreado separado.
+
+Hallazgos comprobados al revisar las rutas musicales:
+
+- `experiments/008-bach-materias/engine.lua.in`, usado también por 009: cada
+  banco sólo tiene X/Y y comienza con `gz=0`. Rotar ese plano no recupera la
+  geometría original. El filtrado espectral y la mezcla tampoco la conservan.
+- `library/algebraic_surfaces/player.lua.in`, prueba de Oblivion: retorna
+  `{x*fade,y*fade,0}`. Es una salida plana y una suma de voces, no una superficie.
+- 010 sí recorre puntos XYZ sobre esfera/elipsoide antes de proyectar; sigue
+  siendo un barrido de franjas con legibilidad dependiente de ventana/persistencia.
+  Su apariencia en el host aún no está aceptada por el usuario.
+- El editor WebGL es una ruta distinta: busca raíces por cambios de signo. Puede
+  perder raíces tangentes/hojas finas. Las mallas de récords además recortan dominios
+  no compactos. No adjudicar a la síntesis un problema observado en ese editor.
+
+Corrección propuesta: probar una sola superficie, conservando coordenadas XYZ
+originales hasta la proyección; comparar con su referencia sombreada usando la
+misma cámara y dominio, sin suma de voces ni transformación espectral. Evaluar
+cobertura, uniones entre recorridos y persistencia antes de buscar un timbre musical.
+No corregirlo agregando una Z arbitraria a los bancos: eso no reconstruye F=0.
+La ruta tímbrica sigue siendo útil, pero no cuenta como representación geométrica.
+
+Pendiente: localizar con el usuario si la comparación refiere al Lua del host,
+a los videos o al editor; realizar la corrección en esa ruta y comprobarla allí.
