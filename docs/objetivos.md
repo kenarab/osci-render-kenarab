@@ -18,6 +18,12 @@ El editor matemático local usa ecuaciones y parámetros, sin OBJ como transport
 El constructor visual por factores y Shuffle basado en recetas de investigación
 quedan como proyecto pendiente; no se propone generación por lenguaje natural.
 
+En proyectos con partituras o MIDI, cada voz debe tener una identidad tímbrica
+de biblioteca asignable e intercambiable en vivo, independiente de las notas.
+Preservar tempo, expresión y notas sostenidas al cambiar; guardar asignaciones
+y escenas por proyecto. Es un requisito transversal para Bach, Piazzolla, Daft Punk
+y piezas futuras; ver [diseño](instrumentos-y-superficies.md) e INS-08…12.
+
 ## Intención artística
 
 Crear un instrumento para ver y escuchar geometría, disfrutar piezas musicales y

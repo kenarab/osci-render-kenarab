@@ -243,3 +243,14 @@ del barrido real, WAV 6 s sin normalizar. Residuo <2.7e-15 y 128/128 celdas
 angulares en un segundo a 16/44.1/48 kHz; pico <.400. Sonido y Pro pendientes.
 No se afirma que una superficie más compleja garantice timbre más agradable.
 Ver experiments/014-cuartica-tonal/README.md.
+
+## EXP-051 — Identidades tímbricas por voz, intercambiables en vivo
+
+Pedido explícito: diseño común a los proyectos con partituras/MIDI para elegir
+y cambiar fácilmente identidades por voz durante una interpretación. INS-08…12
+registran separación de pieza/biblioteca/asignación, notas sostenidas, escenas,
+precarga, niveles y controles. Diseño documentado; implementación general pendiente.
+Aceptación: reutilizar identidades en Bach y Oblivion, cambiarlas sin reiniciar
+notas/tempo/otras voces, sin notas colgadas, con escenas recuperables y prueba Pro.
+El selector de cuatro bancos/tres grupos de 011 es antecedente, no cumplimiento
+general ni mapeo de controlador comprobado.

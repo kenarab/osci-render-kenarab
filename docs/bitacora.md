@@ -516,3 +516,14 @@
   un segundo, pico <.400, energía XYZ, pausa, controles y reinicio.
 - CUA-04: se mantiene escucha pendiente; no se afirma ausencia de aliasing ni
   mejora artística. No se modificó la sesión ni se reprodujo audio.
+
+## 2026-10-07 — Identidades tímbricas en vivo (EXP-051)
+
+- Se incorpora como requisito transversal explícito para piezas MIDI/partitura.
+- INS-08…12: voz estable, identidad versionada independiente, asignación de sesión,
+  escenas y control común. Cambios sostenidos conservan estado musical; motores
+  distintos no presuponen compatibilidad de fase. Preparación fuera del audio.
+- Se distingue el selector existente de Oblivion de un ruteo genérico aún pendiente.
+  Se propone migrar primero una voz/dos identidades y después reutilizar en Bach.
+- Cambio documental: revisadas coherencia y referencias; no se modificó audio,
+  Lua ni sesión de Pro. Sin pruebas de ejecución por no cambiar comportamiento.

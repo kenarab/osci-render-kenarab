@@ -40,3 +40,33 @@ Recortar únicamente silencio inicial dejando 250 ms antes de la primera nota;
 preservar duraciones y alturas y registrar offset/duración reales. El asignable
 con todos los instrumentos conserva sus 40 s. No atribuir al recorte una solución
 a fallos de dispositivo. Las verificaciones usan la duración declarada.
+
+## Contrato transversal de interpretación en vivo — EXP-051
+
+Pedido explícito: identidades tímbricas por voz fácilmente intercambiables en
+todos los proyectos basados en partituras o MIDI, incluso durante una actuación.
+Diseño en docs/instrumentos-y-superficies.md; implementación general pendiente.
+
+- INS-08: separar eventos, voz estable, identidad de biblioteca y asignación de
+  sesión. Reutilizar una identidad en distintas piezas y cambiarla sin editar notas
+  ni el preset global; agrupación de pistas explícita, sin límite fijo de tres voces.
+- INS-09: sustituir timbre en nota sostenida sin reiniciar transporte, altura,
+  pedal ni otras voces; transición acotada y sin reataque forzado. Si el motor cambia,
+  transferir estado musical, no asumir compatibilidad de fase. Comprobar note-off
+  durante el fundido y cambios rápidos; no dejar notas colgadas.
+- INS-10: identidad versionada con parámetros, articulación y nivel calibrado;
+  admitir superficies XYZ, bancos derivados y otros motores. Declarar qué salida
+  conserva geometría; audio mezclado/fundido no certifica una superficie F=0.
+- INS-11: paletas precargadas y escenas de asignaciones recuperables sin cargar
+  geometría en el hilo de audio. Error o recurso ausente mantiene el timbre válido.
+  Acotar instancias/colas y mostrar estado real, sin confirmar éxito anticipado.
+- INS-12: interfaz y entradas de control comparten el modelo de asignación;
+  nombrar voz e identidad, permitir cambiar una voz o escena completa. Verificar
+  MIDI CC/OSC en host antes de declararlos disponibles.
+
+Aceptación pendiente: misma secuencia en Bach y Oblivion con dos asignaciones
+intercambiables; eventos/tempo intactos; cambios sostenidos y rápidos sin notas
+colgadas; recuperación de escena/versiones; error de carga conservador; cotas de
+nivel y coste medidas. Ausencia perceptual de clics y facilidad de uso requieren
+escucha y prueba en Pro/controlador. El prototipo 011 sólo cubre una parte de INS-09
+entre bancos del mismo motor, con tres grupos fijos.
