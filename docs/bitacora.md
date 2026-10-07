@@ -505,3 +505,14 @@
   asignable .301, solo .237, salto de vuelta <1.6e-6. Geometría de solos, Bach
   incluido, residuo <2.7e-15. Escucha y diagnóstico definitivo de host pendientes.
 - No se tocó configuración de Pro ni dispositivos ni se reprodujo audio.
+
+## 2026-10-07 — Cuártica tonal independiente (EXP-050)
+
+- CUA-01/02: se separa portadora longitudinal de cobertura latitudinal: 110/7 Hz
+  en lugar de 576/24 Hz del ejercicio 012. Giro pausado no detiene audio.
+- Plantilla reutilizable, dos Lua, WAV 6 s y comparación de caras/XYZ/XY sin OBJ.
+  Imagen revisada visualmente; es render offline, no captura ni aceptación Pro.
+- CUA-03: tres tasas aprobadas, residuo <2.7e-15, 128/128 celdas angulares en
+  un segundo, pico <.400, energía XYZ, pausa, controles y reinicio.
+- CUA-04: se mantiene escucha pendiente; no se afirma ausencia de aliasing ni
+  mejora artística. No se modificó la sesión ni se reprodujo audio.

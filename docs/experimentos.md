@@ -233,3 +233,13 @@ del fallo en host. INS-06/07: solo recortado con entrada a 250 ms, variantes loo
 y de una pasada, cambio de modo reinicia. Dos vueltas a 16/44.1/48 kHz aprobadas;
 solo conserva F=0. Pro registrado a 16 kHz: riesgo de aliasing del banco.
 No se alteró la sesión ni se reprodujo audio durante el curso. Host/escucha pendientes.
+
+## EXP-050 — Cuártica con portadora y cobertura separadas
+
+Pedido: continuar superficies algebraicas. Propuesta del agente: ensayo sin
+partitura con portadora 110 Hz, cobertura 7 Hz y giro independiente; A–D en Lua.
+CUA-01…04: XYZ sobre F=0, biblioteca separada, referencia con caras y captura
+del barrido real, WAV 6 s sin normalizar. Residuo <2.7e-15 y 128/128 celdas
+angulares en un segundo a 16/44.1/48 kHz; pico <.400. Sonido y Pro pendientes.
+No se afirma que una superficie más compleja garantice timbre más agradable.
+Ver experiments/014-cuartica-tonal/README.md.

@@ -64,3 +64,5 @@ Plan de tareas / evidencia / dudas pendientes
   descargados y prototipo de vocales sintéticas; transcripción y escucha pendientes.
 - [015 — Groove y niveles](015-groove-disco/spec.md): ensayo disco original,
   preferencias actualizadas y propuesta de dinámica; escucha/ruteo pendientes.
+- [016 — Cuártica tonal](016-cuartica-tonal/spec.md): XYZ con portadora, cobertura
+  y giro separados; pruebas offline aprobadas, escucha y host pendientes.
