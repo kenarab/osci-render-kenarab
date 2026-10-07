@@ -43,8 +43,10 @@ asociados a una ficha también representan formatos relacionados, no tres arregl
 La duración se calcula hasta el último note-off, no necesariamente hasta el fin del
 archivo; puede diferir de lo anunciado por un reproductor.
 
-No se obtuvo un archivo musical de **Solitude/Soledad** en este lote. Sigue pendiente
-identificar la obra exacta y obtener una fuente válida. Su ficha se conserva.
+No se obtuvo un archivo musical de **Solitude/Soledad** en este lote. El usuario
+confirmó el 2026-10-07 que busca **Suite Lumière** (años 70). La identificación está
+resuelta; falta una descarga musical válida. Los [nuevos candidatos](../referencias-piazzolla.md)
+se registran por separado y no aumentan el conteo de archivos obtenidos.
 
 ## Caso de estudio: conservar la interpretación
 

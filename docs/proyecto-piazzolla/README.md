@@ -24,8 +24,9 @@ como procedencias, no como nuevos arreglos.
 
 Primer núcleo: **Libertango, Oblivion, Violentango, Meditango y Solitude**. Ampliar
 luego al catálogo de Piazzolla, sus colaboraciones y las interpretaciones pertinentes.
-Solitude necesita desambiguación: se encontraron referencias a Suite Lumière,
-Années/Years of Solitude y usos de Soledad; no fusionarlos sólo por traducción.
+El usuario confirmó el 2026-10-07: **Soledad / Solitude de Suite Lumière**, de los
+años 70. Esa es la obra buscada. Mantener separadas la otra Soledad homónima y
+Années/Years of Solitude; no fusionarlas por traducción o parecido del título.
 
 ## Requisitos de aceptación
 

@@ -304,3 +304,13 @@
 - Reintentado curl tras rechazo accidental indicado por usuario. ScoreBase funciona;
   SheetMusicGiant devuelve HTTP 200 vacío aun con Referer. Chrome/IAB no disponibles.
   No se adjudica causa anti-bot sin evidencia ni se declara búsqueda exhaustiva.
+
+## 2026-10-07 — Soledad de Suite Lumière: identidad confirmada
+
+- El usuario precisa Soledad/Solitude de Suite Lumière (años 70), no la otra obra
+  homónima. Se actualizan referencias, traspaso, manifiesto de fuentes y semilla.
+- Búsqueda dirigida encuentra candidato de partitura completa identificado como
+  Suite Lumiere, ficha de Melos y arreglo en MuseScore. El enlace de PDFCoffee
+  y el recurso de su visor devolvieron HTML: no se cuentan como PDF descargado.
+- Estado: identificación resuelta, archivo musical pendiente; siguen 19 originales
+  válidos. Validación de JSON y diff; no hubo cambios de código ni nuevas pruebas de audio.

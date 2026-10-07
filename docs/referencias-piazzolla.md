@@ -10,7 +10,7 @@ con cinco arreglos implementados o con una escucha analítica ya realizada.
 | Oblivion | Edición de Hal Leonard para solista y cuerdas | Elegir interpretación y estudiar fraseo, respiración y acompañamiento |
 | Violentango | Catálogo A. Pagani; discografía Sony/Carosello | Comparar contraste, densidad y acentos con Libertango |
 | Meditango | Catálogo A. Pagani; discografía Sony/Carosello | Identificar desarrollo temporal y cambios de textura |
-| Solitude | A. Pagani identifica Solitude de la Suite Lumière | Confirmar que es esta obra y no Années de solitude; luego elegir versión |
+| Solitude | A. Pagani identifica Solitude de la Suite Lumière | Confirmado por el usuario el 2026-10-07: Soledad/Solitude de Suite Lumière; buscar arreglos de esa obra |
 
 ## Fuentes
 
@@ -122,3 +122,22 @@ Ya hay [19 archivos válidos y catálogo navegable](proyecto-piazzolla/semilla.m
 con variantes de Oblivion/Libertango, Violentango en PDF y una muestra de Meditango.
 Soledad sigue sin archivo válido. Las afirmaciones anteriores de «ningún MIDI»
 describen el estado previo; la semilla documenta el resultado actual y sus límites.
+
+## Identificación confirmada de Soledad / Solitude (2026-10-07)
+
+El usuario confirma que busca la obra de los años 70 perteneciente a **Suite Lumière**.
+La otra Soledad homónima no es el objetivo de esta búsqueda; no se atribuye una
+fecha a esa otra obra basándose sólo en su recuerdo. Tampoco fusionar Años de soledad.
+
+- [Melos, Suite Lumiere](https://melos.com.ar/producto/suite-lumiere/): la ficha
+  indexada enumera Soledad (Solitude), Muerte, El amor y La evasión. La apertura
+  directa por la herramienta web agotó el tiempo; no se descargó una edición.
+- [Soledad — Partitura completa](https://pdfcoffee.com/soledad-partitura-completa-2-pdf-free.html):
+  el texto público identifica Suite Lumiere y partes de piano eléctrico, bandoneón,
+  guitarra, violín, violonchelo y contrabajo. Es un candidato concreto, no un PDF
+  validado: tanto el enlace de descarga como el recurso del visor devolvieron HTML.
+- [Soledad (from Lumière), MuseScore](https://ja.musescore.com/user/82703944/scores/27846628):
+  candidato localizado por búsqueda, con título explícito; descarga no probada.
+
+Resultado: identidad resuelta y candidatos precisos registrados; todavía no hay
+archivo musical descargado de esta obra. La semilla conserva 19 archivos válidos.

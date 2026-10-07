@@ -126,6 +126,39 @@
       "observation": "Referencia previa de solista y cuerdas; no comprada.",
       "license_status": "no verificada",
       "next_action": "verificar acceso, evidencia y formatos en el nuevo repositorio"
+    },
+    {
+      "id": "melos-lumiere",
+      "kind": "candidato identificado por suite",
+      "url": "https://melos.com.ar/producto/suite-lumiere/",
+      "works": [
+        "Soledad / Solitude — Suite Lumière"
+      ],
+      "observation": "Ficha indexada confirma Soledad (Solitude) dentro de Suite Lumière; apertura directa agotó tiempo.",
+      "license_status": "no verificada",
+      "next_action": "obtener archivo válido y revisar atribución/arreglo"
+    },
+    {
+      "id": "pdfcoffee-soledad-lumiere",
+      "kind": "candidato identificado por suite",
+      "url": "https://pdfcoffee.com/soledad-partitura-completa-2-pdf-free.html",
+      "works": [
+        "Soledad / Solitude — Suite Lumière"
+      ],
+      "observation": "HTML obtenido; texto identifica Suite Lumiere. Descarga y recurso público del visor devolvieron HTML, no PDF.",
+      "license_status": "no verificada",
+      "next_action": "obtener archivo válido y revisar atribución/arreglo"
+    },
+    {
+      "id": "musescore-soledad-lumiere",
+      "kind": "candidato identificado por suite",
+      "url": "https://ja.musescore.com/user/82703944/scores/27846628",
+      "works": [
+        "Soledad / Solitude — Suite Lumière"
+      ],
+      "observation": "Resultado de búsqueda con título Soledad (from Lumière); archivo no obtenido.",
+      "license_status": "no verificada",
+      "next_action": "obtener archivo válido y revisar atribución/arreglo"
     }
   ],
   "local_snapshot": {
@@ -134,5 +167,22 @@
     "sha256": "78fd78126956a6d56f86bda047a5dea3b1b6668577fb539938726a6e9db39fb1",
     "format": "HTML",
     "source_url": "https://songparts.com/songs/astor-piazzolla/oblivion"
-  }
+  },
+  "work_identifications": [
+    {
+      "id": "piazzolla-soledad-suite-lumiere",
+      "preferred_title": "Soledad",
+      "aliases": [
+        "Solitude"
+      ],
+      "parent_work": "Suite Lumière",
+      "period": "años 70; precisión aportada por el usuario",
+      "confirmed_by": "usuario",
+      "confirmed_on": "2026-10-07",
+      "exclude_automatic_merge": [
+        "otra obra homónima Soledad",
+        "Años de soledad / Years of Solitude"
+      ]
+    }
+  ]
 }
