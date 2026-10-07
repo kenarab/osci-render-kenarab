@@ -492,3 +492,16 @@
 - Interfaz inaccesible por fallo de arranque de herramienta; no se cambió nada
   en la sesión. Rango, valor actual, disponibilidad instalada y separación efectiva
   del audio pendientes de comprobación. Se documentó la prueba manual.
+
+## 2026-10-07 — Oblivion: silencio inicial y repetición (EXP-049)
+
+- Usuario informa Pro compilado y funcional, pero Oblivion no funciona. Registro
+  más reciente: Premium 2.9.9.10, audio 16 kHz; no identifica un error Lua concreto.
+- Se comprobó que el solo no tenía notas hasta 11.7392 s. Se dejan 250 ms de
+  entrada y se registra recorte efectivo 41.4892–70 s; 25 notas intactas.
+- INS-06/07: se agregan variantes loop con fundidos a ambos reproductores. Estado
+  distingue preset/control y loop/una pasada. Original asignable mantiene 40 s.
+- Pruebas: dos vueltas completas, fin, reinicio y modos a 16/44.1/48 kHz; pico
+  asignable .301, solo .237, salto de vuelta <1.6e-6. Geometría de solos, Bach
+  incluido, residuo <2.7e-15. Escucha y diagnóstico definitivo de host pendientes.
+- No se tocó configuración de Pro ni dispositivos ni se reprodujo audio.

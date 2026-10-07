@@ -28,10 +28,16 @@ Resultados locales, fuera de Git:
 - Cada uno tiene una variante `-control.lua`: A tempo 0.5–1.5× (centro = original),
   B giro 0–0.2 rad/s (0 pausa), C coeficiente k de 0.1 a 0.9 (centro = 0.5).
 
-Ambos duran 40 segundos al tempo original, correspondientes al fragmento 30–70 s.
+Bach dura 40 segundos (fragmento 30–70 s). Oblivion dura 28.5108 s: se recorta
+el silencio inicial para que la flauta entre a los 250 ms, conservando las 25 notas
+y su tempo; el fragmento efectivo es 41.4892–70 s de la fuente.
 Bach usa la partitura local de 005 y el Adagio a 26 BPM con rubato/cadencias;
 Oblivion usa los eventos locales ScoreBase de la semilla, con su procedencia
 registrada en `docs/proyecto-piazzolla`. Las notas derivadas no se versionan aquí.
+
+Las variantes `-loop.lua` y `-loop-control.lua` repiten con fundidos. Las de una
+pasada terminan en silencio. El solo anterior de Oblivion tenía 11.7392 s de
+silencio inicial: se corrigió esa espera, sin afirmar reparación del host Pro.
 
 La superficie es `X^4 + 3Y^4 + 6Z^4 + k*(X²+Y²+Z²) = 1`.
 Cada nota barre la superficie con 12 vueltas longitudinales por período.

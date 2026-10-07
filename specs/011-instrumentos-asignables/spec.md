@@ -23,3 +23,20 @@ Aceptación musical/visibilidad dentro de osci-render y mapeo físico requieren 
 Configuración en vivo: bancos precalculados y mezcla disponibles en este incremento.
 Editar una ecuación arbitraria y regenerar banco de forma asíncrona/versionada queda
 pendiente; tampoco se implementa aquí el puente TCP GPLA. No depende de activar Pro.
+
+## INS-06 — Repetición explícita para diagnóstico de silencio
+
+Pedido: Oblivion no funciona en Pro (2026-10-07). La causa en host no está
+confirmada. Los reproductores locales terminan en silencio tras 40 s.
+Agregar variantes `-loop` y `-loop-control`, conservando las de una pasada.
+Repetir sin reconstruir bancos, con fundidos en los extremos; cambiar de variante
+reinicia el estado aunque step siga aumentando. Aplicar al reproductor asignable
+y al solo XYZ. Verificar actividad antes/después de dos vueltas, fin de la variante
+original, reinicio, cambios de modo y salida finita a 16/44.1/48 kHz.
+No declarar reparación del host por pasar esta prueba offline.
+
+INS-07: en el solo de Oblivion se comprobó entrada de flauta a 11.7392 s.
+Recortar únicamente silencio inicial dejando 250 ms antes de la primera nota;
+preservar duraciones y alturas y registrar offset/duración reales. El asignable
+con todos los instrumentos conserva sus 40 s. No atribuir al recorte una solución
+a fallos de dispositivo. Las verificaciones usan la duración declarada.

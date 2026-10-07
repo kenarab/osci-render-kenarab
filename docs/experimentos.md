@@ -224,3 +224,12 @@ Premium; distinto del efecto general Scale. Criterio: ampliar ambos ejes igual,
 sin recorte ni aumento audible, conservando Bach como referencia. Prueba en host
 pendiente: la herramienta UI falló al iniciar. No se modificó la sesión.
 Detalles y procedimiento en docs/niveles-y-dinamica.md.
+
+## EXP-049 — Oblivion en Pro: entrada y transporte
+
+Pedido: revisar Oblivion que no funciona. Comprobado: el solo tenía 11.7392 s
+sin notas y ambas variantes finalizaban en silencio; no se confirmó la causa
+del fallo en host. INS-06/07: solo recortado con entrada a 250 ms, variantes loop
+y de una pasada, cambio de modo reinicia. Dos vueltas a 16/44.1/48 kHz aprobadas;
+solo conserva F=0. Pro registrado a 16 kHz: riesgo de aliasing del banco.
+No se alteró la sesión ni se reprodujo audio durante el curso. Host/escucha pendientes.

@@ -24,7 +24,7 @@ permite cambiar **independientemente** la superficie que provee timbre a cada in
 Selección A/B/C: [0,0.25) Barth; [0.25,0.5) Togliatti; [0.5,0.75) Endrass;
 [0.75,1] Kummer. Al cruzar un umbral se mezclan bancos durante una transición
 exponencial de 80 ms, sin reiniciar fase ni notas. Son bancos precalculados:
-no se modifica aún la ecuación durante el audio. TAKE=501 y reinicio de step reinician.
+no se modifica aún la ecuación durante el audio. TAKE=502 y reinicio de step reinician.
 
 `config.json` identifica instrumentos, pistas de origen, asignación inicial,
 procedencia y recorte. Las dos pistas de piano comparten selector pero conservan
@@ -54,3 +54,19 @@ reemplaza sus salidas. No se inicia audio en el host automáticamente.
 Pruebas: polifonía (hasta siete notas activas), señal acotada, fin silencioso,
 reinicio y selección de bancos a 44.1/48 kHz. Prueba auditiva, mapeo externo y
 rendimiento en la versión Pro quedan pendientes con el usuario.
+
+## Diagnóstico de Pro y repetición (INS-06/07)
+
+Los originales paran a los 40 s y quedan en silencio. Para explorar sin que
+termine el fragmento, abrir [011-oblivion-loop.lua](../../recordings/011-oblivion-loop.lua)
+o [011-oblivion-loop-control.lua](../../recordings/011-oblivion-loop-control.lua).
+Se conservan las variantes de una pasada. Cambiar entre modos reinicia la pieza;
+la vuelta usa fundidos, no vuelve a construir los bancos.
+
+`luajit scripts/check_oblivion_transport.lua` comprueba dos vueltas a
+16/44.1/48 kHz, actividad, cambio de modo, fin y reinicio. Pico asignable <=.301;
+salto en el límite <1.2e-6. No es una comprobación de rendimiento del host.
+El registro de Pro muestra 16 kHz: los parciales hasta 12.56 kHz de este banco
+pueden plegarse a esa tasa. No se eliminaron esos parciales ni se cambió el audio
+del sistema mientras el usuario está en un curso. Preferir 44.1/48 kHz al probar.
+La causa del fallo reportado en Pro y la escucha siguen pendientes.

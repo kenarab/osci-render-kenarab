@@ -18,9 +18,9 @@ def main():
         instruments=[dict(id='flute',source_tracks=[0],surface='barthsextic'),dict(id='bassoon',source_tracks=[1],surface='togliatti'),dict(id='piano',source_tracks=[2,3],surface='kummerquartic')],max_partial_hz=highest)
     out=ROOT/'experiments/011-oblivion-asignable';(out/'config.json').write_text(json.dumps(config,indent=2)+'\n')
     template=(ROOT/'library/algebraic_surfaces/player.lua.in').read_text()
-    for live in [False,True]:
-        code=template.replace('@BANKS@',lua(tables)).replace('@NOTES@',lua(notes)).replace('@LIVE@',str(live).lower()).replace('@DURATION@',str(duration))
-        (ROOT/'recordings'/('011-oblivion'+('-control' if live else '')+'.lua')).write_text(code)
+    for live,loop in [(False,False),(True,False),(False,True),(True,True)]:
+        code=template.replace('@BANKS@',lua(tables)).replace('@NOTES@',lua(notes)).replace('@LIVE@',str(live).lower()).replace('@LOOP@',str(loop).lower()).replace('@DURATION@',str(duration))
+        (ROOT/'recordings'/('011-oblivion'+('-loop' if loop else '')+('-control' if live else '')+'.lua')).write_text(code)
     print(len(notes),'eventos; parciales hasta',highest,'Hz; notas originales/derivadas fuera de Git')
 
 if __name__=='__main__':main()

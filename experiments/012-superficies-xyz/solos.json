@@ -2,6 +2,7 @@
   "bach": {
     "notes": 34,
     "seconds": 40,
+    "leading_silence_trimmed": 0,
     "voice": "Violino I",
     "source_excerpt": [
       30,
@@ -13,10 +14,11 @@
   },
   "oblivion": {
     "notes": 25,
-    "seconds": 40,
+    "seconds": 28.510800000000003,
+    "leading_silence_trimmed": 11.489199999999997,
     "voice": "Flauta",
     "source_excerpt": [
-      30,
+      41.4892,
       70
     ],
     "geometry": "X^4+3Y^4+6Z^4+k*(X^2+Y^2+Z^2)=1",
