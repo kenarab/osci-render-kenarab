@@ -32,7 +32,7 @@ def main():
     cmd=['ffmpeg','-hide_banner','-loglevel','error','-n','-f','rawvideo','-pix_fmt','rgb24','-s','1440x900','-r','25','-i','-',
          '-i',str(OUT.with_suffix('.wav')),'-c:v','libx264','-preset','fast','-crf','22','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-shortest',str(OUT.with_suffix('.mp4'))]
     proc=subprocess.Popen(cmd,stdin=subprocess.PIPE)
-    sheet=Image.open(ROOT/'experiments/009-bach-surfer-records/superficies.png')
+    sheet=Image.open(ROOT/'library/algebraic_surfaces/assets/superficies.png')
     grid=Image.new('RGB',(760,760),(10,17,27));gd=ImageDraw.Draw(grid)
     font_path='/System/Library/Fonts/Supplemental/Arial.ttf'
     if Path(font_path).exists():

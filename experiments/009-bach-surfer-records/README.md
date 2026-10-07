@@ -37,7 +37,7 @@ TAKE (401). El reinicio de step también reinicia la pieza.
 ## Material geométrico
 
 Las fórmulas se extrajeron de la galería `record_*.jsurf` de
-`/Applications/SURFER.app/Contents/Java/JFXSurfer.jar`. `sources.json` conserva las
+`/Applications/SURFER.app/Contents/Java/JFXSurfer.jar`. [`catalog.json`](../../library/algebraic_surfaces/catalog.json) conserva las
 expresiones, parámetros y hashes del recurso y del JAR. No se modifica la aplicación.
 
 | Voz musical | Superficie | Grado | Récord bibliográfico de nodos |
@@ -52,9 +52,9 @@ Son cifras de la construcción algebraica de referencia, no nodos contados por
 nuestro programa. En particular, no esperar ver los 65 nodos de Barth en este
 recorte afín. No se afirma que todos los récords de la bibliografía sigan vigentes.
 
-Los cuatro OBJ contienen **caras de superficies**, no curvas aisladas. Se pueden
+Los cuatro OBJ de [`library/algebraic_surfaces/assets`](../../library/algebraic_surfaces/assets) contienen **caras de superficies**, no curvas aisladas. Se pueden
 abrir por separado en osci-render; su reproducción directa no es el timbre del Lua.
-`superficies.png` muestra una vista sombreada de referencia. Tanto el PNG como el
+[`superficies.png`](../../library/algebraic_surfaces/assets/superficies.png) muestra una vista sombreada de referencia. Tanto el PNG como el
 video son visualizaciones propias de la malla, no capturas de SURFER/osci-render.
 
 Se extrae F=0 con tetraedros sobre una grilla 32³ y bisección de aristas. Las cajas,

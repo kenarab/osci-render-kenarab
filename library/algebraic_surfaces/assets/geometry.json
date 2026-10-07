@@ -1,0 +1,62 @@
+[
+  {
+    "name": "barthsextic",
+    "vertices": 9230,
+    "faces": 17856,
+    "grid": 32,
+    "domain": [
+      -1.7847183491355272,
+      1.7847183491355272
+    ],
+    "residual": 2.0150736190771568e-08,
+    "area": 26.85528672815184,
+    "boundary_edges": 468,
+    "nonmanifold_edges": 0,
+    "caveat": "Recorte espacial; la malla no certifica topologia ni cuenta singularidades"
+  },
+  {
+    "name": "togliatti",
+    "vertices": 13219,
+    "faces": 25856,
+    "grid": 32,
+    "domain": [
+      -1.7847183491355272,
+      1.7847183491355272
+    ],
+    "residual": 3.7102161343227635e-09,
+    "area": 36.73998722627089,
+    "boundary_edges": 562,
+    "nonmanifold_edges": 0,
+    "caveat": "Recorte espacial; la malla no certifica topologia ni cuenta singularidades"
+  },
+  {
+    "name": "endrass",
+    "vertices": 24618,
+    "faces": 47728,
+    "grid": 32,
+    "domain": [
+      -1.6359918200408996,
+      1.6359918200408998
+    ],
+    "residual": 4.967299904734546e-10,
+    "area": 58.780056197460915,
+    "boundary_edges": 1472,
+    "nonmanifold_edges": 0,
+    "caveat": "Recorte espacial; la malla no certifica topologia ni cuenta singularidades"
+  },
+  {
+    "name": "kummerquartic",
+    "vertices": 15914,
+    "faces": 30816,
+    "grid": 32,
+    "domain": [
+      -2.0821714073247817,
+      2.0821714073247812
+    ],
+    "residual": 2.246575547815155e-08,
+    "area": 58.976157989206,
+    "boundary_edges": 988,
+    "nonmanifold_edges": 0,
+    "caveat": "Recorte espacial; la malla no certifica topologia ni cuenta singularidades"
+  }
+]

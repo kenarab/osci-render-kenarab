@@ -346,3 +346,13 @@
   residuo <2.3e-8 en vértices; 32³ es una aproximación, no recuento de nodos.
 - Escucha artística, MIDI/OSC, rendimiento/visibilidad de OBJ dentro del host y
   modificación conjunta de ecuación/timbre siguen pendientes. No se instaló nada.
+
+## 2026-10-07 — Biblioteca geométrica independiente de Bach
+
+- Corrección explícita del usuario: superficies reutilizables para distintos
+  proyectos. Catálogo, mallas opcionales, render y momentos pasan a
+  `library/algebraic_surfaces`; Bach importa la biblioteca.
+- Generador independiente probado sin partitura. Ecuaciones y OBJ conservados;
+  imagen de biblioteca ya no etiqueta las superficies como voces musicales.
+- Regeneración tras extracción conservó los cuatro Lua de Bach byte por byte.
+  No se repitieron renders de audio porque los bancos/engine no cambiaron.
