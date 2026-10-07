@@ -417,3 +417,21 @@
   muestra referencia/actividad; elegir malla allí no reasigna el timbre del host.
 - XYZ-01…05: evidencia y reproducción en experiments/012-superficies-xyz/README.md.
   Sonido todavía no aceptado; host, timbres récord y puente de asignación pendientes.
+
+## 2026-10-07 — Diagnóstico de silencio común en el host (EXP-042)
+
+- Usuario informa que ni XYZ ni los Bach anteriores producen imagen/sonido.
+- En osci-render abierto (registro: 2.9.9.10 Free, standalone) se cargó
+  `012-superficies-xyz/esfera.lua`: se observa punto fijo, sin error Lua visible.
+- El efecto global contiene `return { x, y, z }`. Desactivarlo no recuperó la
+  imagen; se restauró su estado activo y el editor del archivo. No se tocaron Lua.
+- El registro del host contiene repetidos `prepareToPlay: sampleRate=16000
+  samplesPerBlock=512`. Es una pista de dispositivo/reinicialización, no prueba
+  suficiente de causa. No se pudo leer el menú Audio mediante automatización.
+- Esfera y aire-seda producen salida finita y no nula en LuaJIT a 16 kHz durante
+  un segundo. Eso descarta silencio intrínseco en ese ensayo, no valida el host.
+- Pendiente: identificar dispositivo de salida/entrada y frecuencia en Audio,
+  comprobar recuperación visual y escucha con el usuario. Se dejó esfera cargada.
+- Usuario confirma conexión y desconexión de auriculares antes del fallo.
+  Próxima prueba: Audio > Settings, reseleccionar salida disponible, comprobar
+  canales y frecuencia; reiniciar aplicación si no recupera el procesamiento.

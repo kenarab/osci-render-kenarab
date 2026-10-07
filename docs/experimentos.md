@@ -162,3 +162,13 @@ separados de tempo/barrido/giro; comprobar forma y sonido dentro del host.
 Evidencia: `experiments/012-superficies-xyz/README.md`, especificación XYZ-01…05 y
 pruebas Lua a 44.1/48 kHz. Pendiente: escucha, host, timbres de superficies récord
 y asignación dinámica. El sonido anterior y el nuevo no tienen aceptación artística.
+
+## EXP-042 — Recuperar salida del host para XYZ y Bach
+
+**Incidencia reportada por el usuario; diagnóstico abierto.** Ambos dejan de
+producir salida percibida. Criterio: recuperar dibujo y audio de esfera y de un
+Bach previamente funcional, identificando el ajuste o fallo responsable.
+Evidencia inicial: punto fijo en esfera, sin error Lua visible; efecto identidad
+no explica el fallo al probar bypass; registro con reinicios a 16 kHz. Dispositivo
+real y causa sin confirmar. LuaJIT produce señal a esa frecuencia; no equivale a
+prueba en host. No modificar geometría para corregir una causa aún desconocida.
