@@ -18,6 +18,7 @@ velocidades lentas. No implica instalar un framework ni una herramienta externa.
 | [008 — Atlas semilla](008-atlas-semilla/spec.md) | Lote obtenido y normalización parcial; OMR/escucha pendientes | Variantes musicales, originales multiformato, procedencia y catálogo |
 | [009 — Bach SURFER récords](009-bach-surfer-records/spec.md) | Implementado; escucha y host pendientes | Mallas de cuatro superficies récord, momentos de área y dos tratamientos del Adagio |
 | [010 — Constructor algebraico](010-constructor-algebraico/spec.md) | Proyecto pendiente | Factores visuales, recetas matemáticas y Shuffle estructurado |
+| [011 — Instrumentos asignables](011-instrumentos-asignables/spec.md) | Prototipo implementado; pruebas humanas pendientes | Ejercicios XY de superficies y Oblivion con timbres por instrumento |
 
 Los estudios anteriores son antecedentes, no implementaciones conformes a estas
 especificaciones. Las mallas de EXP-019 son una base geométrica ya verificada.

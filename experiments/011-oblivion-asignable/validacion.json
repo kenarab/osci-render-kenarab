@@ -1,0 +1,21 @@
+{
+  "seconds": 41,
+  "rate": 48000,
+  "peak": 0.300208513,
+  "rms": 0.064159547,
+  "max_delta": 0.032732787,
+  "max_active": 7,
+  "live_controls": {
+    "rates": [
+      44100,
+      48000
+    ],
+    "max_deltas": [
+      0.028337377175243,
+      0.026034789020447
+    ],
+    "status": "passed",
+    "host": "pending",
+    "listening": "pending"
+  }
+}

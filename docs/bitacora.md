@@ -374,3 +374,21 @@
   no confundir AST del parser con interfaz visual o recetas ya implementadas.
 - Se preserva sonificación por momentos de área para otros proyectos. Usuario
   quiere compartirla con Surfer Invaders cuando esté lista; no se envió nada.
+
+## 2026-10-07 — Superficies legibles y Oblivion asignable (EXP-038/039)
+
+- Pedido: ejercicios XY pequeños y Piazzolla con elección de timbre por instrumento.
+  Usuario hará pruebas humanas con Pro. No se cuenta como host/MIDI ya verificado.
+- Dos Lua preset + controlables: esfera/elipsoide, barrido 24 Hz y escena lenta.
+  Videos 10 s dibujan XY real con ventana 50 ms; captura inspeccionada. Son franjas
+  sobre F=0, no relleno continuo. A pausa escena sin parar barrido; B barrido; C ancho.
+- Oblivion: 30–70 s del arreglo ScoreBase ya obtenido, 312 eventos; flauta/fagot/piano,
+  dos pistas de piano agrupadas para timbre pero notas simultáneas preservadas.
+  Notas y Lua musical permanecen fuera de Git; configuración/procedencia versionadas.
+- Biblioteca de cuatro bancos sin partitura, generador independiente y reproductor
+  con selección por instrumento: A/B/C. Transición 80 ms, tempo D, brillo E.
+- Render Oblivion: pico 0.30021, RMS 0.06416, salto máximo 0.03273, hasta siete
+  notas simultáneas, fin/reinicio aprobados. Cambios de bancos a 44.1/48 kHz aprobados.
+  Esfera/elipsoide: F=0 antes de proyección, continuidad y límites aprobados.
+- Separación vigente: geometría editable, receta de sonificación, bancos versionados,
+  asignación por instrumento y pieza. Coeficientes→audio en vivo y puente host pendientes.

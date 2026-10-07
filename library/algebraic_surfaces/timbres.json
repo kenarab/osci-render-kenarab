@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "harmonics": 12,
+  "size": 1024,
+  "banks": [
+    {
+      "id": "barthsextic",
+      "mesh_sha256": "498ead9e560448405e0b8b61bfdf36bde5f50584788d89e28f92fb78d61cd170",
+      "recipe": "area-moments-v1",
+      "depth_index": 0
+    },
+    {
+      "id": "togliatti",
+      "mesh_sha256": "c293d59d333abdb363309b06ef8830df2d615aa2da12a7821d2abef6f07e1230",
+      "recipe": "area-moments-v1",
+      "depth_index": 0
+    },
+    {
+      "id": "endrass",
+      "mesh_sha256": "44cae3b996cd44ad93f51c37e691ecc7938a78157202ab19de8f5f63f113505a",
+      "recipe": "area-moments-v1",
+      "depth_index": 0
+    },
+    {
+      "id": "kummerquartic",
+      "mesh_sha256": "6eaf1cc8d05dac62325dece3447b6266f328aa1ed1cfb866dce20c980a3c3c94",
+      "recipe": "area-moments-v1",
+      "depth_index": 0
+    }
+  ],
+  "recipe": {
+    "carrier": 0.58,
+    "geometry_gain": 1.4,
+    "rolloffs": [
+      0.4,
+      0.1
+    ],
+    "description": "momentos de todas las caras; no conserva F=0 en audio"
+  }
+}

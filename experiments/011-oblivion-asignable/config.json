@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "source": {
+    "source_url": "https://scorebase.org/scores/38762",
+    "download_url": "https://scorebase.org/scores/38762/file/mid?download=true",
+    "sha256": "13ce45d1fe970352620279e673b76f35a7ba34d79870a2514e9d161e08e1ec26",
+    "rights_status": "acceso p\u00fablico; licencia abierta no verificada",
+    "derivation": {
+      "tool": "scripts/import_repertoire_midi.py",
+      "schema_version": 1,
+      "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+      "options": {
+        "allow_zero_duration": true
+      },
+      "review": "validacion estructural; escucha pendiente"
+    }
+  },
+  "excerpt_seconds": [
+    30.0,
+    70.0
+  ],
+  "duration": 40.0,
+  "notes": 312,
+  "clipped_boundary_notes": 7,
+  "zero_duration_skipped_in_excerpt": 0,
+  "instruments": [
+    {
+      "id": "flute",
+      "source_tracks": [
+        0
+      ],
+      "surface": "barthsextic"
+    },
+    {
+      "id": "bassoon",
+      "source_tracks": [
+        1
+      ],
+      "surface": "togliatti"
+    },
+    {
+      "id": "piano",
+      "source_tracks": [
+        2,
+        3
+      ],
+      "surface": "kummerquartic"
+    }
+  ],
+  "max_partial_hz": 12558.027134428734
+}

@@ -26,3 +26,13 @@ considerar completa una superficie no compacta recortada en una caja.
 Abrir [Superficies en vivo](../../apps/surface-lab/index.html): ecuaciones, parámetro
 a y render implícito WebGL sin OBJ. `expression.js` ofrece AST, evaluación y GLSL
 sin ejecutar código del usuario. [Uso y límites](../../apps/surface-lab/README.md).
+
+## Bancos e instrumentos independientes
+
+`timbres.json` registra cuatro bancos por ID de superficie, hash de malla y receta;
+`timbres.lua` contiene sólo tablas sonoras, sin partitura. Se generan mediante
+`PYTHONPATH=library python3 -m algebraic_surfaces.timbres`, sin repertorio.
+La prueba de Oblivion consume este generador desde un script separado. El primer consumidor es `player.lua.in`: tres grupos de instrumento,
+selección independiente y transición suave entre bancos, conservando la polifonía.
+Los bancos pueden incorporarse a cualquier pieza; editar ecuaciones en vivo requiere
+un generador asíncrono y un puente aún pendientes.

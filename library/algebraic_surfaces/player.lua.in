@@ -1,0 +1,55 @@
+-- Reproductor polifonico con bancos por instrumento. Generado; ver config.json de la pieza.
+-- Selectores A/B/C: 0 Barth, .33 Togliatti, .66 Endrass, 1 Kummer.
+-- D: tempo .5–1.5 (centro=original). E: brillo. Audio no representa mallas completas.
+local LIVE = @LIVE@
+local TAKE = 501
+if not surface_player or surface_player.take~=TAKE or surface_player.rate~=sample_rate or step<surface_player.last then
+ surface_player={take=TAKE,rate=sample_rate,last=step,time=0,seconds=0,index=1,active={},done=false,speed=1,bright=.4,
+ banks=@BANKS@,notes=@NOTES@,mix={{1,0,0,0},{0,1,0,0},{0,0,0,1}},selection={1,2,4}}
+end
+local s=surface_player;s.last=step
+if s.done then return {0,0,0} end
+local dt=1/sample_rate;local k=1-math.exp(-dt/.08)
+local function control(v,default) if type(v)~='number' or v~=v then return default end return math.max(0,math.min(1,v)) end
+local selectors={LIVE and control(slider_a,0) or 0,LIVE and control(slider_b,.33) or .33,LIVE and control(slider_c,1) or 1}
+for ins=1,3 do
+ local chosen=math.min(4,1+math.floor(selectors[ins]*4));s.selection[ins]=chosen
+ for bank=1,4 do s.mix[ins][bank]=s.mix[ins][bank]+k*((bank==chosen and 1 or 0)-s.mix[ins][bank]) end
+end
+s.speed=s.speed+k*((LIVE and .5+control(slider_d,.5) or 1)-s.speed)
+s.bright=s.bright+k*((LIVE and control(slider_e,.4) or .4)-s.bright)
+local t=s.time;s.time=t+dt*s.speed;s.seconds=s.seconds+dt
+if t>=@DURATION@ then s.done=true;return {0,0,0} end
+while s.notes[s.index] and s.notes[s.index][1]<=t do
+ local n=s.notes[s.index];s.active[#s.active+1]={note=n,phase=0};s.index=s.index+1
+end
+local x,y=0,0
+for j=#s.active,1,-1 do
+ local voice=s.active[j];local n=voice.note
+ if t>=n[2] then table.remove(s.active,j)
+ else
+  local ins=n[5];local age=(t-n[1])/s.speed;local remaining=(n[2]-t)/s.speed
+  local function ease(v) v=math.max(0,math.min(1,v));return v*v*(3-2*v) end
+  local env=ease(age/(ins==1 and .09 or .035))*ease(remaining/.07)
+  local hz=440*2^((n[3]-69)/12);voice.phase=(voice.phase+hz*dt)%1
+  local pos=voice.phase*1024;local ix=math.floor(pos);local f=pos-ix;local a,b=ix+1,(ix+1)%1024+1
+  local bright=math.min(1,s.bright+.2*math.exp(-age/.45))
+  local vx,vy=0,0
+  for bank=1,4 do
+   local weight=s.mix[ins][bank]
+   if weight>1e-7 then
+    local tables=s.banks[bank]
+    local function read(axis)
+     local dark=tables[1][axis][a]*(1-f)+tables[1][axis][b]*f
+     local light=tables[2][axis][a]*(1-f)+tables[2][axis][b]*f
+     return dark+(light-dark)*bright
+    end
+    vx=vx+weight*read(1);vy=vy+weight*read(2)
+   end
+  end
+  local gain=({.23,.18,.09})[ins]*(n[4]/127)*env
+  x=x+gain*vx;y=y+gain*vy
+ end
+end
+local fade=math.min(1,s.seconds/.15,(@DURATION@-t)/.2);fade=math.max(0,fade)
+return {x*fade,y*fade,0}
