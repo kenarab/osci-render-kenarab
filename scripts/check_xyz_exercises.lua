@@ -1,4 +1,5 @@
--- XYZ-02/03: evalua el MISMO retorno del Lua; exporta XYZ, no WAV estereo.
+-- XYZ-02/03, NIV-02: verifica el retorno deshaciendo giro/tilt.
+-- Exporta XYZ en marco del objeto para superponer malla, sin descartar Z.
 local names={'esfera','elipsoide','cuartica'}
 local report={}
 for kind,name in ipairs(names) do
@@ -6,11 +7,15 @@ for kind,name in ipairs(names) do
  local play=setfenv(assert(loadfile('experiments/012-superficies-xyz/'..name..'.lua')),env)
  local pts={};local residual=0;local sums={0,0,0};local products={{0,0,0},{0,0,0},{0,0,0}}
  for i=0,1999 do
-  env.step=i;local p=play();local x,y,z=p[1],p[2],p[3];local f
+  env.step=i;local p=play();local angle=env.algebraic_xyz.angle
+  local cp,sp=math.cos(.45),math.sin(.45)
+  local yy,zz=cp*p[2]+sp*p[3],-sp*p[2]+cp*p[3]
+  local x,y,z=math.cos(angle)*p[1]-math.sin(angle)*zz,yy,math.sin(angle)*p[1]+math.cos(angle)*zz
+  local reference={x,y,z};local f
   if kind==1 then f=(x/.42)^2+(y/.42)^2+(z/.42)^2-1
   elseif kind==2 then f=(x/.55)^2+(y/.26)^2+(z/.38)^2-1
   else x,y,z=x/.45,y/.45,z/.45;f=x^4+3*y^4+6*z^4+.5*(x*x+y*y+z*z)-1 end
-  residual=math.max(residual,math.abs(f));pts[#pts+1]=p
+  residual=math.max(residual,math.abs(f));pts[#pts+1]=reference
   for a=1,3 do
    assert(p[a]==p[a] and math.abs(p[a])<.8)
    sums[a]=sums[a]+p[a]

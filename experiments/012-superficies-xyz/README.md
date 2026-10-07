@@ -67,3 +67,21 @@ Evidencia: `validacion.json` comprueba F=0 y covarianza de rango 3 de los ejerci
 `solos.json` registra recortes. Test musical a 44.1/48 kHz: residuo máximo
 2.45e-15 tras deshacer giro/escala, determinantes positivos >1.26e-6, fin,
 reinicio y tempo aprobados. Esto no valida percepción ni configuración del host.
+
+## Ajuste de nivel y relieve (NIV-01…03)
+
+TAKE 602 inicia yaw=.65 rad, inclinación=.45 rad y giro=.1 rad/s (A=.4).
+A=0 pausa el giro sin parar barrido. Se verificó F=0 tras invertir esas rotaciones;
+los XYZ exportados para el visor usan el marco del objeto (se deshace el giro,
+no se elimina Z). La esfera es un control simétrico: preferir elipsoide/cuártica
+para apreciar cambios de orientación.
+
+Incidencia de host resuelta visualmente: Volume=2.1787 con Threshold=.2947
+recortaba la figura dentro de un cuadrado. Ajustes actuales: Volume=.30,
+Threshold=1.00, Line Intensity=1 (antes 5), Persistence=.15 (antes .5), Glow=.10
+(antes .30). Smoothing permanece en 0. No aumentar Volume para hacer zoom:
+aumenta también el audio. Al bajar ganancia el dibujo queda más pequeño.
+El elipsoide corregido fue cargado y observado en 2.9.9.10 Free; se distinguen
+barridos sin el cuadrado. Escucha y percepción 3D satisfactoria siguen pendientes.
+Los controles A/C del host estaban modulados por LFO; usar presets sin `-control`
+para comparar, o poner controles en Static antes de una prueba manual.

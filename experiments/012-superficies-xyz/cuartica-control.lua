@@ -2,16 +2,16 @@
 -- A: velocidad de giro 3D (0 pausa), B: barrido 12–36 Hz; C: parametro geometrico.
 local LIVE=true
 local KIND=3
-local TAKE=601
+local TAKE=602
 if not algebraic_xyz or algebraic_xyz.kind~=KIND or algebraic_xyz.take~=TAKE or algebraic_xyz.rate~=sample_rate or step<algebraic_xyz.last then
- algebraic_xyz={kind=KIND,take=TAKE,rate=sample_rate,last=step,phase=0,angle=0,a=0,b=.5,c=.5}
+ algebraic_xyz={kind=KIND,take=TAKE,rate=sample_rate,last=step,phase=0,angle=.65,a=.4,b=.5,c=.5}
 end
 local s=algebraic_xyz;s.last=step;local dt=1/sample_rate
 local function control(old,value,default)
  if not LIVE or type(value)~='number' or value~=value then value=default end
  return old+(1-math.exp(-dt/.08))*(math.max(0,math.min(1,value))-old)
 end
-s.a=control(s.a,slider_a,0);s.b=control(s.b,slider_b,.5);s.c=control(s.c,slider_c,.5)
+s.a=control(s.a,slider_a,.4);s.b=control(s.b,slider_b,.5);s.c=control(s.c,slider_c,.5)
 s.angle=s.angle+dt*.25*s.a;s.phase=(s.phase+dt*(12+24*s.b))%1
 local v=2*math.pi*s.phase;local u=24*v
 local dx,dy,dz=math.cos(v)*math.cos(u),math.cos(v)*math.sin(u),math.sin(v)
@@ -27,4 +27,6 @@ end
 s.raw={x,y,z}
 -- Rotacion ortogonal en 3D, SIN eliminar la profundidad.
 local c,sn=math.cos(s.angle),math.sin(s.angle)
-return {c*x+sn*z,y,-sn*x+c*z}
+local xx,zz=c*x+sn*z,-sn*x+c*z
+local cp,sp=math.cos(.45),math.sin(.45)
+return {xx,cp*y-sp*zz,sp*y+cp*zz}

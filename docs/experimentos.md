@@ -172,3 +172,10 @@ Evidencia inicial: punto fijo en esfera, sin error Lua visible; efecto identidad
 no explica el fallo al probar bypass; registro con reinicios a 16 kHz. Dispositivo
 real y causa sin confirmar. LuaJIT produce señal a esa frecuencia; no equivale a
 prueba en host. No modificar geometría para corregir una causa aún desconocida.
+
+## EXP-043 — Recorte cuadrado, saturación y poca profundidad
+
+Pedido del usuario. Reiniciar resolvió EXP-042 según escucha del usuario. En host,
+ganancia 2.1787 y Threshold .2947; al pasar a .30 y 1 desaparece el contorno cuadrado
+observado. Escucha pendiente. Corregir orientación/giro de XYZ sin aplanar ni filtrar.
+Criterios NIV-01…03 en specs/013-nivel-relieve.

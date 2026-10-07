@@ -435,3 +435,18 @@
 - Usuario confirma conexión y desconexión de auriculares antes del fallo.
   Próxima prueba: Audio > Settings, reseleccionar salida disponible, comprobar
   canales y frecuencia; reiniciar aplicación si no recupera el procesamiento.
+
+## 2026-10-07 — Nivel, brillo y orientación (EXP-043)
+
+- Usuario confirma que reiniciar recuperó audio/imagen (EXP-042), pero señala
+  saturación, recorte cuadrado y poco relieve.
+- Lectura y prueba en host: Volume 2.1787→.30, Threshold .2947→1.00. Desaparece
+  el contorno cuadrado observado en aire-seda. Bach permanece sin cambios.
+- Line Intensity 5→1, Persistence .5→.15 y Glow .3→.1 permiten distinguir
+  barridos. Smoothing=0. Ganancia menor implica figura más pequeña, no usarla
+  como zoom. A/C aún tienen LFO: presets autónomos evitan esa interferencia.
+- NIV-02: plantilla TAKE 602, orientación oblicua, inclinación y giro lento .1 rad/s.
+  Lua de esfera/elipsoide/cuártica regenerados; F=0 <1.9e-15 y covarianza de rango 3.
+  Evidencia XYZ en marco del objeto tras invertir rotación, sin aplanar.
+- Elipsoide cargado y visible en host 2.9.9.10 Free. Mejora perceptual de profundidad
+  y ausencia de distorsión audible todavía deben confirmarse por el usuario.
