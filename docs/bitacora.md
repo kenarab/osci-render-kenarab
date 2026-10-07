@@ -483,3 +483,12 @@
 - GRV-03: limitación final de escucha y calibración por instrumento propuestas;
   no se confirmó compresor nativo ni se instaló DAW. No atribuir a compresión
   corrección de aliasing, saltos o fidelidad de superficie. Aceptación auditiva pendiente.
+
+## 2026-10-07 — Revisión del tamaño visual (EXP-048)
+
+- Se reconoce que reducir Volume dejó pendiente el tamaño del dibujo.
+- En la copia actual `../osci-render`, Visualiser Settings incluye Image Scale
+  bajo OSCI_PREMIUM. No confundir con Scale de la cadena general de efectos.
+- Interfaz inaccesible por fallo de arranque de herramienta; no se cambió nada
+  en la sesión. Rango, valor actual, disponibilidad instalada y separación efectiva
+  del audio pendientes de comprobación. Se documentó la prueba manual.

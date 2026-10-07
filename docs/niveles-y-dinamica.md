@@ -48,3 +48,21 @@ no se comprobó; no asumir que cada movimiento de slider ya está persistido.
 No editar ni borrar estos archivos mientras la aplicación está abierta. Para
 reproducibilidad conviene guardar un proyecto de escucha con nombre propio y
 anotar ganancias por instrumento; esta propuesta no crea ese proyecto todavía.
+
+## Tamaño visual: control localizado, prueba pendiente
+
+Revisión del código disponible en `../osci-render/Source/visualiser/`:
+`VisualiserSettings.h:177` define **Image Scale** con dos controles de escala
+y `VisualiserSettings.cpp:71` lo muestra bajo `OSCI_PREMIUM`. Es un control del
+visualizador distinto del efecto general Scale de `PluginProcessor.cpp:77`.
+La presencia en esta copia no verifica su disponibilidad en la versión instalada.
+
+Prueba propuesta: en Visualiser Settings, si aparece Image Scale, aumentar ambos
+ejes por el mismo factor, conservando Volume .30 y Threshold 1; empezar por
+duplicar la escala y detenerse antes de cortar el dibujo contra los bordes.
+Confirmar tamaño mayor, proporciones conservadas y audio sin cambio. No se conoce
+aún el rango ni el valor actual del control en la aplicación.
+
+La automatización de la interfaz falló al iniciar (`native pipe startup failed`).
+No se aplicó el ajuste ni se comprobó la ruta completa de render/audio. El problema
+de tamaño sigue abierto; no aumentar Volume para compensarlo sin esa separación.

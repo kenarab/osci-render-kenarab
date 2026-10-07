@@ -215,3 +215,12 @@ Propuesta: ganancia calibrada por instrumento + limitador final sólo en escucha
 referencia geométrica separada. Compresor nativo no confirmado; sin instalación.
 Criterio pendiente: controlar picos sin recorte previo ni cambios XY desiguales,
 comparar audición y geometría. Ningún procesador garantiza buen timbre de todo Lua.
+
+## EXP-048 — Recuperar tamaño visual sin subir audio
+
+Pedido explícito: revisar la configuración porque las imágenes quedaron pequeñas.
+Image Scale localizado en Visualiser Settings del código local, condicionado a
+Premium; distinto del efecto general Scale. Criterio: ampliar ambos ejes igual,
+sin recorte ni aumento audible, conservando Bach como referencia. Prueba en host
+pendiente: la herramienta UI falló al iniciar. No se modificó la sesión.
+Detalles y procedimiento en docs/niveles-y-dinamica.md.
