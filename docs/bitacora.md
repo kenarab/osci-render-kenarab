@@ -403,3 +403,17 @@
   dónde observa la diferencia antes de cambiar la ruta equivocada.
 - No se cambió sonido ni geometría; verificación pertinente: lectura de las rutas
   de generación/proyección y revisión del diff documental.
+
+## 2026-10-07 — Ejercicios XYZ y voz aislada (EXP-041)
+
+- Pedido: repetir ejercicios sin aplanar Z; usuario elige una voz aislada primero.
+- Nuevos esfera/elipsoide/cuártica retornan XYZ, rotación ortogonal y parámetros.
+  F=0 y covarianza de rango 3 comprobados sobre el retorno, no sólo el generador.
+- Bach Violino I y Oblivion flauta, recortes 30–70 s: nuevos Lua con cuártica radial,
+  sin suma de voces ni filtrado de coordenadas. Tempo, giro y coeficiente separados.
+  Prueba a 44.1/48 kHz: residuo <2.45e-15, rango 3, límites, fin/reinicio y tempo OK.
+- Biblioteca reutilizable, visor WebGL con caras y muestras XYZ de los ejercicios;
+  superficies récord disponibles como referencia 3D. En música, el visor sólo
+  muestra referencia/actividad; elegir malla allí no reasigna el timbre del host.
+- XYZ-01…05: evidencia y reproducción en experiments/012-superficies-xyz/README.md.
+  Sonido todavía no aceptado; host, timbres récord y puente de asignación pendientes.

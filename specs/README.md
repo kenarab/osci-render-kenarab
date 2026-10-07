@@ -55,3 +55,6 @@ Fuera de alcance
 Criterios de aceptación (NNN-A01... → requisito)
 Plan de tareas / evidencia / dudas pendientes
 ```
+
+- [012 — Geometría XYZ conservada](012-geometria-xyz/spec.md): ejercicios 3D,
+  cuártica musical de una voz y referencia con caras; aceptación host pendiente.

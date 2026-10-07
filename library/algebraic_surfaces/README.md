@@ -36,3 +36,10 @@ La prueba de Oblivion consume este generador desde un script separado. El primer
 selección independiente y transición suave entre bancos, conservando la polifonía.
 Los bancos pueden incorporarse a cualquier pieza; editar ecuaciones en vivo requiere
 un generador asíncrono y un puente aún pendientes.
+
+## Ruta XYZ (012)
+
+`xyz.lua.in` y `solo_xyz.lua.in` conservan coordenadas de una superficie verdadera.
+`geometry3d.js` contiene mallas reutilizables y recorridos de diagnóstico, sin notas.
+Los bancos espectrales anteriores no equivalen a esta geometría. Ver
+[ejercicios y límites](../../experiments/012-superficies-xyz/README.md).

@@ -151,3 +151,14 @@ prueba matemática aprobada con una composición musical lograda.
 ID, archivos/commit, ecuación y dominio, parámetros/semilla, versión de osci-render,
 salida y frecuencia de muestreo, procedimiento, resultado observado, apreciación
 musical del usuario y próximo cambio. Marcar explícitamente los datos desconocidos.
+
+## EXP-041 — Repetir ejercicios con XYZ conservado
+
+**Pedido del usuario; prototipo verificado, aceptación humana pendiente.**
+Una voz aislada primero: violín de Bach y flauta de Oblivion en pruebas separadas.
+Esfera, elipsoide y cuártica como ejercicios pequeños; mallas SURFER como referencia.
+Criterio: puntos XYZ sobre F=0, soporte tridimensional, caras reconocibles y controles
+separados de tempo/barrido/giro; comprobar forma y sonido dentro del host.
+Evidencia: `experiments/012-superficies-xyz/README.md`, especificación XYZ-01…05 y
+pruebas Lua a 44.1/48 kHz. Pendiente: escucha, host, timbres de superficies récord
+y asignación dinámica. El sonido anterior y el nuevo no tienen aceptación artística.

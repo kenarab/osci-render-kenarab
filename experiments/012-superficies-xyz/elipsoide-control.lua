@@ -1,0 +1,30 @@
+-- Superficie elipsoide: coordenadas XYZ reales; no mezcla de voces ni proyeccion XY.
+-- A: velocidad de giro 3D (0 pausa), B: barrido 12–36 Hz; C: parametro geometrico.
+local LIVE=true
+local KIND=2
+local TAKE=601
+if not algebraic_xyz or algebraic_xyz.kind~=KIND or algebraic_xyz.take~=TAKE or algebraic_xyz.rate~=sample_rate or step<algebraic_xyz.last then
+ algebraic_xyz={kind=KIND,take=TAKE,rate=sample_rate,last=step,phase=0,angle=0,a=0,b=.5,c=.5}
+end
+local s=algebraic_xyz;s.last=step;local dt=1/sample_rate
+local function control(old,value,default)
+ if not LIVE or type(value)~='number' or value~=value then value=default end
+ return old+(1-math.exp(-dt/.08))*(math.max(0,math.min(1,value))-old)
+end
+s.a=control(s.a,slider_a,0);s.b=control(s.b,slider_b,.5);s.c=control(s.c,slider_c,.5)
+s.angle=s.angle+dt*.25*s.a;s.phase=(s.phase+dt*(12+24*s.b))%1
+local v=2*math.pi*s.phase;local u=24*v
+local dx,dy,dz=math.cos(v)*math.cos(u),math.cos(v)*math.sin(u),math.sin(v)
+local x,y,z
+if KIND==1 then x,y,z=.42*dx,.42*dy,.42*dz
+elseif KIND==2 then x,y,z=(.4+.3*s.c)*dx,.26*dy,.38*dz
+else
+ -- Superficie X^4+3Y^4+6Z^4+k*(X^2+Y^2+Z^2)=1; (x,y,z)=.45*(X,Y,Z).
+ local k=.1+.8*s.c;local q=dx^4+3*dy^4+6*dz^4
+ local r=math.sqrt(2/(k+math.sqrt(k*k+4*q)))
+ x,y,z=.45*r*dx,.45*r*dy,.45*r*dz
+end
+s.raw={x,y,z}
+-- Rotacion ortogonal en 3D, SIN eliminar la profundidad.
+local c,sn=math.cos(s.angle),math.sin(s.angle)
+return {c*x+sn*z,y,-sn*x+c*z}

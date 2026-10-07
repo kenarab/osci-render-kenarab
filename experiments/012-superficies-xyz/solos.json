@@ -1,0 +1,26 @@
+{
+  "bach": {
+    "notes": 34,
+    "seconds": 40,
+    "voice": "Violino I",
+    "source_excerpt": [
+      30,
+      70
+    ],
+    "geometry": "X^4+3Y^4+6Z^4+k*(X^2+Y^2+Z^2)=1",
+    "filter": "none",
+    "aliasing": "No se elimina aliasing: filtrar alterar\u00eda el recorrido; prueba diagn\u00f3stica, escucha pendiente"
+  },
+  "oblivion": {
+    "notes": 25,
+    "seconds": 40,
+    "voice": "Flauta",
+    "source_excerpt": [
+      30,
+      70
+    ],
+    "geometry": "X^4+3Y^4+6Z^4+k*(X^2+Y^2+Z^2)=1",
+    "filter": "none",
+    "aliasing": "No se elimina aliasing: filtrar alterar\u00eda el recorrido; prueba diagn\u00f3stica, escucha pendiente"
+  }
+}

@@ -1,0 +1,29 @@
+-- @TITLE@ / una voz, una superficie cuartica XYZ. Sin suma ni filtrado de coordenadas.
+-- Fuente/recorte: ver experiments/012-superficies-xyz/README.md.
+-- A tempo .5–1.5 (0.5 original), B giro 3D (0 pausa), C coeficiente k (.1–.9).
+local LIVE=@LIVE@
+local ID="@ID@"
+if not solo_xyz or solo_xyz.id~=ID or solo_xyz.rate~=sample_rate or step<solo_xyz.last then
+ solo_xyz={id=ID,rate=sample_rate,last=step,time=0,index=1,phase=0,angle=.6,speed=1,k=.5,spin=0,done=false,notes=@NOTES@}
+end
+local s=solo_xyz;s.last=step;local dt=1/sample_rate
+local function control(value,default) if not LIVE or type(value)~='number' or value~=value then return default end;return math.max(0,math.min(1,value)) end
+local smooth=1-math.exp(-dt/.08)
+s.speed=s.speed+smooth*(.5+control(slider_a,.5)-s.speed)
+s.k=s.k+smooth*(.1+.8*control(slider_c,.5)-s.k)
+s.spin=s.spin+smooth*(.2*control(slider_b,0)-s.spin);s.angle=s.angle+dt*s.spin
+local time=s.time;s.time=time+dt*s.speed
+if time>=40 then s.done=true;return {0,0,0} end
+while s.notes[s.index] and time>=s.notes[s.index][2] do s.index=s.index+1 end
+local n=s.notes[s.index]
+if not n or time<n[1] then s.amplitude=0;return {0,0,0} end
+local hz=440*2^((n[3]-69)/12);s.phase=(s.phase+hz*dt)%1
+local v=2*math.pi*s.phase;local u=12*v
+local dx,dy,dz=math.cos(v)*math.cos(u),math.cos(v)*math.sin(u),math.sin(v)
+local q=dx^4+3*dy^4+6*dz^4;local radius=math.sqrt(2/(s.k+math.sqrt(s.k*s.k+4*q)))
+local x,y,z=radius*dx,radius*dy,radius*dz;s.raw={x,y,z}
+-- Envolvente = escala uniforme del objeto; nunca colapsar sólo un eje.
+local function ease(a) a=math.max(0,math.min(1,a));return a*a*(3-2*a) end
+local amplitude=.42*(n[4]/127)*ease((time-n[1])/(.05*s.speed))*ease((n[2]-time)/(.07*s.speed))
+s.amplitude=amplitude;local c,sn=math.cos(s.angle),math.sin(s.angle)
+return {amplitude*(c*x+sn*z),amplitude*y,amplitude*(-sn*x+c*z)}
