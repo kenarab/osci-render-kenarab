@@ -42,6 +42,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-032 | Avanzar con la música de Piazzolla | Fuentes MIDI concretas localizadas e importador preparado; archivos/arreglos pendientes | [Repertorio](referencias-piazzolla.md): Libertango y Oblivion; importación probada con tempo/polifonía, sin atribuir notas inventadas a Piazzolla. |
 | EXP-033 | Reunir arreglos públicos y planificar la mayor base de datos posible de Piazzolla en otro repositorio | Plan y traspaso preparados; ejecución diferida por el usuario | [Atlas Piazzolla](proyecto-piazzolla/README.md): ATL-01–09, modelo, fases y semillas. Un HTML obtenido; ningún arreglo musical descargado aún. |
 | EXP-034 | Experimento semilla: coleccionar variantes y formatos de Piazzolla y preparar lengua franca | 21 originales válidos, 13 derivados y catálogo local; escucha/OMR pendientes | [Semilla](proyecto-piazzolla/semilla.md): 10 MIDI, 3 MXL, 5 PDF, 1 imagen, 2 demos MP3; dos fallos vacíos, 90 fichas candidatas. SEM-01–07. |
+| EXP-035 | Bach con timbres complejos derivados de superficies récord de SURFER/IMAGINARY | Seda y Cristal implementados; escucha y host pendientes | [009](../experiments/009-bach-surfer-records/README.md): cuatro mallas SURFER, WAV completos, voces aisladas y comparación. REC-01–05. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.

@@ -1,0 +1,43 @@
+{
+  "source_app": "/Applications/SURFER.app/Contents/Java/JFXSurfer.jar",
+  "source_jar_sha256": "eb2b38814511ada46cf6710058f31ff9e3d142bc6f883145d3c3b960a2b3abbb",
+  "reference": "https://www.imaginary.org/sites/default/files/imaginary-worldrecordsurfaces-oliver-labs.pdf",
+  "surfaces": [
+    {
+      "name": "barthsextic",
+      "resource": "de/mfo/jsurfer/gallery/record_barthsextic.jsurf",
+      "resource_sha256": "c7bcfbdb33569cf01aa6fecca2b8c090971fe4035f520090fa59fa841ea329d2",
+      "equation": "4*((a*(1+sqrt(5))/2)^2*x^2-1*y^2)*((a*(1+sqrt(5))/2)^2*y^2-1*z^2)*((a*(1+sqrt(5))/2)^2*z^2-1*x^2)-1*(1+2*(a*(1+sqrt(5))/2))*(x^2+y^2+z^2-1*1)^2",
+      "a": 1.0,
+      "record_nodes": 65,
+      "bound": 1.8
+    },
+    {
+      "name": "togliatti",
+      "resource": "de/mfo/jsurfer/gallery/record_togliatti.jsurf",
+      "resource_sha256": "e3ad00821fa54cbc3bcd972d078d1db9ddbad8a375b0a289c98486c1511132a5",
+      "equation": "(1-1*sqrt(5-1*sqrt(5))/2*z)*(x^2+y^2-1*1+(1+3*sqrt(5))/4*z^2)^2-a*3.8496061120482923113983843766*(x-1*z)*(cos(2*3.14159265358979/5)*x-1*sin(2*3.14159265358979/5)*y-1*z)*(cos(4*3.14159265358979/5)*x-1*sin(4*3.14159265358979/5)*y-1*z)*(cos(6*3.14159265358979/5)*x-1*sin(6*3.14159265358979/5)*y-1*z)*(cos(8*3.14159265358979/5)*x-1*sin(8*3.14159265358979/5)*y-1*z)",
+      "a": 1.0,
+      "record_nodes": 31,
+      "bound": 1.8
+    },
+    {
+      "name": "endrass",
+      "resource": "de/mfo/jsurfer/gallery/record_endrass.jsurf",
+      "resource_sha256": "056fea4010026f1df21682911155f66e61ccd9191ef8186b7fd91381c2df7347",
+      "equation": "a*(-1*(1.0)/(4.0)*(1.0-1*sqrt(2.0))*(x^2+y^2)^2 +(x^2+y^2)*((1.0-1*(1.0)/sqrt(2.0))*z^2+0*z+(1.0)/(8.0)*(2.0-1*7.0*sqrt(2.0))) -1*1.0*z^4 +0*z^3 +(0.5+sqrt(2.0))*z^2 +0*z -1*(1.0)/(16.0)*(1.0-1*12.0*sqrt(2.0)))^2 -1*(cos(0*3.14159265358979/4)*x+sin(0*3.14159265358979/4)*y-1*1)*(cos(1*3.14159265358979/4)*x+sin(1*3.14159265358979/4)*y-1*1)*(cos(2*3.14159265358979/4)*x+sin(2*3.14159265358979/4)*y-1*1)*(cos(3*3.14159265358979/4)*x+sin(3*3.14159265358979/4)*y-1*1)*(cos(4*3.14159265358979/4)*x+sin(4*3.14159265358979/4)*y-1*1)*(cos(5*3.14159265358979/4)*x+sin(5*3.14159265358979/4)*y-1*1)*(cos(6*3.14159265358979/4)*x+sin(6*3.14159265358979/4)*y-1*1)*(cos(7*3.14159265358979/4)*x+sin(7*3.14159265358979/4)*y-1*1)",
+      "a": 1.0,
+      "record_nodes": 168,
+      "bound": 1.65
+    },
+    {
+      "name": "kummerquartic",
+      "resource": "de/mfo/jsurfer/gallery/record_kummerquartic.jsurf",
+      "resource_sha256": "4af6c44cd3962296191343bf6d2383498f48b727fdcc2567ad7edf6d53d93ba9",
+      "equation": "(x^2+y^2+z^2-1*(0.5+2*a)^2)^2-1*(3.0*((0.5+2*a)^2)-1*1.0)/(3.0-1*((0.5+2*a)^2))*(1-1*z-1*sqrt(2)*x)*(1-1*z+sqrt(2)*x)*(1+z+sqrt(2)*y)*(1+z-1*sqrt(2)*y)",
+      "a": 0.5,
+      "record_nodes": 16,
+      "bound": 2.1
+    }
+  ]
+}

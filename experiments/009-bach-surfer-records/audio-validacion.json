@@ -1,0 +1,41 @@
+{
+  "seda": {
+    "duration": 339.065729167,
+    "frames": 16275155,
+    "sample_rate": 48000,
+    "peak": 0.616156466,
+    "rms_xy": 0.14789253,
+    "max_delta": 0.070896365,
+    "sections": [
+      0,
+      56.328770833333,
+      112.92735416667,
+      224.94454166667,
+      339.06570833333
+    ]
+  },
+  "cristal": {
+    "duration": 339.065729167,
+    "frames": 16275155,
+    "sample_rate": 48000,
+    "peak": 0.623772969,
+    "rms_xy": 0.131622961,
+    "max_delta": 0.110908667,
+    "sections": [
+      0,
+      56.328770833333,
+      112.92735416667,
+      224.94454166667,
+      339.06570833333
+    ]
+  },
+  "controls": {
+    "rates": [
+      44100,
+      48000
+    ],
+    "result": "continuidad, limites, reinicio y cambio de controles aprobados",
+    "host": "pendiente",
+    "listening": "pendiente"
+  }
+}

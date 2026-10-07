@@ -327,3 +327,22 @@
   PDFCoffee: HTML en lugar de PDF. Se dejó de reiterar esas solicitudes.
 - Verificación: catálogo regenerado; ambas demos decodificadas sin errores;
   rechazo de HTML falsamente etiquetado MP3 y de formato desconocido comprobado.
+
+## 2026-10-07 — Regreso a Bach: superficies récord de SURFER (EXP-035)
+
+- Usuario da por suficiente Piazzolla aquí; Atlas se retomará en otro repositorio.
+  Pide timbres complejos por voz del Bach favorito con superficies récord de SURFER.
+  Considera comprar Pro; no se compra/activa software ni se depende de esa compra.
+- REC-01–05: ecuaciones y parámetros extraídos del JAR del SURFER instalado, con
+  hashes. Barth/Togliatti/Endrass/Kummer, una por voz. Mallas con caras en cajas
+  finitas, vista sombreada y OBJ; singularidades/topología no certificadas por grid.
+- Toda cara participa en momentos angulares ponderados por área para síntesis.
+  Portadora tonal explícita, 12 armónicos, dos estados de brillo y filtros por voz;
+  tablas precalculadas. No se interpreta la señal filtrada como puntos de F=0.
+- Seda y Cristal: dos Lua preset y dos controlables; mantienen las 980 notas,
+  rubato y 339.066 s del Adagio. WAV completos, voces aisladas y comparación A/B/C.
+- Render 48 kHz: picos 0.61616/0.62377, saltos máximos 0.07090/0.11091. Fin
+  silencioso, TAKE, reinicio step y controles a 44.1/48 kHz aprobados. Geometría:
+  residuo <2.3e-8 en vértices; 32³ es una aproximación, no recuento de nodos.
+- Escucha artística, MIDI/OSC, rendimiento/visibilidad de OBJ dentro del host y
+  modificación conjunta de ecuación/timbre siguen pendientes. No se instaló nada.
