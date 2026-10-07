@@ -231,6 +231,28 @@
       "download_url": "https://www.sheetmusicgiant.com/sheets/download?i=ODg3Mjg=",
       "scope": "fallido; Soledad pendiente de identificar frente a Solitude",
       "rights_status": "sitio declara uso personal/prueba temporal; no licencia abierta verificada; no se obtuvo contenido"
+    },
+    {
+      "id": "solitude-lumiere-flauta-demo",
+      "file": "solitude-lumiere-flauta-demo.mp3",
+      "work": "Soledad / Solitude (Suite Lumière)",
+      "variant": "BackingtracksMusic 0239; trío en si menor",
+      "format": "MP3",
+      "source_url": "https://backingtracksmusic.com/en/product-tag/astor-piazzolla/page/4/",
+      "download_url": "https://backingtracksmusic.com/wp-content/uploads/2021/12/Solitude-Bm-trio-play-reference-flute-DEMO.mp3",
+      "scope": "Muestra parcial: con flauta de referencia",
+      "rights_status": "Demo pública de producto comercial; licencia abierta no verificada"
+    },
+    {
+      "id": "solitude-lumiere-acompanamiento-demo",
+      "file": "solitude-lumiere-acompanamiento-demo.mp3",
+      "work": "Soledad / Solitude (Suite Lumière)",
+      "variant": "BackingtracksMusic 0239; trío en si menor",
+      "format": "MP3",
+      "source_url": "https://backingtracksmusic.com/en/product-tag/astor-piazzolla/page/4/",
+      "download_url": "https://backingtracksmusic.com/wp-content/uploads/2021/12/Solitude-Bm-trio-play-DEMO.mp3",
+      "scope": "Muestra parcial: acompañamiento; duración distinta, no asumir sincronía con la otra muestra",
+      "rights_status": "Demo pública de producto comercial; licencia abierta no verificada"
     }
   ]
 }

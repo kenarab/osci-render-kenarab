@@ -141,3 +141,15 @@ fecha a esa otra obra basándose sólo en su recuerdo. Tampoco fusionar Años de
 
 Resultado: identidad resuelta y candidatos precisos registrados; todavía no hay
 archivo musical descargado de esta obra. La semilla conserva 19 archivos válidos.
+
+## Muestras obtenidas el 2026-10-07: Solitude de Suite Lumière
+
+La [página de BackingtracksMusic](https://backingtracksmusic.com/en/product-tag/astor-piazzolla/page/4/)
+identifica el producto 0239 como Suite Lumière, 1975. Descargados los dos enlaces
+DEMO públicos: trío en si menor con flauta de referencia y acompañamiento. Archivos,
+hashes y duración en [el catálogo semilla](proyecto-piazzolla/semilla-catalogo.json).
+Son fragmentos, no partitura/MIDI ni obra completa; escucha pendiente. La ficha
+vecina «Soledad» es otro producto y no se incorporó como equivalente.
+
+La consulta directa de MuseScore devolvió HTTP 403; PDFCoffee devolvió HTML incluso
+desde el recurso del visor. No se obtuvieron partituras de esos enlaces.

@@ -1,6 +1,6 @@
 # Experimento semilla del Atlas
 
-EXP-034 / SEM-01–06. Lote pequeño, recogido entre el 6 y el 7 de octubre de 2026
+EXP-034 / SEM-01–07. Lote pequeño, recogido entre el 6 y el 7 de octubre de 2026
 (según hora local/UTC). El usuario reserva la colección amplia para otro repositorio.
 La búsqueda incluyó catálogos editoriales y comunitarios, páginas de reproductores,
 PDF directos y consultas por los cinco títulos, aliases y formatos. **No es un censo
@@ -12,8 +12,8 @@ exhaustivo de Internet ni una descarga de todo el catálogo de Piazzolla.**
 con una fila por archivo, fuente y validación. Los archivos descargados y sus notas
 normalizadas permanecen fuera de Git, en `downloads/piazzolla/`.
 
-Se obtuvieron **19 archivos musicales/visuales válidos por firma y parser básico**:
-10 MIDI, 3 MXL, 5 PDF y 1 imagen WebP de vista previa. No hay duplicados binarios
+Se obtuvieron **21 archivos musicales/visuales válidos por firma y parser básico**:
+10 MIDI, 3 MXL, 5 PDF, 1 imagen WebP de vista previa y 2 muestras MP3. No hay duplicados binarios
 entre ellos. Dos respuestas vacías quedan como fallos. Se conservaron además
 **90 fichas distintas** de las primeras tres páginas del catálogo ScoreBase como
 candidatos, sin descargarlas todas ni considerar verificada su atribución.
@@ -43,10 +43,15 @@ asociados a una ficha también representan formatos relacionados, no tres arregl
 La duración se calcula hasta el último note-off, no necesariamente hasta el fin del
 archivo; puede diferir de lo anunciado por un reproductor.
 
-No se obtuvo un archivo musical de **Solitude/Soledad** en este lote. El usuario
-confirmó el 2026-10-07 que busca **Suite Lumière** (años 70). La identificación está
-resuelta; falta una descarga musical válida. Los [nuevos candidatos](../referencias-piazzolla.md)
-se registran por separado y no aumentan el conteo de archivos obtenidos.
+Se obtuvieron dos **muestras de Solitude/Soledad de Suite Lumière** de
+[BackingtracksMusic, producto 0239](https://backingtracksmusic.com/en/product-tag/astor-piazzolla/page/4/):
+trío en si menor, con flauta de referencia y acompañamiento. La fuente identifica
+expresamente Suite Lumière (1975). Son fragmentos comerciales públicos del mismo
+arreglo, no dos arreglos nuevos. Sus duraciones difieren; no asumir sincronía.
+La partitura completa y el MIDI de esta obra siguen pendientes.
+
+Los MP3 se verifican con ffprobe y decodificación completa mediante ffmpeg, ambos
+ya instalados. No se transcriben automáticamente ni se evalúa su calidad musical.
 
 ## Caso de estudio: conservar la interpretación
 

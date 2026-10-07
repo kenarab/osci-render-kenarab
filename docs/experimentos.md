@@ -25,7 +25,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-015 | Incorporar Oblivion de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial localizada; no se importó un arreglo. |
 | EXP-016 | Incorporar Violentango de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial/discográfica localizada. |
 | EXP-017 | Incorporar Meditango de Piazzolla como referencia | Catalogado; versión y análisis pendientes | Fuente editorial/discográfica localizada. |
-| EXP-018 | Incorporar Solitude de Piazzolla como referencia | Identidad exacta por confirmar | Candidato: Solitude de Suite Lumière; no confundir con Années de solitude. |
+| EXP-018 | Incorporar Solitude de Piazzolla como referencia | Suite Lumière confirmada por usuario; dos demos de audio obtenidas | [Semilla](proyecto-piazzolla/semilla.md): faltan partitura completa/MIDI; no confundir con Années de solitude. |
 | EXP-019 | Corregir el enfoque: visualizar superficies algebraicas completas, no solo curvas | Prototipo geométrico implementado; host pendiente | Mallas implícitas de toro/Cassini con caras, OBJ y vista sombreada; falta verificar legibilidad y rendimiento en osci-render. |
 | EXP-020 | Diseñar sonidos desde superficies, en vez de notas MIDI como motor | Prototipo 007 implementado; host pendiente | Malla de toro con caras, raster de 24 vueltas y comparación 3D/XY; no relleno continuo. SUP-R01–R04. |
 | EXP-021 | Controlar lentitud y pausa con slider, separando velocidades | Implementado y probado fuera del host | 007: A movimiento/pausa, B barrido; pausa de 10 s con audio a 44.1/48 kHz. Mouse/hardware pendientes. |
@@ -41,7 +41,7 @@ Actualizar este archivo cada vez que se solicite o se pruebe un experimento.
 | EXP-031 | Nuevas versiones del Bach favorito con timbres por voz basados en superficies u otras síntesis complejas | Cuárticas y Prisma implementados; escucha y host pendientes | [008](../experiments/008-bach-materias/README.md): dos Lua/presets y controles, WAV de 5:39, ocho voces aisladas, comparación de 60 s; mallas completas y análisis espectral. |
 | EXP-032 | Avanzar con la música de Piazzolla | Fuentes MIDI concretas localizadas e importador preparado; archivos/arreglos pendientes | [Repertorio](referencias-piazzolla.md): Libertango y Oblivion; importación probada con tempo/polifonía, sin atribuir notas inventadas a Piazzolla. |
 | EXP-033 | Reunir arreglos públicos y planificar la mayor base de datos posible de Piazzolla en otro repositorio | Plan y traspaso preparados; ejecución diferida por el usuario | [Atlas Piazzolla](proyecto-piazzolla/README.md): ATL-01–09, modelo, fases y semillas. Un HTML obtenido; ningún arreglo musical descargado aún. |
-| EXP-034 | Experimento semilla: coleccionar variantes y formatos de Piazzolla y preparar lengua franca | 19 originales válidos, 13 derivados y catálogo local; escucha/OMR pendientes | [Semilla](proyecto-piazzolla/semilla.md): 10 MIDI, 3 MXL, 5 PDF, 1 imagen; dos fallos vacíos, 90 fichas candidatas. SEM-01–06. |
+| EXP-034 | Experimento semilla: coleccionar variantes y formatos de Piazzolla y preparar lengua franca | 21 originales válidos, 13 derivados y catálogo local; escucha/OMR pendientes | [Semilla](proyecto-piazzolla/semilla.md): 10 MIDI, 3 MXL, 5 PDF, 1 imagen, 2 demos MP3; dos fallos vacíos, 90 fichas candidatas. SEM-01–07. |
 
 **Criterio corregido:** EXP-001/002/010/012 son estudios de recorridos y música;
 no completan por sí solos EXP-004 ni el requisito de visualizar superficies.

@@ -16,6 +16,10 @@ repositorio ejecuta un lote pequeño; el archivo exhaustivo continúa en otro.
   explícitos para las cinco obras. Inventario de fuentes no equivale a descarga.
 - SEM-06: ante notas MIDI de duración cero, importación tolerante opcional conserva
   el evento y lo advierte; comportamiento estricto anterior permanece por defecto.
+- SEM-07: admitir muestras públicas MP3 como referencias de audio, identificadas
+  como fragmentos y separadas de las partituras. Verificar codec, duración positiva
+  y decodificación completa con ffprobe/ffmpeg; guardar canales y frecuencia.
+  No inferir notas ni contar acompañamiento y referencia como arreglos distintos.
 
 Aceptación: firmas y parsers reales, controles de hashes, notas/tempos y extracción
 XML. Validación artística y transcripción de PDFs/escaneos no forman parte del lote.

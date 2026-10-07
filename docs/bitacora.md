@@ -314,3 +314,16 @@
   y el recurso de su visor devolvieron HTML: no se cuentan como PDF descargado.
 - Estado: identificación resuelta, archivo musical pendiente; siguen 19 originales
   válidos. Validación de JSON y diff; no hubo cambios de código ni nuevas pruebas de audio.
+
+## 2026-10-07 — Referencias audibles de Solitude / Suite Lumière (EXP-034)
+
+- Descargadas dos demos públicas de BackingtracksMusic 0239, trío en si menor:
+  flauta de referencia y acompañamiento. La fuente identifica Suite Lumière (1975).
+- SEM-07 agrega MP3 al catálogo con codec, duración, canales, frecuencia y
+  decodificación completa. No hay conversión audio→notas ni juicio de calidad.
+- Lote actualizado: 21 originales válidos, 13 derivados, 2 fallos vacíos y 90 fichas.
+  Las muestras del mismo arreglo no se cuentan como arreglos independientes.
+- La partitura completa/MIDI de Solitude sigue pendiente. MuseScore: HTTP 403;
+  PDFCoffee: HTML en lugar de PDF. Se dejó de reiterar esas solicitudes.
+- Verificación: catálogo regenerado; ambas demos decodificadas sin errores;
+  rechazo de HTML falsamente etiquetado MP3 y de formato desconocido comprobado.

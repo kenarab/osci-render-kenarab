@@ -69,6 +69,22 @@ def main():
             elif r['format']=='WebP':
                 with Image.open(p) as im:r['dimensions']=list(im.size);im.verify()
                 r['conversion']='Imagen de pagina; OMR/transcripcion pendiente'
+            elif r['format']=='MP3':
+                info=json.loads(subprocess.check_output(['ffprobe','-v','error',
+                    '-show_streams','-show_format','-of','json',str(p)],text=True))
+                streams=[s for s in info['streams'] if s.get('codec_type')=='audio']
+                if len(streams)!=1 or streams[0].get('codec_name')!='mp3':
+                    raise ValueError('Se esperaba una pista de audio MP3')
+                duration=float(info['format']['duration'])
+                if not 0 < duration < float('inf'):raise ValueError('Duracion MP3 invalida')
+                subprocess.run(['ffmpeg','-v','error','-xerror','-i',str(p),
+                    '-map','0:a:0','-f','null','-'],check=True,capture_output=True)
+                r.update(duration_seconds=round(duration,6),channels=streams[0]['channels'],
+                    sample_rate=int(streams[0]['sample_rate']),codec='mp3',
+                    validation='ffprobe y decodificacion completa ffmpeg; escucha pendiente',
+                    conversion='Referencia de audio; sin transcripcion a notas')
+            else:
+                raise ValueError('Formato no soportado: '+r['format'])
         except (ValueError,KeyError,ET.ParseError,zipfile.BadZipFile,subprocess.CalledProcessError) as e:
             r['status']='invalid';r['error']=str(e)
         records.append(r)
@@ -115,7 +131,7 @@ def main():
     index='''<!doctype html><html lang="es"><meta charset="utf-8"><title>Atlas Piazzolla — semilla</title>
 <style>body{font:16px system-ui;margin:35px;background:#f8f6f1;color:#202830}table{border-collapse:collapse;width:100%}td,th{padding:12px;text-align:left;border-bottom:1px solid #ccc}a{color:#075b79}th{background:#e4e7e5}p{max-width:900px}</style>
 <h1>Atlas Piazzolla — colección semilla</h1><p>Originales y variantes para comparar. Los formatos de un mismo arreglo no cuentan como arreglos nuevos. Los archivos públicos tienen licencia no verificada; no se presupone permiso de redistribución.</p>
-<p>MIDI → eventos JSON; MXL → MusicXML. PDF e imágenes conservados, transcripción pendiente. No hay evaluación auditiva ni clasificación del mejor arreglo.</p>
+<p>MIDI → eventos JSON; MXL → MusicXML. PDF e imágenes conservados, transcripción pendiente. MP3: muestras de referencia, sin transcripción a notas. No hay evaluación auditiva ni clasificación del mejor arreglo.</p>
 <table><thead><tr><th>Obra</th><th>Variante</th><th>Original</th><th>Derivado</th><th>Validación</th><th>Datos</th><th>Procedencia</th><th>Alcance</th></tr></thead><tbody>'''+''.join(rows)+'</tbody></table></html>'
     (RAW/'index.html').write_text(index)
     print(json.dumps(dict(valid=report['valid'],failed=report['failed'],candidates=len(candidates),comparison=diff),ensure_ascii=False))
