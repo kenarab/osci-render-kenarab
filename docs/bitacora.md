@@ -356,3 +356,21 @@
   imagen de biblioteca ya no etiqueta las superficies como voces musicales.
 - Regeneración tras extracción conservó los cuatro Lua de Bach byte por byte.
   No se repitieron renders de audio porque los bancos/engine no cambiaron.
+
+## 2026-10-07 — Editor implícito y futuro constructor visual (EXP-036/037)
+
+- Usuario elige ecuaciones y parámetros. Editor WebGL 2 local sin OBJ, servidor
+  ni servicios externos; galería de seis ejemplos, slider a, cámara y estado JSON.
+- Parser restringido/AST compartido, ray casting de F=0 y última vista válida
+  conservada ante error. No certifica tangencias, topología ni latencia universal.
+- Chrome headless con SwiftShader: seis shaders compilados, slider actualizado,
+  edición inválida conserva los píxeles y gl.getError()=0; captura inspeccionada.
+  Node: evaluación, precedencia, catálogo y rechazo de entradas inválidas aprobados.
+- Código fuente local: integración Blender usa TCP localhost con GPLA v2 base64
+  por línea; es una ruta sin OBJ, no OSC ni recepción directa de polinomios.
+  Puente/audio en vivo no implementados; compatibilidad con binario pendiente.
+- Usuario propone constructor visual por factores para acercar métodos de
+  investigadores al público y Shuffle estructurado. Especificación 010 pendiente;
+  no confundir AST del parser con interfaz visual o recetas ya implementadas.
+- Se preserva sonificación por momentos de área para otros proyectos. Usuario
+  quiere compartirla con Surfer Invaders cuando esté lista; no se envió nada.

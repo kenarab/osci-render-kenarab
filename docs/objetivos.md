@@ -13,6 +13,11 @@ El desarrollo sigue [SDD](../specs/README.md), con aceptación geométrica, audi
 y en el host por separado. El primer prototipo de esas especificaciones está en el experimento 007;
 la aceptación en el host y por escucha sigue pendiente.
 
+Las superficies viven en una biblioteca independiente de las composiciones.
+El editor matemático local usa ecuaciones y parámetros, sin OBJ como transporte.
+El constructor visual por factores y Shuffle basado en recetas de investigación
+quedan como proyecto pendiente; no se propone generación por lenguaje natural.
+
 ## Intención artística
 
 Crear un instrumento para ver y escuchar geometría, disfrutar piezas musicales y

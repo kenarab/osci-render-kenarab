@@ -20,3 +20,9 @@ al proyecto musical, no al catálogo.
 Para agregar una superficie, editar `catalog.json`, registrar ecuación, parámetros,
 dominio y fuente; regenerar recursos. No atribuir un récord por la apariencia ni
 considerar completa una superficie no compacta recortada en una caja.
+
+## Editor directo
+
+Abrir [Superficies en vivo](../../apps/surface-lab/index.html): ecuaciones, parámetro
+a y render implícito WebGL sin OBJ. `expression.js` ofrece AST, evaluación y GLSL
+sin ejecutar código del usuario. [Uso y límites](../../apps/surface-lab/README.md).

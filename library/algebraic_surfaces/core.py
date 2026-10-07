@@ -110,5 +110,3 @@ def moments(samples,voice=0,harmonics=12):
         cs=[c/norm for c in cs]
         result.append(cs)
     return result
-
-

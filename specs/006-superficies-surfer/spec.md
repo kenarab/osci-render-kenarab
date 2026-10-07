@@ -1,6 +1,23 @@
 # 006 — Superficies implícitas como en SURFER
 
-Estado: dirección precisada por el usuario; editor e integración pendientes.
+Estado: biblioteca y editor implícito implementados; sonificación en vivo e integración con host pendientes.
+
+## Incremento EXP-036: biblioteca y editor independientes (2026-10-07)
+
+- ALG-R07: ecuaciones, procedencia, geometría y herramientas reutilizables viven
+  fuera de Bach; proyectos musicales consumen la biblioteca sin apropiarse de ella.
+- ALG-R08: campo de ecuación con parámetros, galería, cámara y render implícito
+  directo en GPU, sin OBJ. Actualización al editar; conservar última vista válida.
+  «Inmediato» es objetivo interactivo, no garantía de latencia en cualquier equipo.
+- ALG-R09: parser matemático acotado sin ejecutar JavaScript del usuario; errores
+  visibles. Guardar/cargar estado JSON portable; no depender de servicios externos.
+- ALG-R10: documentar protocolo real de osci-render antes de prometer enlace.
+  Vista sombreada local y trazado de audio son salidas diferentes. El enlace al
+  host debe ser explícito, limitado a loopback y permanecer pendiente si no se prueba.
+
+Plan: extraer biblioteca conservando bancos Bach; implementar editor local WebGL
+con ray casting de F=0; probar parser, fallos de edición y render en navegador.
+Investigar el servidor de objetos del código local como transporte sin archivos.
 EXP-004/005/006/028. Referencia explícita: [SURFER](https://www.imaginary.org/program/surfer).
 El usuario desarrolló un generador aleatorio y quiere explorar también ejemplos
 con singularidades, incluidos los de las galerías de investigación. Un toro o
@@ -22,11 +39,11 @@ una curva enrollada no satisfacen por sí solos este objetivo.
 - ALG-R06: un control modifica un coeficiente y ambas representaciones lo siguen.
   IanniX puede secuenciar ese control; no sustituye el renderizador implícito.
 
-Primer incremento futuro: un ejemplo verificado, un coeficiente, una vista
+Siguiente incremento: enlazar un ejemplo verificado, un coeficiente, una vista
 sombreada interactiva y su sonificación controlada. Comparar con SURFER y guardar
 un estado reproducible. Recuperar el código/distribución de Surfer Shuffle sin
 suponer que el ZIP enlazado contenga ya todo el código fuente utilizable.
 
 Base existente: extracción de toro/Cassini en 006 del directorio `experiments`.
 La especificación 001 describe el primer instrumento regular; esta amplía su
-alcance a superficies implícitas singulares. Todavía no hay editor general.
+alcance a superficies implícitas singulares. Ya hay un editor matemático local (`apps/surface-lab`); ALG-R06 sigue pendiente.

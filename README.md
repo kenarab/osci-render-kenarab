@@ -4,6 +4,9 @@ Laboratorio de arte y ciencia: superficies algebraicas, música de osciloscopio 
 live coding con osci-render. Surfer Shuffle es un antecedente del proyecto; queremos
 trabajar tanto con superficies elegidas como con generación aleatoria reproducible.
 
+- [Editor de ecuaciones en vivo, sin OBJ](apps/surface-lab/index.html) · [Instrucciones](apps/surface-lab/README.md)
+- [Biblioteca reutilizable de superficies](library/algebraic_surfaces/README.md)
+- [Constructor visual por factores — proyecto pendiente](specs/010-constructor-algebraico/spec.md)
 - [Objetivos, etapas y herramientas](docs/objetivos.md)
 - [Primera sesión con osci-render](docs/primer-arranque.md)
 - [Estudio de un toro — composición de 80 segundos](experiments/002-estudio-de-un-toro/README.md)
