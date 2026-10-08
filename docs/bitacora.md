@@ -549,3 +549,24 @@
 - Controles del visualizador Pro confirmados en el código local; propuesta de orden
   de ajuste documentada, sin valores inventados ni cambios en sus proyectos .osci.
 - Pendiente comparación perceptual en host, conservando audio y geometría iguales.
+
+## 2026-10-08 — Daft Punk, arreglos fuente íntegros (EXP-055)
+
+- DFT-01/02: cuatro MIDI públicos obtenidos, hashes y agrupación de pistas
+  registrados. Something About Us 897 notas, Instant Crush 13226, Lose Yourself
+  to Dance 15966 y Giorgio 5324. Giorgio es reducido (5:49); original completo
+  y cotejo con grabaciones pendientes. No se compraron créditos.
+- DFT-03/04: nuevo 018, ocho Lua locales, presets y controles A–H. Formantes
+  sintéticos, tres bancos algebraicos intercambiables y percusión sintetizada.
+  Salida musical XY, no superficie XYZ ni voz humana/vocoder de análisis.
+- Se corrigió el límite de salto de LuaJIT al cargar partituras largas mediante
+  fábricas con bloques de 400 notas, invocadas sólo al inicializar. Los ocho Lua
+  compilan y ejecutan su primera muestra. Verificación íntegra en validacion.json.
+- DFT-06: notas/Lua musicales y WAV fuera de Git; motor, procedencia y pruebas
+  versionados. Los 86 archivos anteriores 001–014 conservan sus hashes; proyectos
+  .osci del usuario intactos. Escucha artística, MIDI físico y host pendientes.
+- DFT-05 aprobado offline: los cuatro renders a 48 kHz procesan todas las notas,
+  alcanzan el fin y reinician; controles a 16 kHz pasan. Picos medidos
+  0.2043 / 0.2391 / 0.1743 / 0.1636, sin muestras no finitas ni clipping.
+  Cabeceras/duraciones de los cuatro WAV estéreo verificadas. Esto no certifica
+  calidad musical ni rendimiento dentro de Pro.

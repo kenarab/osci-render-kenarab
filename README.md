@@ -47,3 +47,7 @@ Los estudios anteriores permanecen intactos. Empezar por:
 
 Mezcla sonora derivada y geometría por voz son salidas distintas; comparar con
 la galería antes de evaluar la configuración del visualizador de osci-render.
+
+- [018 — Daft Punk: arreglos largos](experiments/018-daft-repertorio/README.md):
+  cuatro pares de Lua preset/control y WAV íntegros de los archivos fuente; Giorgio
+  es un arreglo reducido, no la versión original completa.

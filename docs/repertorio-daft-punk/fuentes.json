@@ -45,6 +45,244 @@
     {
       "url": "https://www.everyonepiano.com/Music-5359.html",
       "status": "HTTP 500 al descargar; no seleccionado"
+    },
+    {
+      "url": "https://www.nonstop2k.com/midi-files/28213-daft-punk-giorgio-by-moroder-midi.html",
+      "status": "Índice muestra 9:04, requiere 9 créditos/premium. No se compró ni descargó. Alternativa pendiente para versión completa."
+    },
+    {
+      "url": "https://onlinesequencer.net/4026204",
+      "status": "Fuente Lose Yourself to Dance localizada; curl devuelve 403. Navegador IAB/Chrome no disponible en herramienta UI. Se usó MIDI descargable alternativo."
+    }
+  ],
+  "midi_candidates_2026_10_08": [
+    {
+      "id": "something-about-us",
+      "title": "Daft Punk — Something About Us",
+      "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_something_about_us/791-1-0-22605",
+      "download_url": "https://midifind.com/files/0-0-1-22605-20",
+      "retrieved": "2026-10-08",
+      "sha256": "ee64936af78615b69bc472363427c46d74eca62ab55732e63ee618c743a42659",
+      "bytes": 8079,
+      "duration": 202.25496,
+      "notes": 897,
+      "skipped_zero_duration": 0,
+      "tracks": {
+        "0": {
+          "name": "Keyboard 1",
+          "group": 1
+        },
+        "4": {
+          "name": "Bass",
+          "group": 3
+        },
+        "1": {
+          "name": "Keyboard 2",
+          "group": 2
+        },
+        "2": {
+          "name": "Keyboard 3",
+          "group": 1
+        },
+        "3": {
+          "name": "Guitar",
+          "group": 1
+        }
+      },
+      "gain": 0.11906250000000002,
+      "mix_peak_bound": 0.6,
+      "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+      "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+      "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco",
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "instant-crush",
+      "title": "Daft Punk — Instant Crush",
+      "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_instant_crush/791-1-0-22595",
+      "download_url": "https://midifind.com/files/0-0-1-22595-20",
+      "retrieved": "2026-10-08",
+      "sha256": "aadd33191655e9c7e396bc29534b7914a7c629b92e7aecc4527a5ad81e039212",
+      "bytes": 111228,
+      "duration": 314.331504,
+      "notes": 13226,
+      "skipped_zero_duration": 0,
+      "tracks": {
+        "0": {
+          "name": "Lead guitar",
+          "group": 2
+        },
+        "1": {
+          "name": "Rhythm guitar",
+          "group": 2
+        },
+        "2": {
+          "name": "Bass",
+          "group": 3
+        },
+        "5": {
+          "name": "Synth 1",
+          "group": 2
+        },
+        "11": {
+          "name": "Drumkit",
+          "group": 4
+        },
+        "6": {
+          "name": "Synth 2",
+          "group": 2
+        },
+        "8": {
+          "name": "Lead Vocals",
+          "group": 1
+        },
+        "7": {
+          "name": "Synth 3",
+          "group": 2
+        },
+        "10": {
+          "name": "Cabasa",
+          "group": 4
+        },
+        "9": {
+          "name": "Vocal Harmony",
+          "group": 1
+        },
+        "3": {
+          "name": "Solo Guitar 1",
+          "group": 2
+        },
+        "4": {
+          "name": "Solo Guitar 2",
+          "group": 2
+        }
+      },
+      "gain": 0.02801470588235299,
+      "mix_peak_bound": 0.6,
+      "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+      "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+      "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco",
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "lose-yourself-to-dance",
+      "title": "Daft Punk — Lose Yourself to Dance",
+      "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_lose_yourself_to_dance/791-1-0-22596",
+      "download_url": "https://midifind.com/files/0-0-1-22596-20",
+      "retrieved": "2026-10-08",
+      "sha256": "0d1272fa11cbc6bbb1a9a4226d527636940f50d9fdf55f1f3b4a36da2fbedd06",
+      "bytes": 131186,
+      "duration": 355.34999999999997,
+      "notes": 15966,
+      "skipped_zero_duration": 0,
+      "tracks": {
+        "2": {
+          "name": "Bass",
+          "group": 3
+        },
+        "10": {
+          "name": "Drumkit",
+          "group": 4
+        },
+        "0": {
+          "name": "Guitar 1",
+          "group": 2
+        },
+        "1": {
+          "name": "Guitar Add",
+          "group": 2
+        },
+        "3": {
+          "name": "Melody",
+          "group": 1
+        },
+        "8": {
+          "name": "Hand Clap",
+          "group": 4
+        },
+        "9": {
+          "name": "Bell Tree",
+          "group": 4
+        },
+        "4": {
+          "name": "Vocoder 1",
+          "group": 1
+        },
+        "5": {
+          "name": "Vocoder 2",
+          "group": 1
+        },
+        "6": {
+          "name": "Vocoder 3",
+          "group": 1
+        },
+        "7": {
+          "name": "Vocoder 4",
+          "group": 1
+        }
+      },
+      "gain": 0.05953124999999981,
+      "mix_peak_bound": 0.6,
+      "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+      "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+      "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco",
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
+    },
+    {
+      "id": "giorgio-by-moroder",
+      "title": "Daft Punk — Giorgio by Moroder (arreglo reducido)",
+      "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_giorgio_by_moroder_2/791-1-0-22588",
+      "download_url": "https://midifind.com/files/0-0-1-22588-20",
+      "retrieved": "2026-10-08",
+      "sha256": "ac3ed9ec73e3872fe61d6cddc69c9160d25677420995ed8030a687439d887d24",
+      "bytes": 44463,
+      "duration": 349.24055999999996,
+      "notes": 5324,
+      "skipped_zero_duration": 0,
+      "tracks": {
+        "0": {
+          "name": "Bass",
+          "group": 3
+        },
+        "5": {
+          "name": "Drumkit",
+          "group": 4
+        },
+        "1": {
+          "name": "Funk Guitar",
+          "group": 2
+        },
+        "2": {
+          "name": "Riff Guitar",
+          "group": 2
+        },
+        "4": {
+          "name": "Keyboard Solo",
+          "group": 1
+        },
+        "3": {
+          "name": "Guitar Solo",
+          "group": 1
+        }
+      },
+      "gain": 0.08659090909090911,
+      "mix_peak_bound": 0.6,
+      "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+      "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+      "scope": "Arreglo reducido: no tema original completo",
+      "warnings": [
+        "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+        "No se asignan automaticamente las pistas a voces monofonicas."
+      ]
     }
   ]
 }

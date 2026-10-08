@@ -1,0 +1,67 @@
+{
+  "id": "lose-yourself-to-dance",
+  "title": "Daft Punk — Lose Yourself to Dance",
+  "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_lose_yourself_to_dance/791-1-0-22596",
+  "download_url": "https://midifind.com/files/0-0-1-22596-20",
+  "retrieved": "2026-10-08",
+  "sha256": "0d1272fa11cbc6bbb1a9a4226d527636940f50d9fdf55f1f3b4a36da2fbedd06",
+  "bytes": 131186,
+  "duration": 355.34999999999997,
+  "notes": 15966,
+  "skipped_zero_duration": 0,
+  "tracks": {
+    "2": {
+      "name": "Bass",
+      "group": 3
+    },
+    "10": {
+      "name": "Drumkit",
+      "group": 4
+    },
+    "0": {
+      "name": "Guitar 1",
+      "group": 2
+    },
+    "1": {
+      "name": "Guitar Add",
+      "group": 2
+    },
+    "3": {
+      "name": "Melody",
+      "group": 1
+    },
+    "8": {
+      "name": "Hand Clap",
+      "group": 4
+    },
+    "9": {
+      "name": "Bell Tree",
+      "group": 4
+    },
+    "4": {
+      "name": "Vocoder 1",
+      "group": 1
+    },
+    "5": {
+      "name": "Vocoder 2",
+      "group": 1
+    },
+    "6": {
+      "name": "Vocoder 3",
+      "group": 1
+    },
+    "7": {
+      "name": "Vocoder 4",
+      "group": 1
+    }
+  },
+  "gain": 0.05953124999999981,
+  "mix_peak_bound": 0.6,
+  "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+  "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+  "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco",
+  "warnings": [
+    "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+    "No se asignan automaticamente las pistas a voces monofonicas."
+  ]
+}

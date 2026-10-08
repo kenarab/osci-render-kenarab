@@ -68,3 +68,5 @@ Plan de tareas / evidencia / dudas pendientes
   y giro separados; pruebas offline aprobadas, escucha y host pendientes.
 - [017 — Voces y formas](017-voces-y-formas/spec.md): Bach/Oblivion asignables,
   cuatro geometrías distintas, estudios anteriores preservados; host pendiente.
+- [018 — Daft repertorio](018-daft-repertorio/spec.md): cuatro arreglos MIDI largos,
+  formantes y controles; integridad respecto del disco y escucha pendientes.

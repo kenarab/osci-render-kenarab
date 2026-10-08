@@ -1,0 +1,43 @@
+{
+  "id": "something-about-us",
+  "title": "Daft Punk — Something About Us",
+  "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_something_about_us/791-1-0-22605",
+  "download_url": "https://midifind.com/files/0-0-1-22605-20",
+  "retrieved": "2026-10-08",
+  "sha256": "ee64936af78615b69bc472363427c46d74eca62ab55732e63ee618c743a42659",
+  "bytes": 8079,
+  "duration": 202.25496,
+  "notes": 897,
+  "skipped_zero_duration": 0,
+  "tracks": {
+    "0": {
+      "name": "Keyboard 1",
+      "group": 1
+    },
+    "4": {
+      "name": "Bass",
+      "group": 3
+    },
+    "1": {
+      "name": "Keyboard 2",
+      "group": 2
+    },
+    "2": {
+      "name": "Keyboard 3",
+      "group": 1
+    },
+    "3": {
+      "name": "Guitar",
+      "group": 1
+    }
+  },
+  "gain": 0.11906250000000002,
+  "mix_peak_bound": 0.6,
+  "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+  "review": "SMF parseado; reproducción completa del archivo; cotejo con grabación y escucha pendientes",
+  "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco",
+  "warnings": [
+    "Pedal, pitch bend y expresion requieren interpretacion posterior; duraciones note-on/off.",
+    "No se asignan automaticamente las pistas a voces monofonicas."
+  ]
+}

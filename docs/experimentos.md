@@ -283,3 +283,14 @@ Controles localizados en código: Line Colour, Screen Colour, Light Effects e
 Image Scale. Procedimiento en docs/niveles-y-dinamica.md; aplicación y comparación
 pendientes. Aceptación: mismo Lua/cámara con mejor legibilidad y audio sin cambios.
 La configuración no sustituye diversidad de superficies ni densidad del barrido.
+
+## EXP-055 — Más Daft Punk y temas de principio a fin
+
+Pedido: el usuario disfrutó los ensayos y solicita más, incluyendo los cuatro
+temas prioritarios completos. DFT-01…06: nuevos 018 con cuatro MIDI reales,
+preset/control por archivo, síntesis de formantes y percusión, identidades
+derivadas de superficies para voces agrupadas; fuentes/hashes manifestados.
+No se modifican ensayos anteriores. Completo significa archivo fuente íntegro:
+Something 3:22, Instant 5:14, Lose 5:55, Giorgio reducido 5:49. Completar Giorgio
+original y cotejar integridad de los demás sigue pendiente. Fuente Giorgio 9:04
+localizada pero requiere créditos; no comprada. Calidad/host pendientes.

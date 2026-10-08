@@ -9,16 +9,18 @@ no hubo comparación auditiva nota por nota con los originales.
 
 | Tema | Dirección del trabajo | Estado |
 | --- | --- | --- |
-| Something About Us | Fraseo cálido y sostenido | PDF disponible; interpretación pendiente |
-| Giorgio by Moroder | Desarrollo por capas y arco narrativo | Nueva preferencia; fuente/transcripción pendiente |
-| Instant Crush (Julian Casablancas) | Línea vocal expresiva y tratamiento robótico | Nueva preferencia; fuente/transcripción pendiente |
-| Lose Yourself to Dance | Bajo sincopado, pulso de baile y articulación | Groove original inspirado, no transcripción |
+| Something About Us | Fraseo cálido y sostenido | PDF y MIDI; arreglo completo del archivo en 018 |
+| Giorgio by Moroder | Desarrollo por capas y arco narrativo | Arreglo reducido 5:49 en 018; original completo pendiente |
+| Instant Crush (Julian Casablancas) | Línea vocal expresiva y tratamiento robótico | MIDI 5:14; arreglo fuente en 018 |
+| Lose Yourself to Dance | Bajo sincopado, pulso de baile y articulación | Groove original conservado; MIDI 5:55 en 018 |
 
 El tema con Julian Casablancas es [Instant Crush, según Sony Music](https://www.sonymusic.es/lanzamientos/daft-punk-lanza-el-video-de-su-single-instant-crush-junto-julian-casablancas-lider-de-strokes/).
 La selección anterior (Digital Love, Harder Better Faster Stronger y Get Lucky)
 se conserva en el medley descargado como material secundario, sin priorizarla.
-Daft Punk está iniciado: fuentes y estudios tímbricos; **ningún tema completo
-interpretado todavía**. No dar por cumplidos arreglos con una demo de vocales.
+Actualización 2026-10-08: [018 — cuatro arreglos largos](../../experiments/018-daft-repertorio/README.md)
+reproduce de principio a fin los MIDI obtenidos, con instrumentación propia. No
+certifica integridad respecto de los discos; Giorgio es reducido. Escucha y cotejo
+pendientes. Las demos originales anteriores se conservan sin cambios.
 
 [Groove original de 24 s](../../recordings/013-groove-disco.wav), 100 BPM,
 bombo a negras, bajo y vocales sincopados. Elección de tempo del estudio, no
@@ -60,3 +62,14 @@ controles y WAV de 16 s. El filtrado o reconstrucción vocal cambia el dibujo;
 no se etiqueta como superficie algebraica fiel. Geometría y sonificación siguen
 siendo componentes separados. Un vocoder real con voz moduladora y una portadora
 procedente de superficies es el siguiente experimento, no un resultado ya obtenido.
+
+## Fuentes nuevas y alcance de «completo»
+
+Se obtuvieron MIDI válidos de [Something About Us](https://midifind.com/files/d/daft_punk/daft_punk_something_about_us/791-1-0-22605),
+[Instant Crush](https://midifind.com/files/d/daft_punk/daft_punk_instant_crush/791-1-0-22595),
+[Lose Yourself to Dance](https://midifind.com/files/d/daft_punk/daft_punk_lose_yourself_to_dance/791-1-0-22596)
+y [Giorgio reducido](https://midifind.com/files/d/daft_punk/daft_punk_giorgio_by_moroder_2/791-1-0-22588).
+El manifiesto registra estructura medida y procedencia, no una evaluación de
+fidelidad. La fuente de [Giorgio de 9:04](https://www.nonstop2k.com/midi-files/28213-daft-punk-giorgio-by-moroder-midi.html)
+requiere créditos/premium según su ficha; no se compró. Completar/cotejar la forma
+del original sigue pendiente y no se sustituye con un loop del arreglo reducido.
