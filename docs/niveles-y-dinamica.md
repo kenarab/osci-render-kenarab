@@ -66,3 +66,27 @@ aún el rango ni el valor actual del control en la aplicación.
 La automatización de la interfaz falló al iniciar (`native pipe startup failed`).
 No se aplicó el ajuste ni se comprobó la ruta completa de render/audio. El problema
 de tamaño sigue abierto; no aumentar Volume para compensarlo sin esa separación.
+
+## Preset visual independiente — EXP-054
+
+El usuario ya amplió Image Scale en Pro, pero percibe poco brillo/color/riqueza.
+Controles confirmados en `../osci-render/Source/visualiser/VisualiserSettings.h`:
+Line Colour (Hue, Saturation, Intensity), Screen Colour (color/ambientación de
+fondo), Light Effects (Persistence, Focus, Glow, Afterglow, Overexposure).
+Image Scale y posición son del visualizador; el efecto Scale de audio es distinto.
+
+Propuesta de ajuste, todavía no aplicada: conservar escala elegida; subir primero
+Intensity del trazo y saturación; mantener fondo oscuro con contraste; ajustar
+Focus observando grosor/nitidez, y sólo después un Glow moderado. Subir Persistence
+lo suficiente para reconocer el barrido, sin acumular vueltas en una mancha.
+Reservar Afterglow/Overexposure para una variante expresiva posterior. No proponer
+valores universales sin ver el rango ni el resultado de la versión instalada.
+
+Guardar una COPIA de proyecto como preset visual para comparar; el proyecto puede
+incluir audio además de visuales, por lo que no se debe cargar indiscriminadamente
+sobre otra sesión. Anotar ajustes visuales por separado. No se editó ni guardó
+ningún .osci del usuario. No usar Volume/Threshold para cambiar brillo o tamaño.
+
+Aceptar esta prueba al comparar el mismo Lua y cámara antes/después: mayor contraste
+y color, trazos distinguibles y sin recorte; audio sin variación. Un preset visual
+no agrega hojas, singularidades ni cobertura: éstas dependen de geometría/barrido.

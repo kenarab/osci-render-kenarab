@@ -542,3 +542,10 @@
   redistribuir notas en Git. Manifiesto conserva procedencia y recorte.
 - Pruebas de fases/tempo/otras voces, transiciones sostenidas, jitter, loop y
   reinicio; WAV 20 s de ambos. No se abrió ni modificó la sesión de osci-render.
+
+## 2026-10-08 — Preset visual separado (EXP-054)
+
+- Usuario amplió la imagen y pide trabajar brillo/color/oscuridad por configuración.
+- Controles del visualizador Pro confirmados en el código local; propuesta de orden
+  de ajuste documentada, sin valores inventados ni cambios en sus proyectos .osci.
+- Pendiente comparación perceptual en host, conservando audio y geometría iguales.

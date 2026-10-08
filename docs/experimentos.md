@@ -275,3 +275,11 @@ y Cassini de dos lóbulos. Cuatro presets XYZ y cuatro controlables, galería 3D
 con caras y captura de referencia; no OBJ ni proyección anterior al retorno Lua.
 VIV-03: residuo F=0 <1.1e-15; galerías y cámara verificadas en Chrome WebGL2.
 No son superficies récord SURFER ni timbre aceptado; pendiente validación Pro.
+
+## EXP-054 — Riqueza visual como configuración separada
+
+Pedido: revisar colores tenues/oscuridad; tamaño ya ampliado por el usuario en Pro.
+Controles localizados en código: Line Colour, Screen Colour, Light Effects e
+Image Scale. Procedimiento en docs/niveles-y-dinamica.md; aplicación y comparación
+pendientes. Aceptación: mismo Lua/cámara con mejor legibilidad y audio sin cambios.
+La configuración no sustituye diversidad de superficies ni densidad del barrido.
