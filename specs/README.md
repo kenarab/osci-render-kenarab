@@ -66,3 +66,5 @@ Plan de tareas / evidencia / dudas pendientes
   preferencias actualizadas y propuesta de dinámica; escucha/ruteo pendientes.
 - [016 — Cuártica tonal](016-cuartica-tonal/spec.md): XYZ con portadora, cobertura
   y giro separados; pruebas offline aprobadas, escucha y host pendientes.
+- [017 — Voces y formas](017-voces-y-formas/spec.md): Bach/Oblivion asignables,
+  cuatro geometrías distintas, estudios anteriores preservados; host pendiente.

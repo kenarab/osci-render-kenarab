@@ -33,3 +33,17 @@ lua scripts/check_curves.lua
 ```
 
 Este repositorio contiene nuestros experimentos, no el código fuente de osci-render.
+
+## Nuevos experimentos — 2026-10-08
+
+Los estudios anteriores permanecen intactos. Empezar por:
+
+- [015 — Bach con timbres por voz](experiments/015-bach-voces-vivas/README.md):
+  Lua completo, A–D para identidades, E tempo, F expresión, G giro; solos XYZ aparte.
+- [016 — Superficies diversas](experiments/016-superficies-diversas/README.md):
+  toro, Roman, doble cono y Cassini; Lua y galería con caras.
+- [017 — Oblivion con Lua en la carpeta](experiments/017-oblivion-voces-vivas/README.md):
+  preset, controles y vistas XYZ por instrumento. Archivos musicales sólo locales.
+
+Mezcla sonora derivada y geometría por voz son salidas distintas; comparar con
+la galería antes de evaluar la configuración del visualizador de osci-render.

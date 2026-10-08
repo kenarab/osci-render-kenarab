@@ -1,0 +1,42 @@
+[
+  {
+    "id": "toro",
+    "residual": 4.440892098500626e-16,
+    "vertices": 4704,
+    "faces": 9216,
+    "equation": "(x^2+y^2+z^2+R^2-r^2)^2-4*R^2*(x^2+y^2)=0",
+    "parameters": {
+      "R": 0.62,
+      "r": 0.25
+    }
+  },
+  {
+    "id": "roman",
+    "residual": 1.3877787807814457e-17,
+    "vertices": 4704,
+    "faces": 9216,
+    "equation": "x^2*y^2+x^2*z^2+y^2*z^2-x*y*z=0",
+    "parameters": {}
+  },
+  {
+    "id": "cono",
+    "residual": 1.6653345369377348e-16,
+    "vertices": 4704,
+    "faces": 9216,
+    "equation": "x^2+y^2-z^2=0",
+    "parameters": {
+      "z_limit": 0.7
+    }
+  },
+  {
+    "id": "cassini",
+    "residual": 4.440892098500626e-16,
+    "vertices": 4704,
+    "faces": 9216,
+    "equation": "((x-a)^2+y^2+z^2)*((x+a)^2+y^2+z^2)-b^4=0",
+    "parameters": {
+      "a": 0.65,
+      "b": 0.68
+    }
+  }
+]

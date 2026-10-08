@@ -1,0 +1,31 @@
+{
+  "mix_peak_bound_expression_1": 0.2691023622047244,
+  "source": {
+    "source": "https://www.mutopiaproject.org/cgibin/piece-info.cgi?id=242",
+    "license": "CC-BY-SA-3.0",
+    "source_sha256": "35807002e83528038bd53bed791d71356c937ac792e8ba4c4aef8eb54ffe0859",
+    "timing": "Adagio 26 BPM con rubato y cadencias; adaptación en este generador"
+  },
+  "voices": [
+    "Violino I",
+    "Violino II",
+    "Viola",
+    "Continuo"
+  ],
+  "defaults": [
+    "toro",
+    "roman",
+    "cono",
+    "cassini"
+  ],
+  "duration": 339.06499999976415,
+  "notes": 980,
+  "files": [
+    "bach.lua",
+    "bach-control.lua",
+    "bach-voz-1-xyz-control.lua",
+    "bach-voz-2-xyz-control.lua",
+    "bach-voz-3-xyz-control.lua",
+    "bach-voz-4-xyz-control.lua"
+  ]
+}

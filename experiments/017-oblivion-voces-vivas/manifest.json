@@ -1,0 +1,44 @@
+{
+  "mix_peak_bound_expression_1": 0.35074015748031495,
+  "source": {
+    "source": {
+      "source_url": "https://scorebase.org/scores/38762",
+      "download_url": "https://scorebase.org/scores/38762/file/mid?download=true",
+      "sha256": "13ce45d1fe970352620279e673b76f35a7ba34d79870a2514e9d161e08e1ec26",
+      "rights_status": "acceso público; licencia abierta no verificada",
+      "derivation": {
+        "tool": "scripts/import_repertoire_midi.py",
+        "schema_version": 1,
+        "tool_sha256": "0466041d48a9277c7002a3b191020c3ee4148460bb450e01dd9ff74aa63adb25",
+        "options": {
+          "allow_zero_duration": true
+        },
+        "review": "validacion estructural; escucha pendiente"
+      }
+    },
+    "excerpt_seconds": [
+      41.4892,
+      70
+    ],
+    "events_sha256": "970412c8b484f610b4766c6d3c037f6b38a0645412f653768c65508b96f798cd"
+  },
+  "voices": [
+    "Flauta",
+    "Fagot",
+    "Piano"
+  ],
+  "defaults": [
+    "toro",
+    "roman",
+    "cono"
+  ],
+  "duration": 28.510800000000003,
+  "notes": 235,
+  "files": [
+    "oblivion.lua",
+    "oblivion-control.lua",
+    "oblivion-voz-1-xyz-control.lua",
+    "oblivion-voz-2-xyz-control.lua",
+    "oblivion-voz-3-xyz-control.lua"
+  ]
+}

@@ -527,3 +527,18 @@
   Se propone migrar primero una voz/dos identidades y después reutilizar en Bach.
 - Cambio documental: revisadas coherencia y referencias; no se modificó audio,
   Lua ni sesión de Pro. Sin pruebas de ejecución por no cambiar comportamiento.
+
+## 2026-10-08 — Voces intercambiables y diversidad (EXP-052/053)
+
+- VIV-01: nuevos experimentos 015/016/017. Hashes de todos los archivos existentes
+  en 001–014 sin cambios; preservados aire-seda.osci y delay.osci del usuario.
+- VIV-02/04/05: Bach completo 339.065 s, cuatro voces, y Oblivion 28.5108 s, tres
+  grupos, comparten biblioteca nueva. Cambios por voz con mezcla suavizada e
+  histéresis; bancos por tasa/altura. Solos XYZ separados de mezcla sonora derivada.
+- VIV-03: toro, Roman compacta, doble cono y Cassini, parametrizaciones XYZ; caras
+  de referencia y galería sin audio. F=0 <1.1e-15 a tres tasas, WebGL sin errores
+  y cámara verificada. Miniaturas revisadas visualmente. Pro/escucha pendientes.
+- VIV-06: archivos Oblivion locales en experiments/017-oblivion-voces-vivas, sin
+  redistribuir notas en Git. Manifiesto conserva procedencia y recorte.
+- Pruebas de fases/tempo/otras voces, transiciones sostenidas, jitter, loop y
+  reinicio; WAV 20 s de ambos. No se abrió ni modificó la sesión de osci-render.

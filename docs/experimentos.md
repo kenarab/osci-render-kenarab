@@ -254,3 +254,24 @@ Aceptación: reutilizar identidades en Bach y Oblivion, cambiarlas sin reiniciar
 notas/tempo/otras voces, sin notas colgadas, con escenas recuperables y prueba Pro.
 El selector de cuatro bancos/tres grupos de 011 es antecedente, no cumplimiento
 general ni mapeo de controlador comprobado.
+
+## EXP-052 — Bach y Oblivion con identidades por voz, en carpetas nuevas
+
+Pedido: implementar Bach asignable, entregar Lua accesible de Oblivion y preservar
+los estudios ya usados. VIV-01/02/04/05/06: nuevos 015 y 017, mismo motor con
+asignación A–D, tempo E, expresión F, giro G. Preset y archivos controlables;
+mezcla sonora derivada separada de solos XYZ. Oblivion Lua en su propia carpeta,
+ignorado por Git por procedencia musical, con manifest y generador reproducible.
+Verificado a 16/44.1/48 kHz: cambios sostenidos sin reiniciar fases/eventos/tempo,
+histéresis, reinicio/loop y F=0 en solos. WAV de 20 s de ambos. Cota de mezcla
+para todo el repertorio a expresión máxima: Bach .270, Oblivion .351. Escucha,
+controlador y host pendientes. No se modificaron experimentos 001–014 ni .osci.
+
+## EXP-053 — Diversidad geométrica más allá de esfera/elipsoide
+
+Pedido explícito: formas más diversas y visibles; cuárticas anteriores no convencen.
+Propuesta implementada en 016: toro, Roman (parte compacta), doble cono recortado
+y Cassini de dos lóbulos. Cuatro presets XYZ y cuatro controlables, galería 3D
+con caras y captura de referencia; no OBJ ni proyección anterior al retorno Lua.
+VIV-03: residuo F=0 <1.1e-15; galerías y cámara verificadas en Chrome WebGL2.
+No son superficies récord SURFER ni timbre aceptado; pendiente validación Pro.

@@ -1,0 +1,70 @@
+[
+  {
+    "id": "toro",
+    "name": "Toro",
+    "equation": "(x^2+y^2+z^2+R^2-r^2)^2-4*R^2*(x^2+y^2)=0",
+    "parameters": {
+      "R": 0.62,
+      "r": 0.25
+    },
+    "bound": 0.9,
+    "recipe": "parametric-fourier-v1",
+    "bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "rms_target": 0.3
+  },
+  {
+    "id": "roman",
+    "name": "Roman",
+    "equation": "x^2*y^2+x^2*z^2+y^2*z^2-x*y*z=0",
+    "parameters": {},
+    "bound": 0.55,
+    "recipe": "parametric-fourier-v1",
+    "bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "rms_target": 0.3
+  },
+  {
+    "id": "cono",
+    "name": "Doble cono",
+    "equation": "x^2+y^2-z^2=0",
+    "parameters": {
+      "z_limit": 0.7
+    },
+    "bound": 1.0,
+    "recipe": "parametric-fourier-v1",
+    "bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "rms_target": 0.3
+  },
+  {
+    "id": "cassini",
+    "name": "Cassini de dos lobulos",
+    "equation": "((x-a)^2+y^2+z^2)*((x+a)^2+y^2+z^2)-b^4=0",
+    "parameters": {
+      "a": 0.65,
+      "b": 0.68
+    },
+    "bound": 1.0,
+    "recipe": "parametric-fourier-v1",
+    "bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "rms_target": 0.3
+  }
+]
