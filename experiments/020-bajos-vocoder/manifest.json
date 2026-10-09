@@ -1,0 +1,60 @@
+[
+  {
+    "id": "lose-yourself-to-dance",
+    "title": "Lose Yourself to Dance",
+    "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_lose_yourself_to_dance/791-1-0-22596",
+    "sha256": "0d1272fa11cbc6bbb1a9a4226d527636940f50d9fdf55f1f3b4a36da2fbedd06",
+    "track": 2,
+    "track_name": "Bass",
+    "source_start": 56.0,
+    "source_end": 80.0,
+    "duration": 24,
+    "notes": 73,
+    "pitches": [
+      28,
+      30,
+      32,
+      34,
+      44,
+      46,
+      48,
+      49,
+      51,
+      53
+    ],
+    "voice": "Monofónico, prioridad a última nota; fases continuas",
+    "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+    "modulator": "Vocales sintéticas o canal externo ext_x; no voz del disco",
+    "host_acceptance": false
+  },
+  {
+    "id": "giorgio-by-moroder",
+    "title": "Giorgio by Moroder",
+    "source_url": "https://midifind.com/files/d/daft_punk/daft_punk_giorgio_by_moroder_2/791-1-0-22588",
+    "sha256": "ac3ed9ec73e3872fe61d6cddc69c9160d25677420995ed8030a687439d887d24",
+    "track": 0,
+    "track_name": "Bass",
+    "source_start": 96.0,
+    "source_end": 120.0,
+    "duration": 24,
+    "notes": 111,
+    "pitches": [
+      28,
+      29,
+      31,
+      33,
+      35,
+      36,
+      38,
+      40,
+      41,
+      43,
+      45,
+      47
+    ],
+    "voice": "Monofónico, prioridad a última nota; fases continuas",
+    "rights": "Descarga pública; autoría del arreglo y licencia abierta no verificadas; derivados sólo locales",
+    "modulator": "Vocales sintéticas o canal externo ext_x; no voz del disco",
+    "host_acceptance": false
+  }
+]

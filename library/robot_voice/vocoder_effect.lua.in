@@ -1,0 +1,16 @@
+-- BVC-05: pegar en Custom Lua Effect, no cargar como fuente .lua.
+-- Entrada X=portadora mono, Y=modulador mono. A mezcla, B drive, C nivel.
+@DSP@
+local rate=type(sample_rate)=='number' and sample_rate>0 and sample_rate or 48000
+local counter=type(step)=='number' and step or 0
+if not bvc_effect or bvc_effect.rate~=rate or counter<bvc_effect.last then
+ bvc_effect={rate=rate,last=counter,vocoder=bvc_vocoder(rate),wet=1,drive=.3,level=.65}
+end
+local s=bvc_effect;s.last=counter;local k=1-math.exp(-1/(rate*.06))
+local function ctl(v,d) if type(v)~='number' or v~=v then return d end;return math.max(0,math.min(1,v)) end
+local function signal(v) if type(v)~='number' or v~=v then return 0 end;return math.max(-2,math.min(2,v)) end
+s.wet=s.wet+k*(ctl(slider_a,1)-s.wet);s.drive=s.drive+k*(ctl(slider_b,.3)-s.drive);s.level=s.level+k*(ctl(slider_c,.65)-s.level)
+local carrier,modulator=signal(x),signal(y)
+local wet=bvc_vocode(s.vocoder,carrier,modulator)
+local output=.65*s.level*bvc_soft((1+5*s.drive)*((1-s.wet)*carrier+s.wet*wet))
+return {output,output,0}

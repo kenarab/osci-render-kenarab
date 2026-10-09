@@ -304,3 +304,15 @@ giro independientes. Lua preset/control y visor con caras sin audio ni OBJ.
 No son superficies récord. Aceptación: lóbulos/forma reconocibles en Pro y cambios
 de A sin pérdida de barrido. Corrección geométrica/cobertura/controles offline
 comprobadas; comparación en Pro, MIDI físico y escucha pendientes.
+
+## EXP-057 — Bajos potentes y vocoderizados con Daft Punk
+
+Pedido del usuario: experimentar con bajos de sintetizador y vocoder, y evaluar
+extensiones de filtros. BVC-01…07 / nuevo 020: dos fragmentos de bajo de 24 s,
+Lose Yourself to Dance y Giorgio, seco/vocoder/controlable. Banco analizador de
+12 bandas, modulador sintético o entrada externa, seno grave, corte/resonancia y
+saturación. Efecto Lua reutilizable y documento de investigación/ruteo con Live.
+Aceptación: bajo con cuerpo y articulación vocal agradable, controles útiles y
+entrada física en Pro. DSP/transferencia espectral/offline aprobados; aceptación
+sonora y host pendientes. No se altera repertorio anterior ni sus .osci; no se
+presentan estos recortes como temas completos ni como superficies XYZ.

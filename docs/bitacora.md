@@ -591,3 +591,30 @@
   host, controlador físico y calidad tímbrica pendientes; no equivalen a F=0.
 - Se preservan 001–018 y .osci del usuario. Daft 018 sigue listo para su escucha;
   Giorgio original completo y cotejo de arreglos permanecen pendientes.
+
+## 2026-10-09 — Bajos y vocoder multibanda (EXP-057)
+
+- BVC-01: pedido de bajos potentes/vocoderizados y filtros. Nuevo 020: Lose
+  Yourself to Dance, Bass 2, 56–80 s, 73 notas; Giorgio reducido, Bass 0, 96–120 s,
+  111 notas. Tres Lua por estudio: seco, vocoder y controles; no temas completos.
+- BVC-02/03: sierras PolyBLEP, filtro de cuatro polos, seno fundamental paralelo,
+  saturación suave y DC-block. Vocoder real de 12 bandas con analizador y
+  portadora separados, modulador de vocales sintéticas o ext_x; sin letras/voz
+  del disco. No se asegura calidad artística ni ausencia de aliasing.
+- La primera prueba espectral detectó demasiada fuga entre regiones. Se duplicó
+  cada pasabanda en cascada; repetidas las pruebas y regenerados todos los Lua/WAV.
+  Se corrigió también el paso de la instancia de estado del vocoder en la carga
+  inicial. No se debilitaron criterios para pasar la transferencia espectral.
+- BVC-05/07: biblioteca independiente y efecto X portadora / Y modulador,
+  sin repertorio. Código local confirma Lua Effect y entrada externa de fuente
+  Lua; documentadas diferencias de rutas Audio Input y síntesis. Live External
+  Carrier/Post FX verificado en manual oficial. No se modificó el host ni la DAW.
+- BVC-06: silencio sin una señal, cola, efecto, controles y entrada simulada
+  aprobados a 16/44.1/48 kHz. Cuatro renders íntegros 24.5 s a 48 kHz, todos
+  los eventos procesados y reinicio; picos secos <=.3374, vocoder <=.2589.
+  FFT independiente: modulación a 400 Hz concentra 98.18% en 180–850 Hz; a
+  2400 Hz concentra 91.12% en 1500–3400 Hz. No mide inteligibilidad de voz.
+- Sin dependencias instaladas; FFT de biblioteca estándar. Originales/notas/Lua
+  musicales/WAV locales; DSP, manifiestos y efecto genérico versionados.
+  Preservados 001–019 y .osci del usuario. Sonido, entrada física, performance
+  y aceptación en Pro pendientes. Salida sonora mono XY; geometría XYZ aparte.

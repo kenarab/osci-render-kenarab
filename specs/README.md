@@ -72,3 +72,5 @@ Plan de tareas / evidencia / dudas pendientes
   formantes y controles; integridad respecto del disco y escucha pendientes.
 - [019 — Cuárticas vivas](019-cuarticas-vivas/spec.md): seis/ocho lóbulos, parámetro
   directo en Lua y visor con caras; reconocimiento en Pro y sonido pendientes.
+- [020 — Bajos y vocoder](020-bajos-vocoder/spec.md): dos estudios Daft, banco
+  de 12 bandas, modulador externo y efecto Lua; escucha/ruteo en host pendientes.

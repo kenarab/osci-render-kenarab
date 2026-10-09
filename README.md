@@ -54,3 +54,6 @@ la galería antes de evaluar la configuración del visualizador de osci-render.
 
 - [019 — Cuárticas vivas](experiments/019-cuarticas-vivas/README.md): familias
   de seis/ocho lóbulos, deformación por coeficiente en Lua y visor 3D sin audio.
+
+- [020 — Bajos de sintetizador y vocoder](experiments/020-bajos-vocoder/README.md):
+  Lose Yourself to Dance/Giorgio, subgrave, filtro resonante y vocoder de 12 bandas.

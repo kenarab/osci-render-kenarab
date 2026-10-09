@@ -1,0 +1,10 @@
+[{"id":"lose-yourself-to-dance-control","rate":16000,"peak":0.541514777,"external_modulator":true},
+{"id":"giorgio-by-moroder-control","rate":16000,"peak":0.545287469,"external_modulator":true},
+{"id":"lose-yourself-to-dance-control","rate":44100,"peak":0.541447539,"external_modulator":true},
+{"id":"giorgio-by-moroder-control","rate":44100,"peak":0.545555707,"external_modulator":true},
+{"id":"lose-yourself-to-dance-control","rate":48000,"peak":0.541460943,"external_modulator":true},
+{"id":"giorgio-by-moroder-control","rate":48000,"peak":0.545563053,"external_modulator":true},
+{"id":"lose-yourself-to-dance-bass","rate":48000,"peak":0.335648588,"rms":0.134764219,"notes":73,"complete_excerpt":true,"host_acceptance":false},
+{"id":"lose-yourself-to-dance-bass-vocoder","rate":48000,"peak":0.258822880,"rms":0.114255856,"notes":73,"complete_excerpt":true,"host_acceptance":false},
+{"id":"giorgio-by-moroder-bass","rate":48000,"peak":0.337305334,"rms":0.119638176,"notes":111,"complete_excerpt":true,"host_acceptance":false},
+{"id":"giorgio-by-moroder-bass-vocoder","rate":48000,"peak":0.241454109,"rms":0.101256048,"notes":111,"complete_excerpt":true,"host_acceptance":false}]

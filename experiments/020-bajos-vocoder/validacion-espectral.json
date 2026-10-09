@@ -1,0 +1,14 @@
+[
+  {
+    "modulator_hz": 400,
+    "low_fraction": 0.9818492846696095,
+    "high_fraction": 0.002454600595043704,
+    "centroid_hz": 431.92472962625493
+  },
+  {
+    "modulator_hz": 2400,
+    "low_fraction": 0.00042549533017332403,
+    "high_fraction": 0.9111822868256898,
+    "centroid_hz": 2752.164478063529
+  }
+]

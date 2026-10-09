@@ -1,0 +1,51 @@
+-- @TITLE@ / BVC-01…06. Bajo aislado; no voz humana ni tema completo.
+-- A corte, B drive, C vocoder, D vocal, E tempo, F expresión, G seno, H audio externo, I resonancia.
+local LIVE=@LIVE@
+@DSP@
+@DATA@
+local ID='@ID@'
+if not bass_voice or bass_voice.id~=ID or bass_voice.rate~=sample_rate or step<bass_voice.last then
+ bass_voice={id=ID,rate=sample_rate,last=step,time=0,index=1,active={},processed=0,done=false,duration=@DURATION@,
+  notes=load_notes(),vowels=load_vowels(),dsp=bvc_engine(sample_rate),cut=.45,drive=.5,wet=@WET@,vowel=.25,
+  speed=1,expression=.65,sub=.55,external=0,resonance=.3,tick=0}
+end
+local s=bass_voice;s.last=step;local dt=1/sample_rate;local k=1-math.exp(-dt/.06)
+local function ctl(v,d) if not LIVE or type(v)~='number' or v~=v then return d end;return math.max(0,math.min(1,v)) end
+s.cut=s.cut+k*(ctl(slider_a,.45)-s.cut);s.drive=s.drive+k*(ctl(slider_b,.5)-s.drive)
+s.wet=s.wet+k*(ctl(slider_c,@WET@)-s.wet);s.vowel=s.vowel+k*(ctl(slider_d,.25)-s.vowel)
+s.speed=s.speed+k*(.5+ctl(slider_e,.5)-s.speed);s.expression=s.expression+k*(ctl(slider_f,.65)-s.expression)
+s.sub=s.sub+k*(ctl(slider_g,.55)-s.sub);s.external=s.external+k*(ctl(slider_h,0)-s.external)
+s.resonance=s.resonance+k*(ctl(slider_i,.3)-s.resonance)
+local t=s.time;s.time=t+dt*s.speed
+if t>=s.duration+.2 then s.done=true;return {0,0,0} end
+while s.notes[s.index] and s.notes[s.index][1]<=t do
+ s.active[#s.active+1]=s.notes[s.index];s.index=s.index+1;s.processed=s.processed+1
+end
+for i=#s.active,1,-1 do if t>=s.active[i][2] then table.remove(s.active,i) end end
+-- Bajo monofónico: última nota comenzada, conservando fase entre articulaciones.
+local n=s.active[#s.active];local hz=n and 440*2^((n[3]-69)/12) or 55
+local function ease(v) v=math.max(0,math.min(1,v));return v*v*(3-2*v) end
+local env=n and (n[4]/127)*ease((t-n[1])/(.008*s.speed))*ease((n[2]-t)/(.025*s.speed)) or 0
+local dsp=s.dsp;local inc=hz*dt
+dsp.p=(dsp.p+inc)%1;dsp.p2=(dsp.p2+inc*1.003)%1;dsp.pm=(dsp.pm+130.81278265*dt)%1
+local carrier=(.7*bvc_saw(dsp.p,inc)+.3*bvc_saw(dsp.p2,inc*1.003))*env
+-- Filtro de corte con caída de envolvente: recalcular a tasa de control, no por muestra.
+if s.tick%64==0 then bvc_lowpass(dsp,100*30^s.cut*(1+.6*env),.65+1.8*s.resonance) end
+s.tick=s.tick+1
+local dry=bvc_filter(dsp.low2,bvc_filter(dsp.low1,carrier))
+local vowel=1+4*s.vowel;local vi=math.min(4,math.floor(vowel));local f=vowel-vi
+local a,b=s.vowels[vi],s.vowels[vi+1];local sn,cs=math.sin(2*math.pi*dsp.pm),math.cos(2*math.pi*dsp.pm);local sh,ch=sn,cs;local demo=0
+for h=1,32 do
+ if h*130.81278265<sample_rate*.4 then demo=demo+(a[h]*(1-f)+b[h]*f)*sh end
+ sh,ch=sh*cs+ch*sn,ch*cs-sh*sn
+end
+local function input(v) if type(v)~='number' or v~=v then return 0 end;return math.max(-1,math.min(1,v)) end
+local external=input(ext_x) -- canal 1: entrada mono sin atenuación por canal ausente.
+local modulator=demo*env*(1-s.external)+external*s.external
+local wet=bvc_vocode(dsp.vocoder,carrier,modulator)
+local sub=math.sin(2*math.pi*dsp.p)*env
+local mono=(1-s.wet)*dry+s.wet*wet+.6*s.sub*sub
+local y=bvc_highpass(dsp,mono)
+local fade=ease(t/.04)*ease((s.duration+.2-t)/.08)
+local output=.65*s.expression*bvc_soft((1+7*s.drive)*y)*fade
+return {output,output,0} -- audio mono XY; el filtro no conserva geometría de superficie.
