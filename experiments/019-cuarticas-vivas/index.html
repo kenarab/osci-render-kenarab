@@ -1,0 +1,17 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cuárticas vivas · seis y ocho lóbulos</title>
+<style>body{margin:0;background:#0a111a;color:#edf7f5;font:16px system-ui}main{display:grid;grid-template-columns:340px 1fr;height:100vh}aside{padding:25px;background:#14212e;overflow:auto}h1{font-size:27px}label{display:block;margin:18px 0 6px}select,button{background:#213c49;color:white;border:1px solid #56717b;border-radius:7px;padding:10px;width:100%}button{margin:8px 0;cursor:pointer}input[type=range]{width:100%;accent-color:#8cdbce}p,small{color:#b5c9ce;line-height:1.5}canvas{width:100%;height:100%;display:block;touch-action:none}section{position:relative;min-width:0}#caption{position:absolute;bottom:15px;left:25px;right:20px;pointer-events:none}#state{color:#ade4da}label[hidden],button[hidden]{display:none}@media(max-width:700px){main{display:block;height:auto}section{height:70vh}}</style>
+<main><aside><small>ECUACIONES / ENSAYO 019</small><h1>Cuárticas vivas</h1>
+<label hidden>Ejercicio<select id="mode"><option value="solo">Una superficie</option></select></label>
+<div id="choices"></div><label>Deformación a: <output id="parameter"></output><input id="deform" type="range" min="0" max=".96" step=".001" value=".92"></label>
+<p id="equation"></p>
+<label hidden>Instrumentos<select id="focus"></select></label>
+<label><input id="faces" type="checkbox" checked> Caras de la superficie</label><label><input id="trace" type="checkbox"> Barrido de referencia</label>
+<button id="reset">Centrar cámara</button>
+<button hidden id="play">Iniciar</button><label hidden>Tiempo <output id="clock">0 s</output><input id="seek" type="range" value="0"></label>
+<p id="state"></p><small>Arrastrá para girar; rueda para acercar. El parámetro modifica la ecuación y reconstruye las caras. La escala se adapta para mantener el radio máximo visible.</small>
+<p>Visor sin audio. El barrido representa 144 ms a 110/7 Hz. Cambiar aquí a no modifica el Lua abierto en osci-render.</p>
+<p><a style="color:#8cdbce" href="README.md">Lua, controles y guía de prueba</a></p></aside>
+<section><canvas id="view"></canvas><p id="caption">Referencia 3D con caras y profundidad. La apariencia en Pro se comprueba aparte.</p></section></main>
+<script src="../../library/algebraic_surfaces/lobed.js"></script>
+<script>window.XYZ_MODELS=LobedSurfaces.families.map((f,i)=>LobedSurfaces.model(i,f.initial));</script>
+<script src="gallery.js"></script><script src="parameters.js"></script></html>

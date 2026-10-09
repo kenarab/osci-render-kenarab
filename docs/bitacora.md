@@ -570,3 +570,24 @@
   0.2043 / 0.2391 / 0.1743 / 0.1636, sin muestras no finitas ni clipping.
   Cabeceras/duraciones de los cuatro WAV estéreo verificadas. Esto no certifica
   calidad musical ni rendimiento dentro de Pro.
+
+## 2026-10-09 — Cuárticas vivas (EXP-056)
+
+- LOB-01/02: nuevo 019 y biblioteca independiente Lua/JS. Familias compactas
+  propias de seis y ocho lóbulos, ecuaciones y rangos registrados; no se les
+  atribuyen singularidades récord de SURFER. Solución radial directa sin OBJ.
+- LOB-03: cuatro Lua, controles de coeficiente, giro, portadora, cobertura y
+  escala; suavizado sin reinicio de fases. XYZ conserva la ecuación, con escala
+  uniforme adaptada al radio máximo y rotación 3D. Sonido geométrico sin filtro.
+- LOB-04: visor local sin audio, caras, cámara y barrido de 144 ms. El parámetro
+  reconstruye directamente 9024 caras; no comunica cambios a Pro. Capturas de
+  ambas familias revisadas: volumen y lóbulos visibles, formas distintas.
+- LOB-05: Lua aprobado a 16/44.1/48 kHz: residuo <2.2e-14, salida <=.8, energía
+  XYZ, 512/512 celdas angulares/segundo, controles, pausa y reinicio. JS verifica
+  extremos de rango, caras no degeneradas y relieve radial >1.7. Chrome local
+  aprobado: selección/deformación/restauración/cámara y WebGL sin errores.
+- El primer Chrome no inició dentro del sandbox; corrida autorizada fuera de él
+  aprobada. Sin cambios en sesión de Pro ni audio reproducido. Reconocimiento en
+  host, controlador físico y calidad tímbrica pendientes; no equivalen a F=0.
+- Se preservan 001–018 y .osci del usuario. Daft 018 sigue listo para su escucha;
+  Giorgio original completo y cotejo de arreglos permanecen pendientes.

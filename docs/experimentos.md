@@ -294,3 +294,13 @@ No se modifican ensayos anteriores. Completo significa archivo fuente íntegro:
 Something 3:22, Instant 5:14, Lose 5:55, Giorgio reducido 5:49. Completar Giorgio
 original y cotejar integridad de los demás sigue pendiente. Fuente Giorgio 9:04
 localizada pero requiere créditos; no comprada. Calidad/host pendientes.
+
+## EXP-056 — Cuárticas deformables con seis y ocho lóbulos
+
+Propuesta del agente para continuar pedidos de diversidad y controles de
+superficies XYZ (EXP-052/053), sin modificar los anteriores. Nuevo 019 / LOB-01…05:
+dos familias propias, coeficiente en vivo, escala uniforme y portadora/cobertura/
+giro independientes. Lua preset/control y visor con caras sin audio ni OBJ.
+No son superficies récord. Aceptación: lóbulos/forma reconocibles en Pro y cambios
+de A sin pérdida de barrido. Corrección geométrica/cobertura/controles offline
+comprobadas; comparación en Pro, MIDI físico y escucha pendientes.

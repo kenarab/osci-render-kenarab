@@ -1,0 +1,6 @@
+[{"id":"seis-lobulos","rate":16000,"residual":1.7763568394e-14,"peak":0.722257776,"angular_cells":512,"host_acceptance":false},
+{"id":"seis-lobulos","rate":44100,"residual":2.13162820728e-14,"peak":0.723641461,"angular_cells":512,"host_acceptance":false},
+{"id":"seis-lobulos","rate":48000,"residual":1.7763568394e-14,"peak":0.723652377,"angular_cells":512,"host_acceptance":false},
+{"id":"ocho-lobulos","rate":16000,"residual":7.1054273576e-15,"peak":0.782610365,"angular_cells":512,"host_acceptance":false},
+{"id":"ocho-lobulos","rate":44100,"residual":7.1054273576e-15,"peak":0.783702284,"angular_cells":512,"host_acceptance":false},
+{"id":"ocho-lobulos","rate":48000,"residual":5.3290705182e-15,"peak":0.783454035,"angular_cells":512,"host_acceptance":false}]

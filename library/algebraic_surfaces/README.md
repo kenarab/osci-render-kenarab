@@ -43,3 +43,10 @@ un generador asíncrono y un puente aún pendientes.
 `geometry3d.js` contiene mallas reutilizables y recorridos de diagnóstico, sin notas.
 Los bancos espectrales anteriores no equivalen a esta geometría. Ver
 [ejercicios y límites](../../experiments/012-superficies-xyz/README.md).
+
+## Cuárticas deformables (019)
+
+`lobed.lua` y `lobed.js` evalúan dos familias radiales compactas de seis y ocho
+lóbulos, con coeficiente continuo. `lobed.lua.in` conserva XYZ y separa giro,
+portadora, cobertura y escala. No depende de partituras ni de OBJ, y no altera
+el catálogo de superficies récord. [Ecuaciones, controles y límites](../../experiments/019-cuarticas-vivas/README.md).

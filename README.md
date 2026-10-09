@@ -51,3 +51,6 @@ la galería antes de evaluar la configuración del visualizador de osci-render.
 - [018 — Daft Punk: arreglos largos](experiments/018-daft-repertorio/README.md):
   cuatro pares de Lua preset/control y WAV íntegros de los archivos fuente; Giorgio
   es un arreglo reducido, no la versión original completa.
+
+- [019 — Cuárticas vivas](experiments/019-cuarticas-vivas/README.md): familias
+  de seis/ocho lóbulos, deformación por coeficiente en Lua y visor 3D sin audio.
