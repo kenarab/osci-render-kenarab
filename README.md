@@ -57,3 +57,6 @@ la galería antes de evaluar la configuración del visualizador de osci-render.
 
 - [020 — Bajos de sintetizador y vocoder](experiments/020-bajos-vocoder/README.md):
   Lose Yourself to Dance/Giorgio, subgrave, filtro resonante y vocoder de 12 bandas.
+
+- [021 — Adelantar/retroceder Lua](experiments/021-transporte-lua/README.md):
+  posición J, pausa K y retorno L; bajo continuo de calibración para comparar.

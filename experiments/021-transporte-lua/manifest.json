@@ -1,0 +1,122 @@
+[
+  {
+    "file": "lose-yourself-to-dance-bass-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 73,
+    "parent": "020-bajos-vocoder",
+    "controls": false
+  },
+  {
+    "file": "lose-yourself-to-dance-bass-vocoder-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 73,
+    "parent": "020-bajos-vocoder",
+    "controls": false
+  },
+  {
+    "file": "lose-yourself-to-dance-bass-control-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 73,
+    "parent": "020-bajos-vocoder",
+    "controls": true
+  },
+  {
+    "file": "giorgio-by-moroder-bass-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 111,
+    "parent": "020-bajos-vocoder",
+    "controls": false
+  },
+  {
+    "file": "giorgio-by-moroder-bass-vocoder-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 111,
+    "parent": "020-bajos-vocoder",
+    "controls": false
+  },
+  {
+    "file": "giorgio-by-moroder-bass-control-transport.lua",
+    "kind": "bass",
+    "duration": 24,
+    "notes": 111,
+    "parent": "020-bajos-vocoder",
+    "controls": true
+  },
+  {
+    "file": "something-about-us-transport.lua",
+    "kind": "song",
+    "duration": 202.25496,
+    "notes": 897,
+    "parent": "018-daft-repertorio",
+    "controls": false,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "something-about-us-control-transport.lua",
+    "kind": "song",
+    "duration": 202.25496,
+    "notes": 897,
+    "parent": "018-daft-repertorio",
+    "controls": true,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "instant-crush-transport.lua",
+    "kind": "song",
+    "duration": 314.331504,
+    "notes": 13226,
+    "parent": "018-daft-repertorio",
+    "controls": false,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "instant-crush-control-transport.lua",
+    "kind": "song",
+    "duration": 314.331504,
+    "notes": 13226,
+    "parent": "018-daft-repertorio",
+    "controls": true,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "lose-yourself-to-dance-transport.lua",
+    "kind": "song",
+    "duration": 355.34999999999997,
+    "notes": 15966,
+    "parent": "018-daft-repertorio",
+    "controls": false,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "lose-yourself-to-dance-control-transport.lua",
+    "kind": "song",
+    "duration": 355.34999999999997,
+    "notes": 15966,
+    "parent": "018-daft-repertorio",
+    "controls": true,
+    "scope": "Arreglo fuente de principio a fin; no certifica integridad respecto del disco"
+  },
+  {
+    "file": "giorgio-by-moroder-transport.lua",
+    "kind": "song",
+    "duration": 349.24055999999996,
+    "notes": 5324,
+    "parent": "018-daft-repertorio",
+    "controls": false,
+    "scope": "Arreglo reducido: no tema original completo"
+  },
+  {
+    "file": "giorgio-by-moroder-control-transport.lua",
+    "kind": "song",
+    "duration": 349.24055999999996,
+    "notes": 5324,
+    "parent": "018-daft-repertorio",
+    "controls": true,
+    "scope": "Arreglo reducido: no tema original completo"
+  }
+]

@@ -618,3 +618,27 @@
   musicales/WAV locales; DSP, manifiestos y efecto genérico versionados.
   Preservados 001–019 y .osci del usuario. Sonido, entrada física, performance
   y aceptación en Pro pendientes. Salida sonora mono XY; geometría XYZ aparte.
+
+## 2026-10-09 — Transporte Lua y referencia de bajo (EXP-058)
+
+- TRN-01–06: nuevo 021, sin modificar 018/020. Catorce variantes con J posición,
+  K pausa y L reinicio: seis bajos y ocho arreglos. Las notas MIDI se incorporan
+  al generar el Lua; no se leen archivos MIDI durante la reproducción.
+- Los bajos de 020 duran 24 s y terminan en silencio. Lose entra a .1 s y Giorgio
+  desde el inicio; los WAV tienen señal en cada segundo. No son introducciones
+  largas. La causa perceptual del sonido descrito por el usuario sigue pendiente.
+- Lectura de la ventana, sin cambiar la sesión: lose-yourself-to-dance-bass-vocoder.lua
+  abierto en delay.osci, Polygonizer y Delay activos, F=0. Ese preset ignora F;
+  las variantes controlables sí se silencian con F=0. Los efectos del host alteran
+  el sonido respecto del render offline. No se comprobó el instante de reproducción.
+- Transporte con búsqueda binaria e índices por segundo precalculados, reconstrucción
+  de notas sostenidas y fundidos de 20 ms. J es una orden de posición, no un indicador
+  que siga la reproducción. La historia de filtros no se reproduce al buscar.
+- Pruebas de las 14 variantes a 16/44.1/48 kHz: 42 casos aprobados, incluyendo
+  pausa, búsqueda, jitter, última orden, reinicio y fin. Salidas finitas y acotadas;
+  silencio en la aplicación de cada salto. Informes numéricos versionados.
+- Referencia Mi2 continua, sin dependencia de sliders, con ciclos de 8 s y fades:
+  RMS inicial .08985 y posterior al ciclo .08463 a 48 kHz. Contador entero de muestras
+  evita deriva en el límite del ciclo. WAV local generado, sin reproducir audio.
+- Reconocimiento como bajo, comodidad del transporte, controlador físico y escucha
+  con/sin efectos en Pro pendientes. Se preservan 001–020 y los .osci del usuario.

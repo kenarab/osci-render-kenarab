@@ -316,3 +316,16 @@ Aceptación: bajo con cuerpo y articulación vocal agradable, controles útiles 
 entrada física en Pro. DSP/transferencia espectral/offline aprobados; aceptación
 sonora y host pendientes. No se altera repertorio anterior ni sus .osci; no se
 presentan estos recortes como temas completos ni como superficies XYZ.
+
+## EXP-058 — Transporte y diagnóstico de actividad de bajos
+
+Pedido: FF/rewind en Lua, aclarar lectura de MIDI y poca actividad/timbre de bajo.
+Nuevo 021 / TRN-01…06: variantes de 018/020 con J posición, K pausa y L inicio;
+tono Mi2 continuo, sin sliders ni MIDI. Los recortes 020 contienen bajo desde
+0.1 s/0 s; RMS directo activo durante cada segundo del recorte. No son largos.
+La sesión observada usa preset vocoder, Polygonizer/Delay y F=0; este F no afecta
+el preset, pero sí variantes controlables. Se conserva intacta la sesión.
+Seek reconstruye sostenidas y estado, con fundidos y candidatos precalculados.
+Pruebas offline de 14 variantes/tres tasas aprobadas. Aceptación: el usuario
+puede ubicarse y reanudar desde una parte con bajo y comparar el tono de referencia
+con el host. UI, cadena física, sonido y diagnóstico causal definitivo pendientes.

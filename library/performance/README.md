@@ -35,3 +35,10 @@ Generadores: `scripts/build_live_voices.py`, `scripts/build_diverse_surfaces.py`
 Sólo escriben los nuevos experimentos 015/016/017 y recursos de esta biblioteca.
 Pruebas: `check_live_voices.lua`, `check_diverse_gallery.cjs` y renders offline con
 `render_live_voices.lua`. No se alteran 001–014 ni archivos .osci del usuario.
+
+`transport.lua` añade un transporte independiente de la síntesis: posición J,
+pausa K y reinicio L, con fundidos de 20 ms. El generador precalcula índices de
+notas por segundo; la búsqueda reconstruye las notas sostenidas sin recorrer
+toda la partitura por muestra. J manda una posición y no indica el avance actual.
+La historia de filtros no se reconstruye. Integración y límites en
+[experimento 021](../../experiments/021-transporte-lua/README.md).
