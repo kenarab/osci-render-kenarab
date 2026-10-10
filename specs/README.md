@@ -76,3 +76,5 @@ Plan de tareas / evidencia / dudas pendientes
   de 12 bandas, modulador externo y efecto Lua; escucha/ruteo en host pendientes.
 - [021 — Transporte Lua](021-transporte-lua/spec.md): posición/pausa/inicio para
   Daft y bajos, tono continuo de calibración; controles en Pro pendientes.
+- [022 — Jardines meditativos](022-jardines-meditativos/spec.md): tres instrumentos
+  continuos, XYZ y sonido separados, bancos de superficies y mapa CC común.

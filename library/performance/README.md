@@ -42,3 +42,9 @@ notas por segundo; la búsqueda reconstruye las notas sostenidas sin recorrer
 toda la partitura por muestra. J manda una posición y no indica el avance actual.
 La historia de filtros no se reconstruye. Integración y límites en
 [experimento 021](../../experiments/021-transporte-lua/README.md).
+
+`meditative.lua.in` es el motor autónomo del [022](../../experiments/022-jardines-meditativos/README.md):
+sin partitura, con cuatro voces sostenidas y ocho controles comunes. Su variante
+XYZ preserva geometría; su variante sonora interpola momentos de todas las caras,
+añade fundamental y espacio estéreo, sin conservar la ecuación en la mezcla.
+Bancos/geometría se generan fuera del audio; no modela vibración física de membranas.

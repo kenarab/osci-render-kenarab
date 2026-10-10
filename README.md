@@ -60,3 +60,6 @@ la galería antes de evaluar la configuración del visualizador de osci-render.
 
 - [021 — Adelantar/retroceder Lua](experiments/021-transporte-lua/README.md):
   posición J, pausa K y retorno L; bajo continuo de calibración para comparar.
+
+- [022 — Jardines meditativos](experiments/022-jardines-meditativos/README.md):
+  tres instrumentos continuos, cuárticas/Roman, voces graves y ocho controles MIDI.

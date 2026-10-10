@@ -1,0 +1,4 @@
+# Instrumentos embebidos y geometría regenerables, sin partituras.
+*.lua
+models.js
+gallery.js

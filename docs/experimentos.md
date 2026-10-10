@@ -329,3 +329,19 @@ Seek reconstruye sostenidas y estado, con fundidos y candidatos precalculados.
 Pruebas offline de 14 variantes/tres tasas aprobadas. Aceptación: el usuario
 puede ubicarse y reanudar desde una parte con bajo y comparar el tono de referencia
 con el host. UI, cadena física, sonido y diagnóstico causal definitivo pendientes.
+
+## EXP-059 — Serie meditativa con controlador
+
+Pedido: nuevos experimentos con lo mejor encontrado, impacto visual, sonidos
+profundos/cuasi meditativos y MIDI. El usuario no acepta los últimos experimentos.
+Propuesta implementada en 022 / MED-01…06: Claustro de luz (seis lóbulos), Jardín
+suspendido (ocho lóbulos), Memoria de agua (Roman). Tres instrumentos continuos,
+doce Lua: XYZ/sonido, cada uno fijo o controlable. Mapa común de ocho CC, bancos
+de ocho formas precalculados, fundamental grave, cuatro voces sin reataques,
+respiración lenta y dos resonadores estéreo amortiguados. Sin vocoder ni repertorio.
+Geometría completa en ruta XYZ; mezcla sonora declarada no geométrica. Visor local
+con caras de las formas iniciales y tres WAV de 36 s. Ningún efecto del host cambiado.
+Pruebas a tres tasas: cobertura, ecuación tras transformaciones, CC, silencio,
+reinicio y salida acotada aprobados. WebGL/cámara revisados; escucha y controlador
+físico pendientes. Aceptación: usuario reconoce formas y puede tocar con ocho
+controles; considera el sonido profundo/agradable. No se declara aceptación artística.

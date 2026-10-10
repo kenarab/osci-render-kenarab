@@ -642,3 +642,26 @@
   evita deriva en el límite del ciclo. WAV local generado, sin reproducir audio.
 - Reconocimiento como bajo, comodidad del transporte, controlador físico y escucha
   con/sin efectos en Pro pendientes. Se preservan 001–020 y los .osci del usuario.
+
+## 2026-10-10 — Jardines meditativos (EXP-059)
+
+- MED-01/03: ante rechazo de últimos estudios, nueva serie 022. Tres instrumentos
+  originales continuos sin MIDI de notas ni final silencioso. Doce Lua, presets
+  independientes de controles heredados y variantes MIDI CC con mapa común.
+- MED-02: cuárticas de seis/ocho lóbulos y Roman compacta con deformación axial.
+  XYZ íntegro con giro/escala uniformes, cobertura 32×16 angular y visor con caras.
+  No se afirma que sean superficies récord; Roman no incluye ejes no compactos.
+- MED-03/05: timbre de momentos ponderados por área de todas las caras, ocho
+  estados de forma y cuatro bandas precalculados. Fundamental explícita, cuatro
+  voces sostenidas, respiración y evolución de intervalos lentas, resonadores
+  estéreo con feedback .62 amortiguado. Audio separado de XYZ; no conserva F=0.
+- MED-04/06: 18 casos (tres instrumentos × dos rutas × tres tasas) aprobados:
+  ecuación invertida desde salida, cobertura completa, controles, silencio,
+  reinicio y presets. Renders 36 s/48 kHz sin normalizar: picos .1959/.1988/.1995,
+  RMS .0711/.0717/.0692. No se reprodujo audio ni se cambiaron efectos del host.
+- Chrome no inició en sandbox; ejecución autorizada fuera del sandbox aprobó
+  WebGL, caras, selección, cámara y barrido. Revisadas tres capturas: formas
+  distintas, con volumen y relieve. Visor sin audio ni conexión MIDI a Pro.
+- Sonido agradable/profundo, reconocimiento en Pro y MIDI físico pendientes.
+  Biblioteca/generador/spec/pruebas versionados; instrumentos/bancos/mallas
+  regenerables locales. Se preservan 001–021 y los .osci del usuario.

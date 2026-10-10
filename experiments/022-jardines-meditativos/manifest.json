@@ -1,0 +1,68 @@
+[
+  {
+    "id": "claustro",
+    "title": "Claustro de luz",
+    "kind": 1,
+    "range": 0.46,
+    "shape": 0.91,
+    "hz": 65.4063913,
+    "period": 42,
+    "third": 3,
+    "seventh": 10,
+    "register": 0.24999999944526366,
+    "bank_shape_frames": 8,
+    "bank_bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "bank_samples": 256,
+    "recipe": "momentos de área de todas las caras + fundamental explícita; no modelo físico",
+    "host_acceptance": false
+  },
+  {
+    "id": "jardin",
+    "title": "Jardín suspendido",
+    "kind": 2,
+    "range": 0.44,
+    "shape": 0.86,
+    "hz": 73.416192,
+    "period": 56,
+    "third": 4,
+    "seventh": 11,
+    "register": 0.4166666670724208,
+    "bank_shape_frames": 8,
+    "bank_bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "bank_samples": 256,
+    "recipe": "momentos de área de todas las caras + fundamental explícita; no modelo físico",
+    "host_acceptance": false
+  },
+  {
+    "id": "memoria",
+    "title": "Memoria de agua",
+    "kind": 3,
+    "range": 0,
+    "shape": 0.5,
+    "hz": 55.0,
+    "period": 70,
+    "third": 3,
+    "seventh": 7,
+    "register": 0.0,
+    "bank_shape_frames": 8,
+    "bank_bands": [
+      2,
+      4,
+      8,
+      12
+    ],
+    "bank_samples": 256,
+    "recipe": "momentos de área de todas las caras + fundamental explícita; no modelo físico",
+    "host_acceptance": false
+  }
+]

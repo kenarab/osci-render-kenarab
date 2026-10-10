@@ -1,0 +1,12 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jardines meditativos · referencia 3D</title>
+<style>body{margin:0;background:#0a111a;color:#edf7f5;font:16px system-ui}main{display:grid;grid-template-columns:320px 1fr;height:100vh}aside{padding:24px;background:#14212e;overflow:auto}h1{font-size:28px}label{display:block;margin:20px 0}select,button{background:#213c49;color:white;border:1px solid #56717b;border-radius:7px;padding:10px;width:100%}p{color:#bdd4ce;line-height:1.6}canvas{width:100%;height:100%;display:block;touch-action:none}section{min-width:0}label[hidden],button[hidden]{display:none}@media(max-width:700px){main{display:block;height:auto}section{height:65vh}}</style>
+<main><aside><small>022 · REFERENCIA CON CARAS</small><h1>Jardines meditativos</h1>
+<label hidden><select id="mode"><option value="solo">Una superficie</option></select></label>
+<div id="choices"></div><label hidden><select id="focus"></select></label>
+<label><input id="faces" type="checkbox" checked> Caras</label><label><input id="trace" type="checkbox"> Barrido XYZ · 200 ms</label>
+<button id="reset">Centrar cámara</button><button hidden id="play">Iniciar</button>
+<label hidden><output id="clock"></output><input id="seek" type="range" value="0"></label>
+<p id="state"></p><p>Claustro: seis lóbulos. Jardín: ocho lóbulos. Memoria: superficie de Roman, con autointersecciones.</p>
+<p>Arrastrá para girar; rueda para acercar. Son formas iniciales con caras, sin audio ni conexión MIDI al host. La mezcla sonora de cada estudio se escucha aparte.</p>
+<p><a style="color:#8cdbce" href="README.md">Instrumentos y mapa del controlador</a></p></aside>
+<section><canvas id="view"></canvas></section></main><script src="models.js"></script><script src="gallery.js"></script></html>
